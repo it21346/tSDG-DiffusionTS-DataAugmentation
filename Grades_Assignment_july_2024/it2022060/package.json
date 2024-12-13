@@ -1,0 +1,17 @@
+{
+  "name": "book-management",
+  "version": "1.0.0",
+  "description": "A simple book management system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

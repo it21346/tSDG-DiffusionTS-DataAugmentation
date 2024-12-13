@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+    <body>
+        <form id="upload_form">
+            <h3>Upload a book</h3>
+            <input type="text" name="author" placeholder="author"> <br>
+            <input type="text" name="title" placeholder="title"> <br>
+            
+            <select name="genre">
+                <option>Science fiction</option>
+                <option>Satire</option>
+                <option>Drama</option>
+                <option>Action and Adventure</option>
+                <option>Romance</option>
+                <option>Mystery</option>
+                <option>Horror</option>
+            </select>
+            <br>
+
+            <input type="text" name="price" placeholder="price"> <br>
+            <button id="upload_button">Upload</button>
+        </form>
+        <div id="upload_error"></div>
+
+        <br><br><br><br><br><br>
+
+        <form id="search_form">
+            <h3>Search for a book</h3>
+            <input type="text" name="title" placeholder="Book title"> <br>
+            <button id="search_button">Search</button>
+        </form>
+        <div id="search_error"></div>
+
+        <br><br><br>
+
+        <table style="visibility: hidden;" id="output_table">
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Price</th>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", ()=>{
+                const upload = document.getElementById("upload_button");
+                const search = document.getElementById("search_button");
+
+                upload.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    let ans = checkForms("upload_form");
+
+                    
+                    clearErrors("upload_error");
+                    clearErrors("search_error");
+                    clearTable("output_table");
+
+                    if(ans.error){
+                        displayError("upload_error", ans.message);
+                    }else{
+                        postData(ans.data);
+                    }
+                });
+
+                search.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    let ans = checkForms("search_form");
+
+                    clearErrors("upload_error");
+                    clearErrors("search_error");
+                    clearTable("output_table");
+
+                    if(ans.error){
+                        displayError("search_error", ans.message);
+                    }else{
+                        getData(ans.data);
+                    }
+                });
+
+                function checkForms(form) {
+                    const f = document.getElementById(form);
+                    const data = new FormData(f);
+                    
+                    let response = {
+                        "error": false,
+                        "message": null,
+                        "data": null
+                    };
+
+                    let fields = {};
+
+                    for(let [key, value] of data.entries()){
+
+                        if(value == ""){
+                            response["error"] = true;
+                            response["message"] = "Fields must not be empty";
+                        }
+
+                        if(key == "price"){
+                            if(isNaN(value) || value <= 0){
+                                response["error"] = true;
+                                if(response["message"] == undefined){
+                                    response["message"] = "Price must be a positive number";
+                                }else{
+                                    response["message"] += " and price must be a positive number";
+                                }
+                            }
+                        }
+
+                        fields[key] = value;
+                    }
+                
+                    response["data"] = JSON.stringify(fields);
+                
+                    return response;
+                }
+
+                function displayError(error_div, data){
+                    const error = document.getElementById(error_div);
+
+                    const elem = document.createElement("h4");
+                    elem.style = "color:red";
+                    const text = document.createTextNode(data);
+
+                    elem.appendChild(text);
+                    error.appendChild(elem);
+                }
+            
+                function clearErrors(error){
+                    const err = document.getElementById(error);
+
+                    if (err.childElementCount > 0) {
+                        for (let i = err.childElementCount - 1; i >= 0; i--) {
+                            err.removeChild(err.childNodes[i]);
+                        }
+                    }
+                }
+
+                function clearTable(tab){
+                    let table = document.getElementById(tab);
+
+                    if (table.childElementCount - 1 > 0) {
+                        for (let i = table.childElementCount; i > 1; i--) {
+                            table.removeChild(table.childNodes[i]);
+                        }
+                    }
+
+                    table.style.visibility = "hidden";
+                    return table;
+                }
+                
+                async function postData(data){
+                    try{
+                        const response = await fetch("http://127.0.0.1:3000/books/",{
+                            method: "POST",
+                            headers:{
+                                "Content-Type": "application/json"
+                            },
+                            body: data
+                        });
+
+                        console.log(response)
+
+                        if(!response.ok){
+                            alert((await response.json())["message"]);
+                        }else{
+                            alert((await response.json())["message"]);
+                        }
+
+
+                    }catch(error){
+                        alert(error.message);
+                    }
+                }
+            
+                async function getData(book){
+                    try{
+                        const response = await fetch("http://127.0.0.1:3000/books/" + JSON.parse(book)["title"]);
+
+                        if (!response.ok) {
+                            alert((await response.json())["message"]);
+                        }else{
+                            const data = await response.json();
+                            await loadDataOnTable(data);
+                        }
+
+                    }catch(error){
+                        alert(error.message);
+                    }
+                }
+                
+                function loadDataOnTable(data) {
+                    let table = clearTable("output_table");
+
+                    if(data.length <= 0){
+                        alert("Book not found");
+                        return;
+                    }
+
+                    table.style.visibility = "visible";
+
+                    for (let i = 0; i < data.length; i++) {
+                        let tr1 = document.createElement("tr");
+
+                        let td0 = document.createElement("td");
+                        let td1 = document.createElement("td");
+                        let td2 = document.createElement("td");
+                        let td3 = document.createElement("td");
+
+                        let txt0 = document.createTextNode(data[i]["author"]);
+                        let txt1 = document.createTextNode(data[i]["title"]);
+                        let txt2 = document.createTextNode(data[i]["genre"]);
+                        let txt3 = document.createTextNode(data[i]["price"]);
+
+                        td0.appendChild(txt0);
+                        td1.appendChild(txt1);
+                        td2.appendChild(txt2);
+                        td3.appendChild(txt3);
+
+                        tr1.appendChild(td0);
+                        tr1.appendChild(td1);
+                        tr1.appendChild(td2);
+                        tr1.appendChild(td3);
+
+                        table.appendChild(tr1);
+                    }
+                }
+            });
+        
+        </script>
+    </body>
+</html>

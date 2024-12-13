@@ -1,0 +1,134 @@
+<!-- 
+    
+    Templates and Other ideas Taken from:
+
+    Background image: https://pixabay.com/photos/books-library-reading-education-2606859/
+    Selection Buttons https://uiverse.io/LightAndy1/empty-donkey-0
+    Register Template: https://uiverse.io/IWhat1/old-ladybug-79
+    Search Template: https://uiverse.io/Bodyhc/afraid-eel-42
+    Breathing Text taken from: https://stackoverflow.com/a/24229723
+    Github Button: https://uiverse.io/stlyash/soft-termite-51
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- library background image -->
+    <img src="images/background.webp" class="bg">
+
+    <div class="all">
+
+        <section>
+            <div class="optionwrapper">
+                <img src="images/logo.webp" class="logo">
+                <div class="register-option">
+                    <div class="selectoption">
+                        <input id="registerBtn" value="option1" name="btn" type="image" src="images/upload.png"
+                            class="optioninput" />
+                        <div class="optionbtn">
+                            <span class="optionspan"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-option">
+                    <div class="selectoption">
+                        <input id="searchBtn" value="option2" name="btn" type="image" src="images/search.png"
+                            class="optioninput" />
+                        <div class="optionbtn">
+                            <span class="optionspan"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="content">
+            <!-- Content from register.html and search.html will be loaded here -->
+        </div>
+ 
+        <!-- Templates for the register and search sections -->
+        <template id="register-template">
+            <section id="registerSection">
+                <div class="register-container">
+                    <div class="container">
+                        <div class="log-card">
+                            <div class="top-info">
+                                <div class="github-title-combo">
+                                    <div class="github-box">
+                                        <a class="github" href="https://github.com/EvanLei-git/web-assignment-2024">
+                                            <img src="images/github.webp" alt="GitHub Logo" width="25" height="25"
+                                                class="githubimg">
+                                        </a>
+                                    </div>
+                                    <div class="text-content">
+                                        <p class="heading">HUA-Verse</p>
+                                        <p class="para">Welcome to my Virtual Library!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <p class="text">Author</p>
+                                <input class="input" type="text" id="author" placeholder="Enter Author Name">
+                                <p class="text">Title</p>
+                                <input class="input" type="text" id="title" placeholder="Enter Book Title">
+                                <p class="text">Genre</p>
+                                <select class="input" id="genre">
+                                    <option value="Science fiction">Science fiction</option>
+                                    <option value="Satire">Satire</option>
+                                    <option value="Drama">Drama</option>
+                                    <option value="Action and Adventure">Action and Adventure</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Mystery">Mystery</option>
+                                    <option value="Horror">Horror</option>
+                                </select>
+                                <p class="text">Price</p>
+                                <input class="input" type="text" id="price" placeholder="Enter Price">
+                            </div>
+
+                            <button class="regbtn" onclick="registerBook()">Register Book</button>
+                            <p class="error" id="error" style="color:red; display:none;"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+
+        <template id="search-template">
+            <section id="searchSection">
+                <div class="search">
+                    <input id="keyword-search" placeholder="Search..." type="text">
+                    <button type="submit" onclick="searchBooks()">Search</button>
+                </div>
+                <div id="bookResults" class="card-container">
+
+                    <!-- Book cards will be dynamically added here -->
+
+                </div>
+
+            </section>
+        </template>
+
+    </div>
+
+
+
+
+    <footer>
+        <section class="footerSection">
+            <svg viewBox="0 0 980 100">
+                <text x="30" y="70">MADE FOR EDUCATIONAL PURPOSES ONLY</text>
+            </svg>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--===============================================Καταχώρηση νέου βιβλίου===============================================-->
+    <div>
+        <h3>Register a new book</h3>
+        <!-- author,title -->
+        <label for="author">Author</label><br>
+        <input type="text" id="author"><br>
+        <label for="title">Title</label><br>
+        <input type="text" id="title"><br>
+        <!-- genre -->
+        <label for="genre">Genre</label><br>
+        <select id="genre" >
+            <option value="Science fiction">Science fiction</option>
+            <option value="Satire">Satire</option>
+            <option value="Drama">Drama</option>
+            <option value="Action and Adventure">Action and Adventure</option>
+            <option value="Romance">Romance</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Horror">Horror</option>
+        </select><br>
+        <!-- price με default τιμή 0 -->
+        <label for="price">Price</label><br>
+        <input type="text" id="price" value="00.0"><br>
+        <!-- Register κουμπί -->
+        <input type="button" id="registerButton" value="Register">
+    </div>
+
+    <script type="text/javascript">
+        //window.origin σε μένα είναι το http://localhost:3000 και το χρησιμοποιούμε για να μην έχουμε καρφωτά paths
+        const url = window.origin+'/books/';
+
+        //Όταν πατηθεί το κουμπί εκτελείται η callback συνάρτηση
+        document.getElementById('registerButton').addEventListener('click',async function(e){
+            //Παίρνουμε τις τιμές που έχει εισάγει ο χρήστης
+            const bookAuthor = document.getElementById('author').value;
+            const bookTitle = document.getElementById('title').value;
+            const bookGenre = document.getElementById('genre').value;
+            const bookPrice = document.getElementById('price').value;
+            
+            //Ελέγχουμε αν οι είσοδοι του χρήστη είναι έγκυρες
+            const message = checkInputs (bookAuthor,bookTitle,bookPrice);
+            /*Αν το message δεν είναι κενό τότε υπάρχει λανθασμένη είσοδο άρα 
+            σταματάει η εκτέλεση της συνάρτησης με το return*/
+            if (message !== ''){
+                alert(message);
+                return;
+            }
+
+            //Δημιουργία του βιβλιού ως json object 
+            const newBook = {
+                "id":0, //default τιμή το 0
+                "author":bookAuthor,
+                "title":bookTitle,
+                "genre":bookGenre,
+                "price":bookPrice
+            }
+
+            try{
+                /*Φεύγει ένα HTTP request στο url με τη μέθοδο POST.
+                Με την χρήση του async/await το response παίρνει τιμή μόλις
+                το promise που επιστρέφει η fetch γίνει fulfilled ή rejected */
+                const response = await fetch(url,{
+                    method:"POST",
+                    headers:{
+                        "Content-Type":"application/json"
+                    },
+                    body:JSON.stringify(newBook)
+                });
+                /*Το promise στο οποίο δείχνει το response είναι fulfilled και 
+                τυπώνει στην κονσόλα το μύνημα επιτυχίας της λειτουργίας*/
+                console.log(await response.json());
+                //Ενημερώνει τον χρήστη για την επιτυχία της καταχώρησης νέου βιβλίου
+                alert('The operation <Register a new book> completed successfully');
+
+            }catch(err){
+                /*Το promise στο οποίο δείχνει το response είναι rejected και 
+                τυπώνει στην κονσόλα το μύνημα αποτυχίας της λειτουργίας*/
+                console.error(err);
+                //Ενημερώνει τον χρήστη για την αποτυχία της καταχώρησης νέου βιβλίου
+                alert('The operation <Register a new book> failed successfully because there was a problem to the server\n\nSorry :(');
+            }
+        })
+
+        //===Βοηθητική συνάρτηση για έλεγχο των εισόδων του χρήστη===
+        function checkInputs (bookAuthor,bookTitle,bookPrice){
+            var message='';
+
+            //Αν ο author ή ο τίτλος είναι string και η τιμή τους είναι το κενό τότε λανθασμένη είσοδο
+            if ((bookAuthor==='') || (bookTitle==='')){
+                message += 'The text shouldn`t be empty\n';
+            }
+            //Αν το price δεν είναι αριθμός ή είναι αρνητικός αριθμός τότε λανθασμένη είσοδο
+            if (isNaN(bookPrice)){
+                message += 'The price should be a number\n';
+            }else if (bookPrice <= 0){
+                message += 'The price should be > 0\n';
+            }
+            return message;
+        }
+    </script>
+<!--===============================================Καταχώρηση νέου βιβλίου===============================================-->
+<!--===============================================Αναζήτηση βιβλίου με λέξη κλειδί======================================-->
+    <hr>
+    <div>
+        <h3>Search a book</h3>
+        <!-- keyword -->
+        <label for="keyword">Keyword for title</label><br>
+        <input type="text" id="keyword">
+        <!-- Search κουμπί -->
+        <input type="button" id="searchButton" value="Search"><br>
+        <!-- Λίστα αποτελεσμάτων -->
+        <label for="results">Results:</label><br>
+        <ul id="results">
+            <li>No results yet</li>
+        </ul>
+    </div>
+
+    <script>
+        //Όταν πατηθεί το κουμπί εκτελείται η callback συνάρτηση
+        document.getElementById('searchButton').addEventListener('click', async function(e){
+            /*Παίρνουμε την τιμή του keyword που έχει εισάγει ο χρήστης.
+            Το trim() διαγράφει τα κενά στην αρχή και στο τέλος*/
+            const titleKeyword = document.getElementById('keyword').value.trim();
+            
+
+            //Χωρίζουμε την είσοδο σε λέξεις με το split και το arrayWithWords είναι πίνακας με τις λέξεις ως στοιχεία
+            const arrayWithWords = titleKeyword.split(" ");
+            //Έλεγχος εγκυρότητας εισόδου χρήστη
+            if (arrayWithWords.length > 1){
+                alert("You should write only one word for the keyword\n");
+                return;
+                //Κάνουμε τον έλεγχο αυτό γιατί η κενή είσοδο έχει μία λέξη το κενό
+            }else if ((arrayWithWords.length === 1) && (arrayWithWords[0] === "")){
+                alert("The keyword`s text shouldn`t be empty\n");
+                return;
+            }
+
+            try{
+                //Φεύγει ένα HTTP request στο http://localhost:3000/books/:titleKeyword με τη μέθοδο GET
+                const response = await fetch(`${url}${titleKeyword}`);
+                //Το books δείχνει σε ένα json που περιέχει ένα array από objects τα οποία είναι τα βιβλία
+                const books = await response.json();
+
+                //Το uListElement δείχνει στην unordered list
+                const uListElement = document.getElementById('results');
+                //Διαγράφουμε όλα τα προηγούμενα αποτελέσματα αν έχει 
+                for (let i=uListElement.childNodes.length-1; i>=0; i--){
+                    uListElement.removeChild(uListElement.childNodes[i]);
+                }
+
+                //Αν υπάρχουν βιβλία τότε τα προσθέτει στην ul με την βοήθεια της appendList
+                if (books.length!==0){
+                    for (book of books){
+                        const text = `id: ${book.id}, author: ${book.author}, 
+                            title: ${book.title}, genre: ${book.genre}, price: ${book.price}`;
+                        appendList(text,uListElement);
+                    }
+                }else {
+                    //Ενημερώνουμε τον χρήστη για τη μη εύρεση του βιβλίου ή βιβλίων
+                    appendList(`There are no books with this keyword: ${titleKeyword}`,uListElement)
+                }
+
+            }catch(err){
+                console.error(err);
+                //Ενημερώνει τον χρήστη για την αποτυχία της αναζήτησης βιβλίου
+                alert('The operation <Search a book> failed successfully because there was a problem to the server\n\nSorry :(');
+            }
+        })
+        
+        //===Βοηθητική συνάρτηση για ενημέρωση της unordered list===
+        function appendList(text,uListElement){
+            /*Δέχεται δύο ορίσματα το text δηλαδή το κείμενο για το li element και
+            το uListElement δηλαδή την ul για να προσθέσει το li element σε αυτήν*/
+            const liElement = document.createElement('li');
+            const textNode = document.createTextNode(text);
+
+            liElement.appendChild(textNode);
+            uListElement.appendChild(liElement);
+        }
+    </script>
+<!--===============================================Αναζήτηση βιβλίου με λέξη κλειδί======================================-->
+</body>
+</html>

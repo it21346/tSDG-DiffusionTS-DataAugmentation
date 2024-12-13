@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>it2022071</title>
+  <link rel="stylesheet" href="style.css">
+
+
+<!--  header font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1>HUA Library</h1>
+  <hr>
+
+  <form>
+    <h3><b>Enter a new book</b></h3>
+
+    <div>
+      <label for="authorName">Author's name:</label>
+      <input type="text" id="authorName" name="authorName" placeholder="J. R. R. Tolkien" class="textbox">
+    </div>
+
+    <div>
+      <label for="title">Book's title:</label>
+      <input type="text" id="title" name="title" placeholder="Lord of the rings" class="textbox">
+    </div>
+
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" placeholder="20$" class="textbox">
+    </div>
+
+
+    <div>
+      <label for="genre" >Genre:</label>
+      <select id="genre" name="genre" class="textbox">
+        <option value="science fiction" class="drop_list_item">Science fiction</option>
+        <option value="satire" class="drop_list_item">Satire</option>
+        <option value="drama" class="drop_list_item">Drama</option>
+        <option value="action and adventure" class="drop_list_item">Action and Adventure</option>
+        <option value="romance" class="drop_list_item">Romance</option>
+        <option value="mystery" class="drop_list_item">Mystery</option>
+        <option value="horror" class="drop_list_item">Horror</option>
+      </select>
+    </div>
+
+    <br>
+
+
+    <input type="button" id="submitBut" class="button" value="submit">
+
+    <br><br>
+    <h3 id="success"></h3>
+    <hr>
+    <br>
+
+    <div>
+      <label for="search">Search book:</label>
+      <input type="text" id="search" name="search" class="textbox">
+      <br>
+      <button type="button" id="searchBut" class="button" >submit</button>
+    </div>
+
+  </form>
+  
+  <script type="text/javascript">
+    const url = window.origin + '/books/';
+    
+    document.getElementById('submitBut').addEventListener('click', async function(e){
+
+      const bookAuthor = document.getElementById('authorName').value;
+      const bookTitle = document.getElementById('title').value;
+      const bookGenre = document.getElementById('genre').value;
+      const bookPrice = document.getElementById('price').value;
+
+      const newbook = {                             // allocating values 
+        "author":bookAuthor,
+        "title":bookTitle,
+        "genre":bookGenre,
+        "price":bookPrice
+      };
+      try{
+        const response = await fetch(url,{                // sending the new book
+          method:"POST",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body:JSON.stringify(newbook)
+        });
+
+      } catch(err){
+        console.error(err);
+      }
+
+    });
+
+    document.getElementById('searchBut').addEventListener('click',async function(e){
+      
+      const searchKeyword = document.getElementById('search').value;
+      
+      if (!searchKeyword) {
+        alert("Please enter a keyword to search...");
+        return;
+      }
+
+      try {
+        const response = await fetch(`${url}${searchKeyword}`, {
+          method: "GET",
+
+        });
+
+        const books = await response.json();
+        console.log(books);
+
+        
+        const resultsContainer = document.getElementById('results');        // Display the search results
+        resultsContainer.innerHTML = ''; // Clear previous results
+
+        books.forEach(book => {
+          const bookInfo = document.createElement('div');
+         
+          bookInfo.innerHTML = `
+            <hr>
+            <p>ID: ${book.id}</p>
+            <p>Author: ${book.author}</p>
+            <p>Title: ${book.title}</p>
+            <p>Genre: ${book.genre}</p>
+            <p>Price: ${book.price}</p>
+            <br> <!-- Optional: Add a line break between each book -->
+            <hr>
+          `;
+          resultsContainer.appendChild(bookInfo);
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    });
+    
+  </script>
+  
+  <br>
+
+  <div id="results" class="results"></div>
+
+</body>
+
+</html>

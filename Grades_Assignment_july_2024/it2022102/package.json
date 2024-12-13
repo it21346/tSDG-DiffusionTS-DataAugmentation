@@ -1,0 +1,16 @@
+{
+  "name": "webooks",
+  "version": "1.0.0",
+  "description": "Books storing system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodejs index.js"
+  },
+  "author": "George Tzalas",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}

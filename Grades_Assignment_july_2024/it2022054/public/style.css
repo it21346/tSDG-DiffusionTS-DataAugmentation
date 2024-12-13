@@ -1,0 +1,266 @@
+body { /*Ρυθμίσεις body*/
+    font-family: Arial, sans-serif; /* Επιλογή γραμματοσειράς */
+    margin: 0;  /*Περιθώριο*/
+    padding: 0; 
+    background-color: rgb(255, 255, 255); /* Λευκό φόντο σε περίπτωση που βγάλουμε την φωτογραφία*/
+    color: rgb(255, 255, 255);/*Χρώμα που υπάρχει πίσω απο την εικόνα σε περίπτωση που την βγάλουμε*/
+    overflow-y: scroll; /* Επιτρέπει την κύλιση */
+}
+
+.overlay {
+    background-image: url('https://i.pinimg.com/736x/f9/b5/06/f9b50630ff3a81b91fbd962cae737f82.jpg');   /* Εικόνα φόντου */
+    position: fixed; /* Σταθερή θέση */
+    top: 0; /* Επάνω άκρο */
+    left: 0; /* Αριστερό άκρο */
+    width: 100%; /* Πλήρες πλάτος */
+    height: 100%; /* Πλήρες ύψος */
+    z-index: 1000; /* Υψηλότερο επίπεδο */
+    display: flex; /* Ευέλικτη εμφάνιση */
+    justify-content: center; /* Κεντράρισμα οριζόντια */
+    align-items: center; /* Κεντράρισμα κατακόρυφα */
+    background-color: rgba(0, 0, 0, 0.85); /* Ημιδιαφανές άσπρο φόντο πάλι σε περίπτωση που δεν βάλουμε εικόνα */
+    overflow-y: auto; /* Επιτρέπει την κύλιση μέσα στην overlay */
+}
+
+.container {
+    width: 50%; /* Πλάτος 50% της overlay */
+    background-color: rgba(0, 0, 0, 0.85); /* Ημιδιαφανές μαύρο φόντο που χρησιμοποιείται*/
+    padding: 20px; /* Περιθώριο εντός του container */
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Σκιά με άσπρο χρώμα */
+    max-height: 90%; /* Μέγιστο ύψος 90% της οθόνης */
+    overflow-y: auto; /* Επιτρέπει την κύλιση μέσα στο container */
+}
+
+.centered-image { /*Ρυθμίσεις γαι την εικόνα*/
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Κενό κάτω από τα στοιχεία φόρμας */
+}
+
+label {
+    display: block; /* Εμφάνιση ως block */
+    margin-bottom: 5px; /* Κενό κάτω από κάθε ετικέτα */
+    color: white; /* Λευκό χρώμα κειμένου */
+}
+
+
+/* Στυλ για μηνύματα σφάλματος */
+.error {
+    color: red; /* Κόκκινο χρώμα κειμένου */
+}
+
+/* Στυλ για μηνύματα επιτυχίας */
+.success {
+    color: green; /* Πράσινο χρώμα κειμένου */
+}
+
+/* Στυλ για πίνακα */
+table {
+    width: 100%; /* Πλήρες πλάτος */
+    border-collapse: collapse; /* Συγχώνευση περιθωρίων */
+    margin-top: 20px; /* Κενό από πάνω */
+    color: white; /* Λευκό χρώμα κειμένου */
+}
+
+th, td {
+    padding: 10px; /* Περιθώριο εντός των κελιών */
+    text-align: left; /* Αριστερή στοίχιση κειμένου */
+    border-bottom: 1px solid #ddd; /* Ανώτερο χρώμα περιγράμματος */
+}
+
+/* Στυλ για κεφαλίδα πίνακα */
+th {
+    background-color: rgba(255, 255, 255, 0.1); /* Ημιδιαφανές άσπρο φόντο για την κεφαλίδα */
+}
+
+/* Στυλ για τον κύριο τίτλο */
+.title {
+    text-align: center; /* Κεντράρισμα κειμένου */
+    color: white; /* Λευκό χρώμα κειμένου */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Επιλογή γραμματοσειράς */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4); /* Σκίαση κειμένου */
+}
+
+
+/*Από εδώ και κάτω δεν έχω βάλει κώδικα καθώς είναι έτοιμος-παρμένος από το universe.io*/
+/*Αποτελείται από δύο έτοιμα κουμπία που τα έχω συνδυάσει για να υπάρχει το επιθυμητό αποτέλεσμα
+και τα checkboxes*/
+
+.beautiful-button {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #616161);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 28px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(90, 90, 90, 0);
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.beautiful-button:hover {
+    background: linear-gradient(to bottom, #000000);
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+}
+
+.beautiful-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(255, 255, 255,255);
+}
+
+@keyframes button-shimmer {
+    0% {
+        background-position: left top;
+    }
+
+    100% {
+        background-position: right bottom;
+    }
+}
+
+@keyframes button-particles {
+    0% {
+        background-position: left top;
+    }
+
+    100% {
+        background-position: right bottom;
+    }
+}
+
+button {
+    background: #333;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #ffffff 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #000000, #000000);
+    box-shadow: -1px -5px 15px #000000, 5px 5px 15px #000000,
+                inset 5px 5px 10px #000000, inset -5px -5px 10px #000000;
+}
+
+button:hover {
+    box-shadow: 1px 1px 13px #ffffff, -1px -1px 13px #ffffff;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+button:active {
+    box-shadow: 1px 1px 13px #ffffff, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    transition: 100ms;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #fff; 
+    background-color: rgb(28, 28, 30); 
+    border: none;
+    outline: none;
+    border-radius: 0.4vw;
+    transition: .4s;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+input:hover, select:hover, button:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186); 
+}
+
+input:focus, select:focus, button:focus {
+    box-shadow: 0 0 0 .15vw skyblue; 
+}
+
+.checkbox-group {
+    display:flex
+}
+
+.checkbox-group > div {
+    margin-right: 80px; 
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+.custom-checkbox .checkmark::before {
+    content: "\2713";
+    font-size: 16px;
+    color: transparent;
+    transition: color 0.8s, transform 0.9s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #1eb12a;
+    border-color: #333;
+    transform: scale(1.1) rotateZ(360deg) rotateY(360deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+    color: #fff;
+}
+
+.custom-checkbox:hover {
+    color: #666;
+}
+
+.custom-checkbox:hover .checkmark {
+    border-color: #666;
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.custom-checkbox input[type="checkbox"]:focus + .checkmark {
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.custom-checkbox .checkmark,
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    transition: background-color 1.3s, border-color 1.3s, color 1.3s, transform 0.3s;
+}

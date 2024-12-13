@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Management</title>
+</head>
+<body>
+    <!-- Τμήμα Εγγραφής Βιβλίου -->
+    <h2>Book Registration</h2>
+    <!-- Πεδία εισόδου για συγγραφέα, τίτλο, είδος και τιμή -->
+    <input type="text" id="author" placeholder="Author">
+    <input type="text" id="title" placeholder="Title">
+    <select id="genre">
+        <!-- Μενού για την επιλογή είδους του βιβλίου -->
+        <option value="Science fiction">Science fiction</option>
+        <option value="Satire">Satire</option>
+        <option value="Drama">Drama</option>
+        <option value="Action and Adventure">Action and Adventure</option>
+        <option value="Romance">Romance</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Horror">Horror</option>
+    </select>
+    <!-- Πεδίου για την τιμή -->
+    <input type="text" id="price" placeholder="Price">
+    <!-- Κουμπί υποβολής αιτήματος για εγγραφή του βιβλίου -->
+    <input type="button" id="send_request" value="Send Request!">
+
+    <!-- Τμήμα αναζήτησης βιβλίου -->
+    <h2>Book Search</h2>
+    <!-- Πεδίο εισόδου για εισαγωγή λέξης-κλειδιού αναζήτησης -->
+    <input type="text" id="keyword" placeholder="Keyword">
+    <!-- Κουμπί για έναρξη αναζήτησης βιβλίου -->
+    <input type="button" id="search_book" value="Search">
+
+    <!-- Δοχείο για την εμφάνιση αποτελεσμάτων αναζήτησης -->
+    <div id="results"></div>
+
+    <script type="text/javascript">
+        // Event listener για την υποβολή αιτήματος εγγραφής βιβλίου
+        document.getElementById('send_request').addEventListener('click', async (e) => {
+            // Επιστροφή τιμών εισόδου για συγγραφέα, τίτλο, είδος και τιμή
+            const author = document.getElementById('author').value.trim();
+            const title = document.getElementById('title').value.trim();
+            const genre = document.getElementById('genre').value;
+            const price = document.getElementById('price').value.trim();
+
+            // Έλεγχος για το αν κάποιο από τα πεδία είναι κενό
+            if (!author || !title || !genre || !price) {
+                alert("All fields are required.");
+                return;
+            }
+
+            // Εγκυρότητα τιμής
+            if (isNaN(price)) {
+                alert("Please enter a valid price.");
+                return;
+            }
+
+            // Δημιουργήστε ένα αντικείμενο βιβλίου με τις τιμές εισόδου
+            const book = {
+                author,
+                title,
+                genre,
+                price: parseFloat(price)
+            };
+ 
+            // Αποστολή αιτήματος POST για προσθήκη του βιβλίου
+            const url = 'http://localhost:3000/books/';
+            console.log(book);
+            const result = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify(book)
+            });
+            console.log(result);
+            // Χειρισμός απάντησης από τον server
+            const response = await result.json();
+            console.log(response);
+            alert(result);
+        });
+
+        // Event listener για την έναρξη αναζήτησης βιβλίου
+        document.getElementById('search_book').addEventListener('click', async (e) => {
+            // Retrieve search keyword
+            const keyword = document.getElementById('keyword').value.trim();
+
+            // Έλεγχος για το εάν το κλειδί αναζήτησης είναι κενό
+            if (!keyword) {
+                alert("Please enter a keyword.");
+                return;
+            }
+
+            // Αποστολή GET αιτήματος για αναζήτηση βιβλίων
+            const url = `http://localhost:3000/books/${keyword}`;
+            const result = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    "Content-type": "application/json"
+                }
+            });
+
+            // Χειρισμός απάντησης από τον server
+            const results = await result.json();
+            const resultsElem = document.getElementById('results');
+            resultsElem.innerHTML = ''; // Clear previous results
+
+            // Εμφάνιση αποτελεσμάτων αναζήτησης
+            if (results.length > 0) {
+                results.forEach(book => {
+                    resultsElem.innerHTML += `<p>ID: ${book.id}, Author: ${book.author}, Title: ${book.title}, Genre: ${book.genre}, Price: ${book.price}</p>`;
+                });
+            } else {
+                resultsElem.innerHTML = '<p>No books found.</p>';
+            }
+        });
+    </script>
+</body>
+</html>

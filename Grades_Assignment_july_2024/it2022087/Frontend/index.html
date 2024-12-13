@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--Κανονικά θα έβαζα css, html και js σε διαφορετικά αρχεία απλά η εργασία είναι μικρή οπότε τα έβαλα όλα εδώ. -->
+<html class="light-theme">
+<head>
+    <title>BOOK MANAGEMENT PAGE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        html, body {
+            transition: background-color 0.5s ease;
+        }
+
+        .light-theme { //
+            background-color: #f8f9fa;
+            color: #000000;
+        }
+
+        .dark-theme {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .theme-button {
+            background-color: transparent;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            transition: color 0.5s ease;
+            position: absolute;
+            bottom: 50px;
+            left : 10px;
+        }
+
+        .light-theme .theme-button {
+            color: #000000;
+        }
+
+        .dark-theme .theme-button {
+            color: #ffffff;
+        }
+
+        #results {
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .result-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body class="light-theme"> <!-- Start with light theme -->
+<div class="container py-5">
+    <button id="themeButton" class="theme-button"> <!-- Dark mode button -->
+        <img id="themeIcon" src="https://cdn-icons-png.freepik.com/512/6714/6714978.png" alt="DefaultIcon" width='100' height='100'>
+    </button>
+    <h1 class="mb-5">Book Management</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Register a new book</h2>
+            <form id="bookForm" class="mb-5">
+                <div class="form-group">
+                    <input type="text" id="author" class="form-control" placeholder="Author" required maxlength='64'>
+                    <div id="authorWarning" style="display: none; color: red;">Author name cannot exceed 64 characters.</div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="title" class="form-control" placeholder="Title" required maxlength="64">
+                    <div id="titleWarning" style="display: none; color: red;">Title cannot exceed 64 characters.</div>
+                </div>
+                <div class="form-group">
+                    <select id="genre" class="form-control" required>
+                        <option value="">Select genre</option>
+                        <option value="Science fiction">Science fiction</option>
+                        <option value="Satire">Satire</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Action and Adventure">Action and Adventure</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Horror">Horror</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="price" class="form-control" placeholder="Price" required step="0.01">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <div id="message"></div>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Search for a book</h2>
+            <div class="input-group mb-3">
+                <input type="text" id="search" class="form-control" placeholder="Keyword">
+                <div class="input-group-append">
+                    <button id="searchBtn" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            <div id="results" class="border p-3"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const themeButton = document.getElementById('themeButton');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+    const body = document.body;
+
+    themeButton.addEventListener('click', function() { // Change to dark theme
+        if (html.classList.contains('light-theme')) {
+            html.classList.remove('light-theme');
+            body.classList.remove('light-theme');
+            html.classList.add('dark-theme');
+            body.classList.add('dark-theme');
+            themeIcon.src = 'https://static.thenounproject.com/png/4676033-200.png';
+        } else {  // Change back to light theme
+            html.classList.remove('dark-theme');
+            body.classList.remove('dark-theme');
+            html.classList.add('light-theme');
+            body.classList.add('light-theme');
+            themeIcon.src = 'https://cdn-icons-png.freepik.com/512/6714/6714978.png';
+        }
+    });
+
+    document.getElementById('searchBtn').addEventListener('click', function() { // Search for a book
+        const keyword = document.getElementById('search').value;
+        const results = document.getElementById('results');
+        if (!keyword.trim()) {
+            results.innerHTML = 'Please enter a keyword';
+            return;
+        }
+        fetch(`http://localhost:3000/books/${keyword}`) // Fetch the data from the server
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {  // Display the results (if they exist)
+                results.innerHTML = '';
+                if (data.length === 0) {
+                    results.innerHTML = 'No results found';
+                } else {
+                    const regex = new RegExp(`(${keyword})`, 'gi');
+                    let resultList = '<ul>';
+                    data.forEach(book => {
+                        const title = book.title.replace(regex, '<span class="highlight">$1</span>');
+                        resultList += `<li class="result-item">${title} by ${book.author} (${book.genre}, ${book.price}€)</li>`;
+                    });
+                    resultList += '</ul>';
+                    results.innerHTML = resultList;
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+                results.innerHTML = '<p style="color: red;">Failed to contact the server. Please try again later.</p>';
+            });
+    });
+
+    document.getElementById('bookForm').addEventListener('submit', function(e) { // Register a new book
+        e.preventDefault();
+        const author = document.getElementById('author');
+        const title = document.getElementById('title');
+        const genre = document.getElementById('genre');
+        const price = document.getElementById('price');
+        fetch('http://localhost:3000/books', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ author: author.value, title: title.value, genre: genre.value, price: price.value }),
+
+        })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => {
+                        throw err;
+                    });
+                }
+                return response.json();
+            })
+
+            .then(data => { // Registration confirmation + clear the form
+                displayMessage('Success!', 'success');
+                author.value = '';
+                title.value = '';
+                genre.value = '';
+                price.value = '';
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                if (error.message === 'Book with the same title and author already exists.') {
+                    displayMessage('Book with the same title and author already exists.', 'error');
+                } else {
+                    displayMessage('Something went wrong :(', 'error');
+                }
+            });
+    });
+
+    function displayMessage(message, type) {
+        const messageElement = document.getElementById('message');
+        messageElement.textContent = message;
+        messageElement.style.fontWeight = 'bold';
+
+        if (type === 'success') {
+            messageElement.style.color = 'green';
+            messageElement.textContent = message;
+        } else if (type === 'error') {
+            messageElement.style.color = 'red';
+            messageElement.textContent = message;
+        }
+
+        // Remove the message after 3 seconds
+        setTimeout(() => {
+            messageElement.textContent = '';
+        }, 3000);
+    }
+
+    const priceInput = document.getElementById('price');
+    const bookForm = document.getElementById('bookForm');
+
+    priceInput.addEventListener('input', function() {
+        const price = this.value;
+        if (price.includes('.')) {
+            if (price.split('.')[1].length > 2) {
+                this.value = parseFloat(price).toFixed(2);
+            }
+        }
+        if (price.length > 9) {
+            alert('Price cannot exceed 9 digits');
+            this.value = price.slice(0, 9);
+        }
+        if (isNaN(price) || price < 0) {
+            this.setCustomValidity('Please enter a positive number');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+    bookForm.addEventListener('submit', function(e) {
+        if (!priceInput.validity.valid) {
+            e.preventDefault();
+            alert('Please correct the errors in the form');
+        }
+    });
+
+    const authorInput = document.getElementById('author');
+    const titleInput = document.getElementById('title');
+    const authorWarning = document.getElementById('authorWarning');
+    const titleWarning = document.getElementById('titleWarning');
+
+    authorInput.addEventListener('input', function() {
+        if (this.value.length >= 64) {
+            authorWarning.style.display = 'block';
+        } else {
+            authorWarning.style.display = 'none';
+        }
+    });
+
+    titleInput.addEventListener('input', function() { //
+        if (this.value.length >= 64) {
+            titleWarning.style.display = 'block';
+        } else {
+            titleWarning.style.display = 'none';
+        }
+    });
+
+</script>
+</body>
+</html>
