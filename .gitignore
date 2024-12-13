@@ -4,5 +4,9 @@
 # Ignore specific folders
 /Pandora/
 /HALCOR/wandb/
+/HALCOR/Data/
+/HALCOR/Experiments/Bi-directional LSTM/Multi-step Predictions/models/
+/HALCOR/Experiments/Bi-directional LSTM/Single-step Predictions/models/
+/HALCOR/Experiments/CNN-LSTM/models/
 # Ignore a specific file
 # secret_config.json
