@@ -2,8 +2,7 @@
 # *.log
 
 # Ignore specific folders
-/HALCOR/
 /Pandora/
-
+/HALCOR/wandb/
 # Ignore a specific file
 # secret_config.json
