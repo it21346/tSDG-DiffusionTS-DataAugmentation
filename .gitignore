@@ -5,9 +5,9 @@
 /Pandora/
 /HALCOR/wandb/
 /HALCOR/Data/
-/HALCOR/Experiments/Forecasting/Bi-directional LSTM/Multi-step Predictions/models
-/HALCOR/Experiments/Forecasting/Bi-directional LSTM/Single-step Predictions/models
-/HALCOR/Experiments/Forecasting/CNN-LSTM/models
+/HALCOR/Experiments/Forecasting/Bi-directional LSTM/Multi-step Predictions/models/
+/HALCOR/Experiments/Forecasting/Bi-directional LSTM/Single-step Predictions/models/
+/HALCOR/Experiments/Forecasting/CNN-LSTM/models/
 
 # Ignore a specific file
 # secret_config.json
