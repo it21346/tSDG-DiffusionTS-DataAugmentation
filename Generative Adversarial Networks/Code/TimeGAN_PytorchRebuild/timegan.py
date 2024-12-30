@@ -64,6 +64,7 @@ class TimeGAN:
         self.Y_fake_e = self.discriminator(self.E_hat)
 
     def gen_synth_data(self, batch_size):
+        self.device = torch.device('cpu')
         self.Z = random_generator(batch_size, self.para['input_dim'], self.max_seq_len, self.ori_time)
         self.Z = torch.tensor(self.Z, dtype=torch.float32).to(self.device)
 

@@ -6,6 +6,7 @@ from metrics.visualization_metrics import visualization
 from utils import extract_time
 import pandas as pd
 import pickle
+import torch
 
 def MinMaxInverseScaler(norm_data, original_data):
     """Inverse Min Max scaler to denormalize data.
@@ -91,6 +92,7 @@ def test(opt, ori_data):
         synth_size = len(ori_data)
     
     generated_data, _, _ = model.gen_synth_data(synth_size)
+    
     
     generated_data = generated_data.cpu().detach().numpy()
     gen_data = list()

@@ -10,7 +10,7 @@ from data_loading import real_data_loading, sine_data_generation
 def main(opt):
     # Data loading
     ori_data = None
-    if opt.data_name in ['stock', 'energy', 'copper_data']:
+    if opt.data_name in ['stock', 'energy', 'ericsson']:
         ori_data = real_data_loading(opt.data_dir, opt.data_name, opt.seq_len)
     elif opt.data_name == 'sine':
         # Set number of samples and its dimensions
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     # Args for the main function
     parser = argparse.ArgumentParser()
     # Data parameters
-    parser.add_argument('--data_name', type=str, default='stock', choices=['sine', 'stock', 'energy', 'copper_data'], )
+    parser.add_argument('--data_name', type=str, default='stock', choices=['sine', 'stock', 'energy', 'ericsson'], )
     parser.add_argument('--seq_len', type=int, default=24, help='sequence length')
     parser.add_argument('--sine_no', type=int, default=10000, help='number of sine data samples')
     parser.add_argument('--sine_dim', type=int, default=5, help='dim of  sine data')
