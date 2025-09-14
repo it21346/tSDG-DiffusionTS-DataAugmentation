@@ -71,6 +71,12 @@ instance/
 # Sphinx documentation
 docs/_build/
 
+
+Checkpoints_energy_33/
+Checkpoints_energy_49/
+Checkpoints_energy_65/
+
+
 # PyBuilder
 .pybuilder/
 target/
