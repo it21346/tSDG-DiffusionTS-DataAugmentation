@@ -79,16 +79,15 @@ def visualization(ori_data, generated_data, analysis, compare=3000):
     - analysis: tsne or pca or kernel
   """
     # Analysis sample size (for faster computation)
-    anal_sample_no = min([3000, compare, ori_data.shape[0]])
-    # idx = np.random.permutation(ori_data.shape[0])[:anal_sample_no]
-    idx = np.random.permutation(anal_sample_no)
+    anal_sample_no = min([compare, ori_data.shape[0]])
+    idx = np.random.permutation(ori_data.shape[0])[:anal_sample_no]
 
     # Data preprocessing
     # ori_data = np.asarray(ori_data)
     # generated_data = np.asarray(generated_data)
 
-    ori_data = ori_data[:anal_sample_no][idx]
-    generated_data = generated_data[:anal_sample_no][idx]
+    ori_data = ori_data[idx]
+    generated_data = generated_data[idx]
 
     no, seq_len, dim = ori_data.shape
 
