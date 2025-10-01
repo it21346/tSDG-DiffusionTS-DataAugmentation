@@ -1,1 +1,0 @@
-epoch time D_loss G_loss mmd2 that pdf real_pdf
