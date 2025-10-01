@@ -1,7 +1,0 @@
-CREATE TABLE books (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    author VARCHAR(25) NOT NULL,
-    title VARCHAR(40) NOT NULL,
-    genre VARCHAR(20) NOT NULL,
-    price REAL NOT NULL
-);

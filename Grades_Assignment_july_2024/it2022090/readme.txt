@@ -1,2 +1,0 @@
-ΚΩΝΣΤΑΝΤΙΝΟΣ ΠΟΓΕΛΗΣ - ΑΜ:2022090
-Στο zip υπαρχουν το index.html το package.json και το books.sqlite. Χρησιμοποιησα sqlite 3, στο αρχειο books.sqlite υπαρχουν τα 2 entries της εκφωνισης μαζι με 3 τυχαια entries ακομα. Ολα τα depedences βρησκονται στο package.json. Ενσωματωσα οτι ειχα στο css αρχειο μου στο κωδικα το html γιατι με βολεψε πιο πολυ ετσι κατα την διαρκεια του development. 
