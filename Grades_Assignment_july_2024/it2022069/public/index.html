@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8"> <!-- Για τα γράμματα της σελίδας --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Για την προσαρμογή της σελίδας σε διάφορες συσκευές -->
+    <title>BookLand.com</title> <!-- Ο τίτλος της σελίδας -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Σύνδεση με το αρχείο CSS -->
+</head>
+
+<body>
+    <div class="container"> <!-- Για τη διάταξη της σελίδας -->
+        <h1>BookLand</h1> <!-- Μια γραμματοσειρά ως επικεφαλίδα της σελίδας -->
+        <h2>Add Books</h2> <!-- Μια γραμματοσειρά ως υποκεφαλίδα για την προσθήκη ενός βιβλίου -->
+        <div id="message"></div> <!-- Για την εμφάνιση των μηνυμάτων -->
+        <form id="bookLand"> <!-- Η φόρμα για την προσθήκη βιβλίου -->
+            <div class="form"> <!-- Για την εισαγωγή του συγγραφέα -->
+                <label for="author">Author</label> <!-- Ετικέτα για το πεδίο -->
+                <input type="text" id="author" name="author" class="input" placeholder="Enter the author" required> <!-- Πεδίο για να εισάγει ο χρήστης τον συγγραφέα -->
+            </div>
+            <div class="form"> <!-- Για την εισαγωγή του τίτλου -->
+                <label for="title">Title</label> <!-- Ετικέτα για το πεδίο -->
+                <input type="text" id="title" name="title" class="input" placeholder="Enter the title" required> <!-- Πεδίο για να εισάγει ο χρήστης τον τίτλο -->
+            </div>
+            <div class="form"> <!-- Για την εισαγωγή του είδους -->
+                <label for="genre">Genre</label> <!-- Ετικέτα για το dropdown list -->
+                <select id="genre" name="genre" class="genre" required> <!-- Dropdown list για να επιλέξει ο χρήστης το είδος -->
+                    <option value="Science fiction" class="value">Science Fiction</option> <!-- Οι επιλογές για το είδος του βιβλίου(Science fiction,Satire,Drama,Action and Adventure,Romance,Mystery,Horror) -->
+                    <option value="Satire" class="value">Satire</option>
+                    <option value="Drama" class="value">Drama</option>
+                    <option value="Action and Adventure" class="value">Action and Adventure</option>
+                    <option value="Romance" class="value">Romance</option>
+                    <option value="Mystery" class="value">Mystery</option>
+                    <option value="Horror" class="value">Horror</option>
+                </select>
+            </div>
+            <div class="form"> <!-- Για την εισαγωγή της τιμής -->
+                <label for="price">Price</label> <!-- Ετικέτα για το πεδίο -->
+                <input type="text" id="price" name="price" class="input" placeholder="Enter the price" required> <!-- Πεδίο για να εισάγει ο χρήστης την τιμή -->
+            </div>
+            <button type="submit" class="button">Add Book</button> <!-- Κουμπί για την προσθήκη του βιβλίου -->
+        </form>
+
+        <h2>Search Books</h2> <!-- Μια γραμματοσειρά ως υποκεφαλίδα για την αναζήτηση ενός βιβλίου -->
+        <div id="searchMessage"></div> <!-- Για την εμφάνιση των μηνυμάτων -->
+        <label for="searchType">Type Of Search Term</label> <!-- Ετικέτα για το dropdown list -->
+        <select id="searchType" class="genre"> <!-- Dropdown list για να επιλέξει ο χρήστης το κριτήριο αναζήτησης βιβλίου  -->
+            <option value="author">Author</option> <!-- Οι επιλογές για το είδος του βιβλίου(Author,Title,Genre,Price) -->
+            <option value="title">Title</option>
+            <option value="genre">Genre</option>
+            <option value="price">Price</option>
+        </select>
+        <p>
+            <input type="text" id="searchTerm" placeholder="Enter the search term" class="input"> <!-- Πεδίο για να εισάγει ο χρήστης την λέξη-κλειδί ανάλογα το κριτήριο που επέλεξε παραπάνω -->
+        </p>
+        <button id="searchButton" class="button">Search Book</button> <!-- Κουμπί για την αναζήτηση βιβλίου-->
+
+        <table id="resultsTable"> <!-- Πίνακας για την εμφάνιση των αποτελεσμάτων της αναζήτησης -->
+            <thead>
+                <caption>Searching Books</caption> <!-- Τίτλος του πίνακα -->
+                <tr>
+                    <th>Author</th> <!-- Τίτλος της στήλης -->
+                    <th>Title</th> <!-- Τίτλος της στήλης -->
+                    <th>Genre</th> <!-- Τίτλος της στήλης -->
+                    <th>Price</th> <!-- Τίτλος της στήλης -->
+                </tr>
+            </thead>
+            <tbody> <!-- Το σώμα του πίνακα στο οποίο θα εμφανίζονται τα αποτελέσματα της αναζήτησης -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script>
+        document.getElementById('bookLand').addEventListener('submit', function (event) { // Όταν πατήσει ο χρήστης το κουμπί για την προσθήκη ενός βιβλίου
+            event.preventDefault();
+
+            let author = document.getElementById('author').value; // Αποθήκευση της εισαγωγής του χρήστη στο πεδίο του συγγραφέα
+            let title = document.getElementById('title').value; // Αποθήκευση της εισαγωγής του χρήστη στο πεδίο του τίτλου
+            let genre = document.getElementById('genre').value; // Αποθήκευση της επιλογής του χρήστη στο dropdown list του είδους
+            let price = document.getElementById('price').value; // Αποθήκευση της εισαγωγής του χρήστη στο πεδίο της τιμής 
+            let messageElement = document.getElementById('message'); // Για τα μηνύματα
+
+            if (isNaN(price) || price <= 0) { // Αν η τιμή που έβαλε ο χρήστης είναι αρνητική ή μηδέν ή δεν είναι αριθμός
+                messageElement.innerHTML = '<p class="error">Please enter a valid price.</p>'; // Μήνυμα λάθους για την εισαγωγή της τιμής
+                return;
+            }
+
+            let book = { // Δημιουργία αντικειμένου βιβλίου με τις εισαγωγές του χρήστη
+                author: author,
+                title: title,
+                genre: genre,
+                price: parseFloat(price) // Μετατροπή της εισαγωγής του χρήστη από γραμματοσειρά σε αριθμό
+            };
+
+            fetch('http://localhost:3000/books', { // Αυτό το κομμάτι κώδικα με την εντολή fetch το βρήκα σε αυτό το link:https://stackoverflow.com/questions/39565706/post-request-with-fetch-api 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(book)
+            })
+                .then(response => response.json()) // Μετατροπή του response από το fetch σε json
+                .then(data => {
+                    if (data.success) { // Αν η προσθήκη του βιβλίου έγινε επιτυχώς
+                        messageElement.innerHTML = '<p class="success">Book added successfully.</p>'; // Μήνυμα ότι προστέθηκε το βιβλίο
+                    } else { // Αν δεν έγινε η προσθήκη του βιβλίου
+                        messageElement.innerHTML = '<p class="error">Failed to add book.Try again.</p>'; // Μήνυμα λάθους ότι δεν προστέθηκε το βιβλίο
+                    }
+                    
+                    document.getElementById('author').value = ''; // Εκκαθάριση του πεδίου του συγγραφέα
+                    document.getElementById('title').value = ''; // Εκκαθάριση του πεδίου του τίτλου
+                    document.getElementById('price').value = ''; // Εκκαθάριση του πεδίου της τιμής
+                })
+                .catch(error => {
+                    messageElement.innerHTML = '<p class="error">Error found.Try again.</p>'; // Μήνυμα λάθους
+                });
+        });
+
+        document.getElementById('searchButton').addEventListener('click', function () { // Όταν πατήσει ο χρήστης το κουμπί για την αναζήτηση βιβλίου
+            let searchType = document.getElementById('searchType').value; // Αποθήκευση της επιλογής του χρήστη στο dropdown list του κριτηρίου αναζήτησης
+            let searchTerm = document.getElementById('searchTerm').value; // Αποθήκευση της εισαγωγής του χρήστη στο πεδίο της λέξης-κλειδί
+            let searchMessageElement = document.getElementById('searchMessage'); // Για τα μηνύματα
+            let resultsTableBody = document.getElementById('resultsTable').querySelector('tbody'); // Τα αποτελέσματα της αναζήτησης που θα εμφανιστούν στο σώμα του πίνακα
+
+            if (searchType === 'price') { // Αν το κριτήριο αναζήτησης που επέλεξε ο χρήστης είναι η τιμή
+                if (isNaN(searchTerm) || searchTerm <= 0) { // Αν η τιμή που έβαλε ο χρήστης είναι αρνητική ή μηδέν ή δεν είναι αριθμός
+                    searchMessageElement.innerHTML = '<p class="error">Please enter a valid price.</p>'; // Μήνυμα λάθους για την εισαγωγή της τιμής
+                    resultsTableBody.innerHTML = '<tr><th>Author</th><th>Title</th><th>Genre</th><th>Price</th></tr>'; // Να συνεχίσει να φαίνεται ο πίνακας
+                    document.getElementById('searchTerm').value = ''; // Εκκαθάριση του πεδίου της λέξης-κλειδί
+                    return;
+                }
+            }
+
+            fetch(`http://localhost:3000/books/search?type=${searchType}&term=${encodeURIComponent(searchTerm)}`) 
+                .then(response => response.json()) // Μετατροπή του response από το fetch σε json
+                .then(data => {
+                    if (data.length > 0) { // Αν υπάρχουν αποτελέσματα από την αναζήτηση
+                        searchMessageElement.innerHTML = ''; // Εκκαθάριση του μηνύματος 
+                        resultsTableBody.innerHTML = '<tr><th>Author</th><th>Title</th><th>Genre</th><th>Price</th></tr>'; // Να συνεχίσει να φαίνεται ο πίνακας 
+                        data.forEach(book => { // Για κάθε βιβλίο
+                            let row = resultsTableBody.insertRow(); // Προσθήκη γραμμής στον πίνακα
+                            row.insertCell(0).textContent = book.author; // Προσθήκη του συγγραφέα στον πίνακα
+                            row.insertCell(1).textContent = book.title; // Προσθήκη του τίτλου στον πίνακα
+                            row.insertCell(2).textContent = book.genre; // Προσθήκη του είδους στον πίνακα
+                            row.insertCell(3).textContent = book.price; // Προσθήκη της τιμής στον πίνακα
+                        });
+                    } else { // Αν δεν βρέθηκε κάποιο βιβλίο
+                        searchMessageElement.innerHTML = ''; // Εκκαθάριση του μηνύματος 
+                        resultsTableBody.innerHTML = '<tr><td colspan="4">No books found</td></tr>'; // Αντί του πίνακα να εμφανιστεί μήνυμα ότι δεν βρέθηκε κάποιο βιβλίο
+                    }
+                    document.getElementById('searchTerm').value = ''; // Εκκαθάριση του πεδίου της λέξης-κλειδί
+                })
+                .catch(error => {
+                    searchMessageElement.innerHTML = '<p class="error">Error found.Try again.</p>'; // Μήνυμα λάθους
+                    resultsTableBody.innerHTML = '<tr><th>Author</th><th>Title</th><th>Genre</th><th>Price</th></tr>'; // Να συνεχίσει να φαίνεται ο πίνακας 
+                    document.getElementById('searchTerm').value = ''; // Εκκαθάριση του πεδίου της λέξης-κλειδί
+                });
+        });
+    </script>
+</body>
+
+</html>

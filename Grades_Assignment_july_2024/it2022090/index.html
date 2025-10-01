@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <style>
+        body {
+            font-family: "Brush Script MT", cursive;
+            background-color: #a7d2df; 
+            color: #333; 
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #fa5336;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: rgb(16, 136, 16); 
+        }
+        button {
+        padding: 8px;
+        border-radius: 20px;
+        transition: background-color 10s ease;  
+        }
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 200px;
+           
+        }
+
+        .book-item {
+            background-color: #7baaf1;
+            padding: 20px;
+            border-radius: 35px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: auto; 
+            margin-top: -10px;
+            width: 90%;
+            padding: 35px; 
+        }
+
+        .book-item p {
+            margin: 2px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>it's 2022090 Book Store</h1>
+    <div class="container">
+        <h2>Add a New Book</h2>
+        <form id="addBookForm">
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" required><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="genre">Genre:</label><br>
+            <select id="genre" name="genre" required>
+                <option value="Science fiction">Science fiction</option>
+                <option value="Satire">Satire</option>
+                <option value="Drama">Drama</option>
+                <option value="Action and Adventure">Action and Adventure</option>
+                <option value="Romance">Romance</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Horror">Horror</option>
+            </select><br>
+            <label for="price">Price (in €):</label><br>
+            <input type="number" id="price" name="price" step="0.01" required><br><br>
+            <button type="submit">Add</button>
+        </form>
+        <p id="addBookMessage"></p>
+    </div>
+
+    <div class="container">
+        <h2>Search for a Book</h2>
+        <form id="searchBookForm">
+            <label for="keyword">Keyword:</label><br>
+            <input type="text" id="keyword" name="keyword" required><br><br>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </div>
+
+    <script>
+        document.getElementById('addBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const author = document.getElementById('author').value;
+            const title = document.getElementById('title').value;
+            const genre = document.getElementById('genre').value;
+            const price = document.getElementById('price').value;
+
+            fetch('http://localhost:3000/books', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ author, title, genre, price })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('addBookMessage').textContent = data.message === 'success' ? 'Book added successfully!' : 'Failed to add book.';
+            });
+        });
+
+        document.getElementById('searchBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const keyword = document.getElementById('keyword').value;
+
+            fetch(`http://localhost:3000/books/${keyword}`)
+            .then(response => response.json())
+            .then(data => {
+                const resultsContainer = document.getElementById('searchResults');
+                resultsContainer.innerHTML = '';
+
+                if (data.length === 0) {
+                    resultsContainer.textContent = 'No books found.';
+                } else {
+                    data.forEach(book => {
+                        const bookContainer = document.createElement('div');
+                        bookContainer.classList.add('book-item');
+                        bookContainer.innerHTML = `
+                            <p><strong>ID:</strong> ${book.id}</p>
+                            <p><strong>Title:</strong> ${book.title}</p>
+                            <p><strong>Author:</strong> ${book.author}</p>
+                            <p><strong>Genre:</strong> ${book.genre}</p>
+                            <p><strong>Price:</strong> ${book.price} €</p>
+                        `;
+                        resultsContainer.appendChild(bookContainer);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

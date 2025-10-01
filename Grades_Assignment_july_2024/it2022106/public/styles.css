@@ -1,0 +1,170 @@
+:root {
+    --button-color: #cc7824ee;
+    --container-color: #a3905e;
+    --container-color-light: #ded99e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-image: url('./library-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:valid:focus, select:valid:focus {
+    outline: 2px solid var(--button-color);
+}
+
+input:invalid:focus {
+    outline: 2px solid red;
+}
+
+select:invalid:focus {
+    border: 2px solid red;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--button-color);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--container-color-light);
+    box-shadow: 0px 3px 8px var(--container-color-light);
+}
+
+.container {
+    width: 80vw;
+    max-width: 700px;
+    background-color: var(--container-color);
+    border-radius: 10px;
+    box-shadow: 3px 7px 20px var(--button-color);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: var(--container-color-light);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 3px;
+    border-radius: 15px 15px 0 0;
+}
+
+.tab-button:hover {
+    box-shadow: none;
+}
+
+.tab-button.active {
+    background-color: var(--button-color);
+}
+
+.tab-button:hover {
+    background-color: var(--button-color);
+}
+
+.tab-pane {
+    display: none;
+    height: 80vh;
+    max-height: 295px;
+    margin: 0 0 10px 0;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-content {
+    border-top: none;
+    padding: 20px;
+}
+
+
+.search-flex {
+    display: flex;
+    width: 100%;
+}
+
+.search-flex input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 0;
+    margin-right: 3px;
+}
+
+.search-flex button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container {
+    height: 100%;
+}
+
+#results-container {
+    height: 80%;
+    margin-top: 20px;
+    background-color: var(--container-color-light);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Keep vertical scrolling */
+    overflow-x: auto; /* Add horizontal scrolling */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a grid with two columns */
+    gap: 10px; /* Space between grid items */
+}
+
+.result-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item p {
+    margin: 5px 0;
+}

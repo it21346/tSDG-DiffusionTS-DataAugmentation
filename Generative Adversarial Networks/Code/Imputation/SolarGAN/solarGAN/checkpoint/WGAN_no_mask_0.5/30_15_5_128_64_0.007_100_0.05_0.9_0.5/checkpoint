@@ -1,0 +1,2 @@
+model_checkpoint_path: "WGAN_no_mask_0.5.model-151"
+all_model_checkpoint_paths: "WGAN_no_mask_0.5.model-151"

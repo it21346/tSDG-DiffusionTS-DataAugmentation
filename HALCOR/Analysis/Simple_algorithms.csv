@@ -1,0 +1,66 @@
+Algorithm,Score
+Spearman_diff,0.006 
+Spearman_Product Group,-0.596 
+Spearman_SKU code,-0.586 
+Spearman_Event Code_plc,-0.255 
+Spearman_Duration (sec),0.030 
+Spearman_Καθαρές Μηχανοώρες (min),-0.012 
+Spearman_Work Center,-0.186 
+Spearman_Event Code_mes,-0.261 
+Spearman_Duration (min),-0.038 
+Spearman_Production Quantity (#),-0.050 
+Spearman_DB  955DBW    8   in die side,-0.248 
+Spearman_DB  955DBW   12  in center,0.012 
+Spearman_DB  955DBW   16  in stem side,-0.157 
+Spearman_MW   960  diff die,-0.320 
+Spearman_MW   962  diff stem,0.150 
+Spearman_MW   964  dif cont disk,-0.254 
+Spearman_DB   10DBW   92  disk temp,0.010 
+Spearman_DB   10DBW    2 pressure main ,0.047 
+Spearman_DB   10DBW   12 pressure mandrel,0.090 
+Spearman_DB  301DBW   98  billet number,0.066 
+Spearman_DB 2000DBW    8  m1 id,0.488 
+Spearman_DB 2000DBW   50  m1 counter,0.122 
+Spearman_DB 2000DBW   18  m2 id,0.491 
+Spearman_DB 2000DBW   52   m2 counter,0.151 
+Spearman_DB 2000DBW   38  man id,0.667 
+Spearman_DB 2000DBW   56 man counter,0.055 
+Spearman_DB  700DBW   46  contener counter,0.495 
+Spearman_DB  301DBW  272  cooling water mandrel outlet,0.140 
+Spearman_DB  301DBW  274  cooling water mandrel inlet,0.185 
+Spearman_DB  301DBW  276  mandrel coolng flow,-0.158 
+Spearman_DB  301DBW   96  mandrell movment,-0.103 
+Spearman_DB   30DBW   80   contener position,0.017 
+Spearman_DB   10DBW  114  cont  cooling air flow,0.013 
+Spearman_MW    46  mikos  bigetas,-0.027 
+Spearman_DB  301DBW  166   mikos   solinas,-0.123 
+Pearson_diff,0.003 
+Pearson_Duration (sec),-0.016 
+Pearson_Καθαρές Μηχανοώρες (min),-0.019 
+Pearson_Duration (min),-0.030 
+Pearson_Production Quantity (#),0.012 
+Pearson_DB  955DBW    8   in die side,-0.203 
+Pearson_DB  955DBW   12  in center,-0.003 
+Pearson_DB  955DBW   16  in stem side,-0.183 
+Pearson_MW   960  diff die,-0.343 
+Pearson_MW   962  diff stem,0.218 
+Pearson_MW   964  dif cont disk,-0.174 
+Pearson_DB   10DBW   92  disk temp,0.010 
+Pearson_DB   10DBW    2 pressure main ,0.068 
+Pearson_DB   10DBW   12 pressure mandrel,0.132 
+Pearson_DB  301DBW   98  billet number,0.082 
+Pearson_DB 2000DBW    8  m1 id,0.381 
+Pearson_DB 2000DBW   50  m1 counter,0.048 
+Pearson_DB 2000DBW   18  m2 id,0.378 
+Pearson_DB 2000DBW   52   m2 counter,0.103 
+Pearson_DB 2000DBW   38  man id,0.413 
+Pearson_DB 2000DBW   56 man counter,0.051 
+Pearson_DB  700DBW   46  contener counter,0.481 
+Pearson_DB  301DBW  272  cooling water mandrel outlet,0.049 
+Pearson_DB  301DBW  274  cooling water mandrel inlet,0.043 
+Pearson_DB  301DBW  276  mandrel coolng flow,-0.042 
+Pearson_DB  301DBW   96  mandrell movment,-0.127 
+Pearson_DB   30DBW   80   contener position,0.009 
+Pearson_DB   10DBW  114  cont  cooling air flow,-0.001 
+Pearson_MW    46  mikos  bigetas,0.000 
+Pearson_DB  301DBW  166   mikos   solinas,-0.001 

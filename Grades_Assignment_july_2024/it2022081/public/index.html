@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title id="title">The Book World</title>
+    
+    <script>
+        function change_page(page){
+            document.getElementById(page).style.display='block';
+            document.getElementById('page_menu').style.display='none';
+            return false;
+        }
+    </script>
+    <script>
+        function back(page){
+            document.getElementById(page).style.display='none';
+            document.getElementById('page_menu').style.display='block';
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        The Book World
+        <div id="page_menu">
+            <button onclick="change_page('page_add')">
+                <p>Add New Book</p>
+
+                
+        </div>
+    </h1>
+        
+        <div id="page_add" style="display: none">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" placeholder="Author's full name">
+        
+        <br>
+        <br>
+
+        
+        <label for="titles">Title:</label>
+        <input type="text" id="titles" name="titles" placeholder="Book's title">
+        
+
+        <br>
+        <br>
+
+           
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre">
+                <option>Science Fiction</option>
+                <option>Satire</option>
+                <option>Drama</option>
+                <option>Action and Adventure</option>
+                <option>Romance</option>
+                <option>Mystery</option>
+                <option>Horror</option>
+            </select>
+       
+
+        <br>
+        <br>
+
+        
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" placeholder="Book's price" min="0" step="0.01">
+        
+
+        <br>
+        <br>
+
+        
+            <input type="button" id="submit_book" value="Submit!">
+            <script type="text/javascript">
+                const url = 'http://localhost:3000/books/';
+        
+                document.getElementById('submit_book').addEventListener('click',async function(e){
+                    const book_author = document.getElementById('author').value;
+                    const book_title = document.getElementById('titles').value;
+                    const book_genre = document.getElementById('genre').value;
+                    const book_price = document.getElementById('price').value;
+        
+                    const new_book = {
+                        "author":book_author,
+                        "title":book_title,
+                        "genre":book_genre,
+                        "price":book_price
+                    };
+                    try{
+                        const response = await fetch(url,{
+                            method:"POST",
+                            headers:{
+                                "Content-Type":"application/json"
+                            },
+                            body:JSON.stringify(new_book)
+                        });
+        
+                        console.log(await response.json());
+                        back('page_add')
+                    } catch(err){
+                        console.error(err);
+                    }
+                });
+            </script>
+
+        
+        <br>
+        <br>
+
+        <button onclick="back('page_add')">
+            <p>Back</p>
+        </div>
+
+        
+</body>
+
+</html>

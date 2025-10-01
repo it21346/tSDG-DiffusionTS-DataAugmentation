@@ -1,0 +1,5 @@
+main_stock.py --dataset ./data/stock.pkl --task-name copper_1 --generate True --gen_data_name _1 --gan-batch-size 16
+
+Namespace(dataset='./data/stock.pkl', devi='0', epochs=1000, iterations=15000, d_update=5, log_dir='../stock_result', task_name='copper_1', python_seed=619511121516056738, debug=False, eval_ae=False, fix_ae=None, fix_gan=None, ae_batch_size=128, gan_batch_size=16, embed_dim=96, hidden_dim=24, layers=3, ae_lr=0.001, weight_decay=0, scale=1, dropout=0.0, gan_lr=0.0001, gan_alpha=0.99, noise_dim=96, generate_samples='True', gen_data_name='_1')
+Python random seed: 619511121516056738
+load: ../stock_result/copper_1/ae.dat

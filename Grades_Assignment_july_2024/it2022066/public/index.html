@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Digital Library</h1>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('add-book')">Add Book</button>
+        <button class="tab-button" onclick="showTab('search-book')">Search Book</button>
+        <button class="tab-button" onclick="showTab('view-books')">View All Books</button>
+    </div>
+    <div id="add-book" class="tab-content">
+        <h2>Add a New Book</h2>
+        <form id="book-form">
+            <label for="author">Author:</label>
+            <input type="text" id="author" placeholder="Author" required>
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Title" required>
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="">--Select Genre--</option>
+                <option value="Science fiction">Science fiction</option>
+                <option value="Satire">Satire</option>
+                <option value="Drama">Drama</option>
+                <option value="Action and Adventure">Action and Adventure</option>
+                <option value="Romance">Romance</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Horror">Horror</option>
+            </select>
+            <label for="price">Price:</label>
+            <input type="number" id="price" placeholder="Price" step="0.01" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <p id="entry-message"></p>
+    </div>
+    <div id="search-book" class="tab-content" style="display:none;">
+        <h2>Search for a Book</h2>
+        <input type="text" id="search" placeholder="Search by title">
+        <button id="search-button">Search</button>
+        <div id="results"></div>
+    </div>
+    <div id="view-books" class="tab-content" style="overflow-y:auto;">
+        <h2>All Books</h2>
+        <div id="all-books"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,569 @@
+/* Body and background setup due to footer issues */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(12px);
+    transform: scale(1.04);
+    /* removes the white border created when using the blur filter */
+
+}
+
+#content {
+    flex: 1;
+}
+
+
+/* Start of the Architecture */
+.all {
+    flex: 1;
+    background-size: 1800px;
+    display: flex;
+    align-items: center;
+    background-repeat: repeat-x;
+    margin-top: 50px;
+    text-align: center;
+    flex-direction: column;
+    /*margin-bottom: 350px; */
+    max-width: 1800px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* HUA logo*/
+img.logo {
+
+    display: flex;
+    position: absolute;
+    left: -50%;
+    width: 100px;
+    height: 100px;
+    top: -25%
+}
+
+
+/* Option Buttons Setup*/
+.optionwrapper {
+    --font-color-dark: #bebfc5;
+    --font-color-light: #bebfc5;
+    --bg-color: #212121;
+    --main-color: #0c0c0c;
+    --secondary-color: #4b4b4b;
+    position: relative;
+    width: 240px;
+    height: 60px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 34px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px var(--main-color);
+    margin-bottom: 70px;
+}
+
+.optioninput {
+    object-fit: cover;
+
+}
+
+.top-info {
+    transform: scale(1.22);
+    text-shadow: -1px -1px 0 #868686, 1px -1px 0 #868686, -1px 1px 0 #868686, 1px 1px 0 #868686;
+    display: flex;
+    align-items: right;
+    margin-right: 70px;
+}
+
+.selectoption {
+    margin-right: 5px;
+    width: 120px;
+    height: 55px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+    border-radius: 34px;
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.selectoption:last-child {
+    margin-right: 4px;
+}
+
+.selectoption:hover {
+    background-color: var(--secondary-color);
+
+}
+
+.selectoption:hover .optionspan {
+    color: var(--font-color-light);
+}
+
+.optioninput {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    appearance: none;
+    cursor: pointer;
+}
+
+.optionbtn {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionspan {
+    color: var(--font-color-dark);
+}
+
+.optioninput:checked+.optionbtn {
+    background-color: var(--main-color);
+    transition: 0.2s cubic-bezier(0, 0, 0, 1);
+}
+
+.optioninput:checked+.optionbtn .optionspan {
+    color: var(--font-color-light);
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+
+
+.card-container {
+    width: 400px;
+}
+
+
+
+/* Start of the Register template */
+.register-container {
+
+    width: 350px;
+    height: 440px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.log-card {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background: #212121d0;
+    margin-top: 3%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Adding the github button on the right of the text */
+.github-title-combo {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.github-box {
+    position: relative;
+    left: 282.8px;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.github-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.github-box .github {
+    background-color: rgb(24, 22, 22);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.github-box a:hover {
+    width: 80%;
+}
+
+/* rest of the inputs for register */
+.heading {
+    margin: auto;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.para {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 5000;
+    letter-spacing: .1rem;
+
+}
+
+#genre option {
+    background-color: grey;
+    color: white;
+}
+
+.text {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(143, 155, 167);
+}
+
+.input-group {
+
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.input {
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    font-weight: 600;
+    color: #2879f3;
+}
+
+.input:hover {
+    color: #2879f3;
+    box-shadow: 2px 2px 10px 6px #2879f380;
+}
+
+.input:focus {
+    color: #2879f3;
+    box-shadow: 2px 2px 10px 6px #2879f380;
+}
+
+.password-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.checkbox-group {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forget-password {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2879f3;
+    text-decoration: none;
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+    color: #f37e10;
+}
+
+.regbtn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #2879f3;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.regbtn:hover {
+    background-color: #0653c7;
+}
+
+.no-account {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.link {
+    font-weight: 800;
+    color: #2879f3;
+}
+
+.link:hover {
+    color: #f37e10;
+    text-decoration: underline;
+}
+
+/* Search Bar */
+
+.search {
+    display: inline-block;
+    position: relative;
+    transform: scale(1.2);
+}
+
+#keyword-search {
+    background-color: #212121;
+    color: #d0d5da;
+    border: 2px solid #e4dcdc25;
+}
+
+/* RGB animations for search boder */
+@keyframes borderAnimation {
+    0% {
+        border-color: #d42020;
+    }
+
+    25% {
+        border-color: #20d420;
+    }
+
+    50% {
+        border-color: #2020d4;
+    }
+
+    75% {
+        border-color: #d420d4;
+    }
+
+    100% {
+        border-color: #d42020;
+    }
+}
+
+#keyword-search:focus {
+    border: 2px solid;
+    animation: borderAnimation 10s linear infinite;
+    outline: none;
+}
+
+#keyword-search::placeholder {
+    color: #d0d5da;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    padding: 9px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(102, 101, 101, 0.356);
+}
+
+.search button[type="submit"] {
+    background-color: #d0d5da;
+    border: none;
+    color: #1b1b1b;
+    cursor: pointer;
+    padding: 11px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.9s ease;
+}
+
+.search button[type="submit"]:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+    background-color: #474747;
+}
+
+
+
+/* Card layout for each element */
+.book-not-found {
+    text-shadow: -2px -2px 0 #844733, 2px -2px 0 #844733, -2px 2px 0 #844733, 2px 2px 0 #844733;
+
+    color: white;
+    text-shadow: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    position: relative;
+    height: 60px;
+
+}
+
+.repeat-card {
+    margin-top: 30px;
+    height: 100px;
+    background: #f5f5f5;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    --font-color-dark: #bebfc5;
+    --font-color-light: #bebfc5;
+    --bg-color: #212121;
+    --main-color: #0c0c0c;
+    position: relative;
+    height: 60px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 34px;
+    box-shadow: 10px 3px var(--main-color);
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 12px;
+    color: #bdb8b8;
+}
+
+.middle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bdb8b8;
+    margin: auto 0;
+}
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 14px;
+    color: #bdb8b8;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 12px;
+    color: #bdb8b8;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 15px;
+    color: #bdb8b8;
+}
+
+
+
+/* Finishing Touch (footer) */
+.educational-purposes {
+    display: flex;
+    justify-content: center;
+    font: bold 15px Century;
+}
+
+.edu {
+    stroke: #ffffff;
+    stroke-width: .5px;
+    stroke-linejoin: round;
+    animation: 2s pulsate infinite;
+    color: #ffffff;
+    /* Added for visibility */
+}
+
+@keyframes pulsate {
+    50% {
+        stroke-width: 5px;
+    }
+}
+
+
+footer {
+    margin-top: 30px;
+    background-color: #363636;
+    /* For visibility */
+    color: black;
+    /* For visibility */
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    text-align: center;
+
+}
+
+
+svg {
+    font: bold 40px Century Gothic, Arial;
+    width: 100%;
+    height: 40px;
+}
+
+text {
+    letter-spacing: .2rem;
+    fill: black;
+    stroke: white;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    animation: 4s pulsate infinite;
+}
+
+@keyframes pulsate {
+    70% {
+        stroke-width: 2px
+    }
+}

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    /* https://www.w3schools.com/colors/colors_picker.asp */
+    background-color: #007fff;
+    margin: 0;
+    padding: 20px;
+    /* https://www.w3schools.com/cssref/css3_pr_align-items.php */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 5px 5px #00a3ff;
+    max-width: 600px;
+    width: 100%;
+}
+
+h3 {
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"], select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #38d01a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    color: #333;
+}
+

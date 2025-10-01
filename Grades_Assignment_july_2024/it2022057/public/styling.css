@@ -1,0 +1,86 @@
+/* Basic styles for the main body*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    background-color: aliceblue;
+    align-content: center;
+}
+
+/* Styles for the main heading 'BOOK MANAGEMENT' */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px grey;
+    font: bold;
+    color: black;
+}
+
+/* Styles for subheadings 'Add new book' and 'Search results' */
+h2 {
+    text-shadow: 1px 1px 2px cornflowerblue;
+    font-style: italic;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+/* Simple styles for text, number input fields and select dropdowns */
+input[type="text"],
+input[type="number"],
+select {
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for focused input and select elements */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: white;
+    outline: none;
+}
+
+/* Just customize the label's position*/
+label {
+    display: block;
+}
+
+/* Styles for buttons */
+input[type="button"] {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+input[type="button"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Error message style for price validation */
+#priceError {
+    color: red;
+    font-size: small;
+    margin-top: -10px;
+    display: none;
+}
+
+p {
+    color: #333;
+}
+
+/* Styles for book json display */
+pre {
+    background-color: #f9f9f9;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+}

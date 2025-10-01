@@ -1,0 +1,1613 @@
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  True
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+Loading data...
+
+Creating model...
+
+Epoch 0 [100/469] loss_D: 0.6102 loss_G: 0.7285
+Epoch 0 [200/469] loss_D: 0.6688 loss_G: 0.6078
+Epoch 0 [300/469] loss_D: 0.8140 loss_G: 3.4748
+Epoch 0 [400/469] loss_D: 0.5065 loss_G: 1.8886
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 1 [100/469] loss_D: 0.6360 loss_G: 0.7341
+Epoch 1 [200/469] loss_D: 0.6011 loss_G: 0.6270
+Epoch 1 [300/469] loss_D: 0.5042 loss_G: 0.8455
+Epoch 1 [400/469] loss_D: 0.6199 loss_G: 0.5145
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 2 [100/469] loss_D: 0.6196 loss_G: 0.7863
+Epoch 2 [200/469] loss_D: 0.5730 loss_G: 0.6427
+Epoch 2 [300/469] loss_D: 0.5820 loss_G: 0.9288
+Epoch 2 [400/469] loss_D: 0.5817 loss_G: 0.8099
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 3 [100/469] loss_D: 0.7569 loss_G: 0.3545
+Epoch 3 [200/469] loss_D: 0.5062 loss_G: 0.9860
+Epoch 3 [300/469] loss_D: 0.5766 loss_G: 0.8782
+Epoch 3 [400/469] loss_D: 0.4070 loss_G: 1.1797
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 4 [100/469] loss_D: 1.3867 loss_G: 0.0775
+Epoch 4 [200/469] loss_D: 0.4548 loss_G: 1.0010
+Epoch 4 [300/469] loss_D: 0.5349 loss_G: 1.0452
+Epoch 4 [400/469] loss_D: 0.6134 loss_G: 0.8243
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 5 [100/469] loss_D: 0.6219 loss_G: 0.8501
+Epoch 5 [200/469] loss_D: 0.4726 loss_G: 1.1477
+Epoch 5 [300/469] loss_D: 0.5971 loss_G: 0.7513
+Epoch 5 [400/469] loss_D: 0.5913 loss_G: 1.0369
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 6 [100/469] loss_D: 0.6403 loss_G: 0.7241
+Epoch 6 [200/469] loss_D: 0.6306 loss_G: 0.5305
+Epoch 6 [300/469] loss_D: 0.6432 loss_G: 0.7874
+Epoch 6 [400/469] loss_D: 0.5452 loss_G: 1.1078
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 7 [100/469] loss_D: 0.6907 loss_G: 0.4386
+Epoch 7 [200/469] loss_D: 0.6981 loss_G: 0.4282
+Epoch 7 [300/469] loss_D: 0.5474 loss_G: 1.0429
+Epoch 7 [400/469] loss_D: 0.5699 loss_G: 0.9327
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 8 [100/469] loss_D: 0.5430 loss_G: 1.0120
+Epoch 8 [200/469] loss_D: 0.6289 loss_G: 0.8193
+Epoch 8 [300/469] loss_D: 1.0235 loss_G: 0.1680
+Epoch 8 [400/469] loss_D: 0.6263 loss_G: 1.7890
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 9 [100/469] loss_D: 0.5196 loss_G: 0.9104
+Epoch 9 [200/469] loss_D: 0.5452 loss_G: 0.9975
+Epoch 9 [300/469] loss_D: 0.5437 loss_G: 0.9893
+Epoch 9 [400/469] loss_D: 0.5663 loss_G: 0.9619
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 10 [100/469] loss_D: 0.5533 loss_G: 0.8838
+Epoch 10 [200/469] loss_D: 0.5013 loss_G: 1.2096
+Epoch 10 [300/469] loss_D: 0.6263 loss_G: 0.4915
+Epoch 10 [400/469] loss_D: 0.5661 loss_G: 0.9483
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 11 [100/469] loss_D: 0.7066 loss_G: 0.4443
+Epoch 11 [200/469] loss_D: 0.8701 loss_G: 0.2763
+Epoch 11 [300/469] loss_D: 0.5137 loss_G: 1.2730
+Epoch 11 [400/469] loss_D: 0.6442 loss_G: 0.6347
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 12 [100/469] loss_D: 0.7905 loss_G: 2.8994
+Epoch 12 [200/469] loss_D: 0.5273 loss_G: 0.9698
+Epoch 12 [300/469] loss_D: 0.5658 loss_G: 0.7750
+Epoch 12 [400/469] loss_D: 0.6442 loss_G: 0.5408
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 13 [100/469] loss_D: 0.5530 loss_G: 0.8049
+Epoch 13 [200/469] loss_D: 0.5813 loss_G: 0.7595
+Epoch 13 [300/469] loss_D: 0.5349 loss_G: 2.0889
+Epoch 13 [400/469] loss_D: 0.6099 loss_G: 0.8863
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 14 [100/469] loss_D: 0.5511 loss_G: 1.0763
+Epoch 14 [200/469] loss_D: 0.5969 loss_G: 0.7724
+Epoch 14 [300/469] loss_D: 0.5848 loss_G: 0.9192
+Epoch 14 [400/469] loss_D: 0.6414 loss_G: 0.6546
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 15 [100/469] loss_D: 0.6431 loss_G: 0.8518
+Epoch 15 [200/469] loss_D: 0.5443 loss_G: 0.9357
+Epoch 15 [300/469] loss_D: 0.5625 loss_G: 0.9976
+Epoch 15 [400/469] loss_D: 0.5558 loss_G: 1.3364
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 16 [100/469] loss_D: 0.6282 loss_G: 0.6605
+Epoch 16 [200/469] loss_D: 0.5288 loss_G: 1.1267
+Epoch 16 [300/469] loss_D: 0.5668 loss_G: 2.1542
+Epoch 16 [400/469] loss_D: 0.5953 loss_G: 1.0843
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 17 [100/469] loss_D: 0.5741 loss_G: 1.3532
+Epoch 17 [200/469] loss_D: 0.6528 loss_G: 0.5124
+Epoch 17 [300/469] loss_D: 0.4963 loss_G: 1.3502
+Epoch 17 [400/469] loss_D: 0.7599 loss_G: 0.3462
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 18 [100/469] loss_D: 0.5899 loss_G: 0.8780
+Epoch 18 [200/469] loss_D: 0.5678 loss_G: 0.9396
+Epoch 18 [300/469] loss_D: 0.5780 loss_G: 0.8934
+Epoch 18 [400/469] loss_D: 0.5906 loss_G: 0.9811
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 19 [100/469] loss_D: 0.5133 loss_G: 1.8002
+Epoch 19 [200/469] loss_D: 0.6194 loss_G: 0.7629
+Epoch 19 [300/469] loss_D: 0.6029 loss_G: 0.9161
+Epoch 19 [400/469] loss_D: 0.6618 loss_G: 0.6969
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 20 [100/469] loss_D: 0.7086 loss_G: 0.4397
+Epoch 20 [200/469] loss_D: 0.6053 loss_G: 0.7556
+Epoch 20 [300/469] loss_D: 0.6591 loss_G: 0.5322
+Epoch 20 [400/469] loss_D: 0.6649 loss_G: 0.5327
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 21 [100/469] loss_D: 0.6233 loss_G: 0.7812
+Epoch 21 [200/469] loss_D: 0.5457 loss_G: 1.4383
+Epoch 21 [300/469] loss_D: 0.5825 loss_G: 1.1510
+Epoch 21 [400/469] loss_D: 0.6309 loss_G: 1.5243
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 22 [100/469] loss_D: 0.6479 loss_G: 0.6891
+Epoch 22 [200/469] loss_D: 0.6235 loss_G: 0.8559
+Epoch 22 [300/469] loss_D: 0.5861 loss_G: 1.0233
+Epoch 22 [400/469] loss_D: 0.7134 loss_G: 0.4408
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 23 [100/469] loss_D: 0.7719 loss_G: 0.3517
+Epoch 23 [200/469] loss_D: 0.6164 loss_G: 1.4856
+Epoch 23 [300/469] loss_D: 0.5906 loss_G: 1.2821
+Epoch 23 [400/469] loss_D: 0.6708 loss_G: 0.7204
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 24 [100/469] loss_D: 0.7082 loss_G: 0.4520
+Epoch 24 [200/469] loss_D: 0.5640 loss_G: 1.0017
+Epoch 24 [300/469] loss_D: 0.6178 loss_G: 1.1132
+Epoch 24 [400/469] loss_D: 0.6199 loss_G: 0.7611
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 25 [100/469] loss_D: 0.6413 loss_G: 0.6932
+Epoch 25 [200/469] loss_D: 0.5980 loss_G: 0.9856
+Epoch 25 [300/469] loss_D: 0.6067 loss_G: 0.6622
+Epoch 25 [400/469] loss_D: 0.6105 loss_G: 0.7381
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 26 [100/469] loss_D: 0.6296 loss_G: 0.7244
+Epoch 26 [200/469] loss_D: 0.6257 loss_G: 0.7583
+Epoch 26 [300/469] loss_D: 0.6241 loss_G: 0.9803
+Epoch 26 [400/469] loss_D: 0.6000 loss_G: 0.9102
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 27 [100/469] loss_D: 0.6749 loss_G: 1.1563
+Epoch 27 [200/469] loss_D: 0.7354 loss_G: 0.3942
+Epoch 27 [300/469] loss_D: 0.6517 loss_G: 0.6647
+Epoch 27 [400/469] loss_D: 0.6912 loss_G: 0.6751
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 28 [100/469] loss_D: 0.6205 loss_G: 1.0318
+Epoch 28 [200/469] loss_D: 0.6122 loss_G: 0.7140
+Epoch 28 [300/469] loss_D: 0.6603 loss_G: 1.0274
+Epoch 28 [400/469] loss_D: 0.6510 loss_G: 1.0789
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 29 [100/469] loss_D: 0.6276 loss_G: 0.6129
+Epoch 29 [200/469] loss_D: 0.5725 loss_G: 1.0504
+Epoch 29 [300/469] loss_D: 0.6296 loss_G: 0.8066
+Epoch 29 [400/469] loss_D: 0.6657 loss_G: 0.5959
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 30 [100/469] loss_D: 0.6221 loss_G: 0.9057
+Epoch 30 [200/469] loss_D: 0.6418 loss_G: 0.7979
+Epoch 30 [300/469] loss_D: 0.6390 loss_G: 0.9364
+Epoch 30 [400/469] loss_D: 0.6682 loss_G: 0.6642
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 31 [100/469] loss_D: 0.7029 loss_G: 0.5343
+Epoch 31 [200/469] loss_D: 0.6509 loss_G: 0.6959
+Epoch 31 [300/469] loss_D: 0.6143 loss_G: 1.1466
+Epoch 31 [400/469] loss_D: 0.6312 loss_G: 0.8207
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 32 [100/469] loss_D: 0.6357 loss_G: 0.7996
+Epoch 32 [200/469] loss_D: 0.6235 loss_G: 0.6708
+Epoch 32 [300/469] loss_D: 0.6566 loss_G: 0.8417
+Epoch 32 [400/469] loss_D: 0.6738 loss_G: 0.5938
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 33 [100/469] loss_D: 0.6736 loss_G: 0.5042
+Epoch 33 [200/469] loss_D: 0.6383 loss_G: 0.7200
+Epoch 33 [300/469] loss_D: 0.6536 loss_G: 0.6536
+Epoch 33 [400/469] loss_D: 0.6587 loss_G: 0.8452
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 34 [100/469] loss_D: 0.6147 loss_G: 0.8251
+Epoch 34 [200/469] loss_D: 0.5957 loss_G: 0.7688
+Epoch 34 [300/469] loss_D: 0.6951 loss_G: 0.6623
+Epoch 34 [400/469] loss_D: 0.6708 loss_G: 0.7919
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 35 [100/469] loss_D: 0.6552 loss_G: 0.9212
+Epoch 35 [200/469] loss_D: 0.5927 loss_G: 1.0883
+Epoch 35 [300/469] loss_D: 0.6329 loss_G: 0.8386
+Epoch 35 [400/469] loss_D: 0.6452 loss_G: 0.8295
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 36 [100/469] loss_D: 0.6556 loss_G: 0.7664
+Epoch 36 [200/469] loss_D: 0.6394 loss_G: 0.7922
+Epoch 36 [300/469] loss_D: 0.6445 loss_G: 1.0509
+Epoch 36 [400/469] loss_D: 0.6597 loss_G: 0.7524
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 37 [100/469] loss_D: 0.6298 loss_G: 0.7518
+Epoch 37 [200/469] loss_D: 0.6164 loss_G: 0.7529
+Epoch 37 [300/469] loss_D: 0.6168 loss_G: 0.8179
+Epoch 37 [400/469] loss_D: 0.6384 loss_G: 0.9587
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 38 [100/469] loss_D: 0.6199 loss_G: 0.8400
+Epoch 38 [200/469] loss_D: 0.5912 loss_G: 0.8766
+Epoch 38 [300/469] loss_D: 0.6467 loss_G: 0.6986
+Epoch 38 [400/469] loss_D: 0.6606 loss_G: 0.8035
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 39 [100/469] loss_D: 0.6900 loss_G: 0.6630
+Epoch 39 [200/469] loss_D: 0.5808 loss_G: 1.0821
+Epoch 39 [300/469] loss_D: 0.6556 loss_G: 0.8211
+Epoch 39 [400/469] loss_D: 0.7271 loss_G: 0.5735
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 40 [100/469] loss_D: 0.7733 loss_G: 0.3404
+Epoch 40 [200/469] loss_D: 0.6379 loss_G: 0.8694
+Epoch 40 [300/469] loss_D: 0.6727 loss_G: 0.8802
+Epoch 40 [400/469] loss_D: 0.6540 loss_G: 0.8290
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 41 [100/469] loss_D: 0.6083 loss_G: 0.9054
+Epoch 41 [200/469] loss_D: 0.6322 loss_G: 0.8315
+Epoch 41 [300/469] loss_D: 0.6303 loss_G: 0.9491
+Epoch 41 [400/469] loss_D: 0.7438 loss_G: 0.5052
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 42 [100/469] loss_D: 0.6430 loss_G: 1.0777
+Epoch 42 [200/469] loss_D: 0.5701 loss_G: 1.1538
+Epoch 42 [300/469] loss_D: 0.6576 loss_G: 0.8174
+Epoch 42 [400/469] loss_D: 0.6429 loss_G: 0.7597
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 43 [100/469] loss_D: 0.6386 loss_G: 0.9267
+Epoch 43 [200/469] loss_D: 0.6679 loss_G: 0.6527
+Epoch 43 [300/469] loss_D: 0.6602 loss_G: 0.7467
+Epoch 43 [400/469] loss_D: 0.6560 loss_G: 0.7137
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 44 [100/469] loss_D: 0.6828 loss_G: 0.6629
+Epoch 44 [200/469] loss_D: 0.6890 loss_G: 0.6063
+Epoch 44 [300/469] loss_D: 0.6201 loss_G: 0.9018
+Epoch 44 [400/469] loss_D: 0.6460 loss_G: 0.8056
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 45 [100/469] loss_D: 0.6162 loss_G: 0.8524
+Epoch 45 [200/469] loss_D: 0.6854 loss_G: 0.9044
+Epoch 45 [300/469] loss_D: 0.6451 loss_G: 0.7962
+Epoch 45 [400/469] loss_D: 0.7026 loss_G: 0.4908
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 46 [100/469] loss_D: 0.6956 loss_G: 0.6868
+Epoch 46 [200/469] loss_D: 0.6110 loss_G: 0.7595
+Epoch 46 [300/469] loss_D: 0.6340 loss_G: 0.7823
+Epoch 46 [400/469] loss_D: 0.6614 loss_G: 0.8330
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 47 [100/469] loss_D: 0.5978 loss_G: 0.9413
+Epoch 47 [200/469] loss_D: 0.6462 loss_G: 0.7475
+Epoch 47 [300/469] loss_D: 0.6306 loss_G: 0.8366
+Epoch 47 [400/469] loss_D: 0.6942 loss_G: 0.7208
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 48 [100/469] loss_D: 0.6587 loss_G: 0.8117
+Epoch 48 [200/469] loss_D: 0.6034 loss_G: 1.0096
+Epoch 48 [300/469] loss_D: 0.6735 loss_G: 0.6468
+Epoch 48 [400/469] loss_D: 0.6893 loss_G: 0.9473
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 49 [100/469] loss_D: 0.6530 loss_G: 1.0534
+Epoch 49 [200/469] loss_D: 0.6333 loss_G: 0.8139
+Epoch 49 [300/469] loss_D: 0.5993 loss_G: 0.8409
+Epoch 49 [400/469] loss_D: 0.6336 loss_G: 0.9179
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 50 [100/469] loss_D: 0.6757 loss_G: 0.5531
+Epoch 50 [200/469] loss_D: 0.6458 loss_G: 0.6726
+Epoch 50 [300/469] loss_D: 0.6545 loss_G: 0.7189
+Epoch 50 [400/469] loss_D: 0.6276 loss_G: 0.7676
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 51 [100/469] loss_D: 0.6756 loss_G: 0.7306
+Epoch 51 [200/469] loss_D: 0.6539 loss_G: 0.6703
+Epoch 51 [300/469] loss_D: 0.6225 loss_G: 0.7679
+Epoch 51 [400/469] loss_D: 0.6319 loss_G: 0.7525
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 52 [100/469] loss_D: 0.6868 loss_G: 0.6168
+Epoch 52 [200/469] loss_D: 0.6374 loss_G: 0.7953
+Epoch 52 [300/469] loss_D: 0.7058 loss_G: 0.7788
+Epoch 52 [400/469] loss_D: 0.6682 loss_G: 0.7454
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 53 [100/469] loss_D: 0.6014 loss_G: 0.7943
+Epoch 53 [200/469] loss_D: 0.6077 loss_G: 0.8647
+Epoch 53 [300/469] loss_D: 0.7143 loss_G: 0.4779
+Epoch 53 [400/469] loss_D: 0.6823 loss_G: 0.7142
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 54 [100/469] loss_D: 0.5958 loss_G: 0.8244
+Epoch 54 [200/469] loss_D: 0.6751 loss_G: 0.5750
+Epoch 54 [300/469] loss_D: 0.6529 loss_G: 0.7868
+Epoch 54 [400/469] loss_D: 0.6193 loss_G: 0.8009
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 55 [100/469] loss_D: 0.6050 loss_G: 0.7717
+Epoch 55 [200/469] loss_D: 0.6377 loss_G: 0.6850
+Epoch 55 [300/469] loss_D: 0.6826 loss_G: 0.7038
+Epoch 55 [400/469] loss_D: 0.7181 loss_G: 0.5286
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 56 [100/469] loss_D: 0.6570 loss_G: 0.6251
+Epoch 56 [200/469] loss_D: 0.6674 loss_G: 0.6164
+Epoch 56 [300/469] loss_D: 0.6287 loss_G: 0.9678
+Epoch 56 [400/469] loss_D: 0.6160 loss_G: 0.7846
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 57 [100/469] loss_D: 0.6525 loss_G: 0.7018
+Epoch 57 [200/469] loss_D: 0.6218 loss_G: 0.9912
+Epoch 57 [300/469] loss_D: 0.6184 loss_G: 0.9665
+Epoch 57 [400/469] loss_D: 0.6754 loss_G: 0.6576
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 58 [100/469] loss_D: 0.7126 loss_G: 0.4854
+Epoch 58 [200/469] loss_D: 0.6710 loss_G: 0.5772
+Epoch 58 [300/469] loss_D: 0.6543 loss_G: 0.6299
+Epoch 58 [400/469] loss_D: 0.6237 loss_G: 0.6883
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 59 [100/469] loss_D: 0.5864 loss_G: 0.7144
+Epoch 59 [200/469] loss_D: 0.6783 loss_G: 0.6301
+Epoch 59 [300/469] loss_D: 0.6723 loss_G: 0.8832
+Epoch 59 [400/469] loss_D: 0.7095 loss_G: 0.7683
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 60 [100/469] loss_D: 0.6469 loss_G: 1.1738
+Epoch 60 [200/469] loss_D: 0.6060 loss_G: 0.7734
+Epoch 60 [300/469] loss_D: 0.6511 loss_G: 0.9056
+Epoch 60 [400/469] loss_D: 0.6490 loss_G: 0.9031
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 61 [100/469] loss_D: 0.6533 loss_G: 0.9690
+Epoch 61 [200/469] loss_D: 0.6686 loss_G: 0.5883
+Epoch 61 [300/469] loss_D: 0.6183 loss_G: 0.8868
+Epoch 61 [400/469] loss_D: 0.7140 loss_G: 0.4599
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 62 [100/469] loss_D: 0.6562 loss_G: 0.6918
+Epoch 62 [200/469] loss_D: 0.5939 loss_G: 1.2854
+Epoch 62 [300/469] loss_D: 0.6838 loss_G: 0.7261
+Epoch 62 [400/469] loss_D: 0.6742 loss_G: 0.7596
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 63 [100/469] loss_D: 0.6748 loss_G: 0.7690
+Epoch 63 [200/469] loss_D: 0.6233 loss_G: 0.9223
+Epoch 63 [300/469] loss_D: 0.6318 loss_G: 0.8059
+Epoch 63 [400/469] loss_D: 0.6413 loss_G: 0.7800
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 64 [100/469] loss_D: 0.6109 loss_G: 0.6224
+Epoch 64 [200/469] loss_D: 0.6240 loss_G: 0.6365
+Epoch 64 [300/469] loss_D: 0.6267 loss_G: 1.1514
+Epoch 64 [400/469] loss_D: 0.6526 loss_G: 0.7454
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 65 [100/469] loss_D: 0.6357 loss_G: 0.8356
+Epoch 65 [200/469] loss_D: 0.6075 loss_G: 0.8334
+Epoch 65 [300/469] loss_D: 0.6580 loss_G: 0.7689
+Epoch 65 [400/469] loss_D: 0.6649 loss_G: 0.7328
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 66 [100/469] loss_D: 0.7013 loss_G: 0.5805
+Epoch 66 [200/469] loss_D: 0.6533 loss_G: 0.7739
+Epoch 66 [300/469] loss_D: 0.6520 loss_G: 0.7012
+Epoch 66 [400/469] loss_D: 0.7038 loss_G: 0.5977
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 67 [100/469] loss_D: 0.6450 loss_G: 0.7671
+Epoch 67 [200/469] loss_D: 0.6950 loss_G: 0.4450
+Epoch 67 [300/469] loss_D: 0.6543 loss_G: 0.7730
+Epoch 67 [400/469] loss_D: 0.6283 loss_G: 0.8926
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 68 [100/469] loss_D: 0.6833 loss_G: 0.6653
+Epoch 68 [200/469] loss_D: 0.6157 loss_G: 0.7926
+Epoch 68 [300/469] loss_D: 0.5967 loss_G: 0.9698
+Epoch 68 [400/469] loss_D: 0.6750 loss_G: 0.7441
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 69 [100/469] loss_D: 0.6184 loss_G: 0.7629
+Epoch 69 [200/469] loss_D: 0.6532 loss_G: 0.8506
+Epoch 69 [300/469] loss_D: 0.6726 loss_G: 0.8008
+Epoch 69 [400/469] loss_D: 0.6618 loss_G: 0.5975
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 70 [100/469] loss_D: 0.6736 loss_G: 0.6378
+Epoch 70 [200/469] loss_D: 0.6800 loss_G: 0.5089
+Epoch 70 [300/469] loss_D: 0.6607 loss_G: 0.8536
+Epoch 70 [400/469] loss_D: 0.5849 loss_G: 0.9019
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 71 [100/469] loss_D: 0.6803 loss_G: 0.6681
+Epoch 71 [200/469] loss_D: 0.6350 loss_G: 0.7756
+Epoch 71 [300/469] loss_D: 0.6535 loss_G: 0.7715
+Epoch 71 [400/469] loss_D: 0.6654 loss_G: 0.6495
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 72 [100/469] loss_D: 0.6526 loss_G: 0.7972
+Epoch 72 [200/469] loss_D: 0.6511 loss_G: 0.6268
+Epoch 72 [300/469] loss_D: 0.6561 loss_G: 0.9385
+Epoch 72 [400/469] loss_D: 0.6241 loss_G: 0.7976
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 73 [100/469] loss_D: 0.6680 loss_G: 0.6247
+Epoch 73 [200/469] loss_D: 0.6560 loss_G: 0.9665
+Epoch 73 [300/469] loss_D: 0.6301 loss_G: 0.7308
+Epoch 73 [400/469] loss_D: 0.6605 loss_G: 0.7549
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 74 [100/469] loss_D: 0.6527 loss_G: 0.6261
+Epoch 74 [200/469] loss_D: 0.6211 loss_G: 1.0695
+Epoch 74 [300/469] loss_D: 0.6201 loss_G: 0.8757
+Epoch 74 [400/469] loss_D: 0.6098 loss_G: 0.8310
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 75 [100/469] loss_D: 0.6567 loss_G: 0.8943
+Epoch 75 [200/469] loss_D: 0.6073 loss_G: 0.9710
+Epoch 75 [300/469] loss_D: 0.6275 loss_G: 1.0150
+Epoch 75 [400/469] loss_D: 0.7020 loss_G: 0.5311
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 76 [100/469] loss_D: 0.6344 loss_G: 0.7239
+Epoch 76 [200/469] loss_D: 0.7155 loss_G: 0.6162
+Epoch 76 [300/469] loss_D: 0.6637 loss_G: 0.7153
+Epoch 76 [400/469] loss_D: 0.6081 loss_G: 0.7802
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 77 [100/469] loss_D: 0.6681 loss_G: 0.6027
+Epoch 77 [200/469] loss_D: 0.7167 loss_G: 0.4745
+Epoch 77 [300/469] loss_D: 0.6103 loss_G: 1.2447
+Epoch 77 [400/469] loss_D: 0.6010 loss_G: 0.9800
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 78 [100/469] loss_D: 0.6364 loss_G: 1.0282
+Epoch 78 [200/469] loss_D: 0.7617 loss_G: 0.3846
+Epoch 78 [300/469] loss_D: 0.6980 loss_G: 0.6175
+Epoch 78 [400/469] loss_D: 0.7175 loss_G: 0.4589
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 79 [100/469] loss_D: 0.6696 loss_G: 0.6721
+Epoch 79 [200/469] loss_D: 0.6419 loss_G: 0.9520
+Epoch 79 [300/469] loss_D: 0.6355 loss_G: 0.7770
+Epoch 79 [400/469] loss_D: 0.6491 loss_G: 0.7005
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 80 [100/469] loss_D: 0.6840 loss_G: 0.6454
+Epoch 80 [200/469] loss_D: 0.6505 loss_G: 0.6536
+Epoch 80 [300/469] loss_D: 0.6726 loss_G: 0.6986
+Epoch 80 [400/469] loss_D: 0.6400 loss_G: 0.7794
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 81 [100/469] loss_D: 0.6823 loss_G: 0.6574
+Epoch 81 [200/469] loss_D: 0.6637 loss_G: 1.0747
+Epoch 81 [300/469] loss_D: 0.6528 loss_G: 0.8487
+Epoch 81 [400/469] loss_D: 0.6066 loss_G: 0.8587
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 82 [100/469] loss_D: 0.6533 loss_G: 0.5754
+Epoch 82 [200/469] loss_D: 0.6485 loss_G: 0.5915
+Epoch 82 [300/469] loss_D: 0.6372 loss_G: 0.7582
+Epoch 82 [400/469] loss_D: 0.6572 loss_G: 0.9056
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 83 [100/469] loss_D: 0.6895 loss_G: 0.7285
+Epoch 83 [200/469] loss_D: 0.7403 loss_G: 0.4154
+Epoch 83 [300/469] loss_D: 0.5978 loss_G: 0.9943
+Epoch 83 [400/469] loss_D: 0.6343 loss_G: 0.7704
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 84 [100/469] loss_D: 0.6283 loss_G: 0.6834
+Epoch 84 [200/469] loss_D: 0.6994 loss_G: 1.0021
+Epoch 84 [300/469] loss_D: 0.6883 loss_G: 0.7331
+Epoch 84 [400/469] loss_D: 0.5826 loss_G: 1.3781
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 85 [100/469] loss_D: 0.7714 loss_G: 0.3537
+Epoch 85 [200/469] loss_D: 0.5594 loss_G: 1.0450
+Epoch 85 [300/469] loss_D: 0.6508 loss_G: 0.7986
+Epoch 85 [400/469] loss_D: 0.6338 loss_G: 0.6509
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 86 [100/469] loss_D: 0.7420 loss_G: 0.4458
+Epoch 86 [200/469] loss_D: 0.6805 loss_G: 0.5719
+Epoch 86 [300/469] loss_D: 0.5796 loss_G: 0.8489
+Epoch 86 [400/469] loss_D: 0.6648 loss_G: 0.5230
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 87 [100/469] loss_D: 0.6593 loss_G: 0.5748
+Epoch 87 [200/469] loss_D: 0.6018 loss_G: 0.8285
+Epoch 87 [300/469] loss_D: 0.5767 loss_G: 1.0023
+Epoch 87 [400/469] loss_D: 0.6330 loss_G: 0.8606
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 88 [100/469] loss_D: 0.5642 loss_G: 1.0833
+Epoch 88 [200/469] loss_D: 0.5985 loss_G: 1.4515
+Epoch 88 [300/469] loss_D: 0.6269 loss_G: 0.9850
+Epoch 88 [400/469] loss_D: 0.6616 loss_G: 0.8087
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 89 [100/469] loss_D: 0.6222 loss_G: 1.3005
+Epoch 89 [200/469] loss_D: 0.7460 loss_G: 0.4234
+Epoch 89 [300/469] loss_D: 0.5966 loss_G: 0.7943
+Epoch 89 [400/469] loss_D: 0.6104 loss_G: 1.1030
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 90 [100/469] loss_D: 0.6113 loss_G: 1.4422
+Epoch 90 [200/469] loss_D: 0.5996 loss_G: 1.2088
+Epoch 90 [300/469] loss_D: 0.6097 loss_G: 1.4126
+Epoch 90 [400/469] loss_D: 0.5951 loss_G: 0.7532
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 91 [100/469] loss_D: 0.6893 loss_G: 0.4969
+Epoch 91 [200/469] loss_D: 0.5928 loss_G: 0.9784
+Epoch 91 [300/469] loss_D: 0.6363 loss_G: 0.7510
+Epoch 91 [400/469] loss_D: 0.6546 loss_G: 0.5594
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 92 [100/469] loss_D: 0.6601 loss_G: 0.6957
+Epoch 92 [200/469] loss_D: 0.8542 loss_G: 0.2655
+Epoch 92 [300/469] loss_D: 0.6112 loss_G: 0.8238
+Epoch 92 [400/469] loss_D: 0.6227 loss_G: 0.7616
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 93 [100/469] loss_D: 0.6294 loss_G: 1.0194
+Epoch 93 [200/469] loss_D: 0.6610 loss_G: 0.7706
+Epoch 93 [300/469] loss_D: 0.6235 loss_G: 0.8369
+Epoch 93 [400/469] loss_D: 0.6372 loss_G: 0.6687
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 94 [100/469] loss_D: 0.6351 loss_G: 0.6113
+Epoch 94 [200/469] loss_D: 0.6126 loss_G: 1.2499
+Epoch 94 [300/469] loss_D: 0.6592 loss_G: 1.0251
+Epoch 94 [400/469] loss_D: 0.6537 loss_G: 1.0132
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 95 [100/469] loss_D: 0.6553 loss_G: 0.5898
+Epoch 95 [200/469] loss_D: 0.6389 loss_G: 0.7317
+Epoch 95 [300/469] loss_D: 0.5669 loss_G: 1.3406
+Epoch 95 [400/469] loss_D: 0.6240 loss_G: 0.8135
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 96 [100/469] loss_D: 0.5741 loss_G: 1.0058
+Epoch 96 [200/469] loss_D: 0.9195 loss_G: 0.2436
+Epoch 96 [300/469] loss_D: 0.6168 loss_G: 1.0904
+Epoch 96 [400/469] loss_D: 0.6998 loss_G: 0.5435
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 97 [100/469] loss_D: 0.6211 loss_G: 0.6869
+Epoch 97 [200/469] loss_D: 0.5935 loss_G: 1.0827
+Epoch 97 [300/469] loss_D: 0.6356 loss_G: 0.7397
+Epoch 97 [400/469] loss_D: 0.8570 loss_G: 0.2817
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 98 [100/469] loss_D: 0.6578 loss_G: 0.5898
+Epoch 98 [200/469] loss_D: 0.6056 loss_G: 1.0266
+Epoch 98 [300/469] loss_D: 0.6146 loss_G: 1.2814
+Epoch 98 [400/469] loss_D: 0.6797 loss_G: 0.6583
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 99 [100/469] loss_D: 0.6623 loss_G: 0.6104
+Epoch 99 [200/469] loss_D: 0.6626 loss_G: 0.5917
+Epoch 99 [300/469] loss_D: 0.5685 loss_G: 1.1394
+Epoch 99 [400/469] loss_D: 0.6018 loss_G: 0.9340
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 100 [100/469] loss_D: 0.6151 loss_G: 0.8680
+Epoch 100 [200/469] loss_D: 0.6361 loss_G: 0.6537
+Epoch 100 [300/469] loss_D: 0.6363 loss_G: 0.6194
+Epoch 100 [400/469] loss_D: 0.6158 loss_G: 0.7704
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 101 [100/469] loss_D: 0.6581 loss_G: 0.4948
+Epoch 101 [200/469] loss_D: 0.5323 loss_G: 0.8768
+Epoch 101 [300/469] loss_D: 0.6170 loss_G: 0.8477
+Epoch 101 [400/469] loss_D: 0.5842 loss_G: 1.3846
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 102 [100/469] loss_D: 0.7052 loss_G: 0.4415
+Epoch 102 [200/469] loss_D: 0.5569 loss_G: 1.1598
+Epoch 102 [300/469] loss_D: 0.6188 loss_G: 0.8021
+Epoch 102 [400/469] loss_D: 0.5822 loss_G: 1.2997
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 103 [100/469] loss_D: 0.7018 loss_G: 0.5030
+Epoch 103 [200/469] loss_D: 0.6321 loss_G: 0.8672
+Epoch 103 [300/469] loss_D: 0.8147 loss_G: 0.3158
+Epoch 103 [400/469] loss_D: 0.6136 loss_G: 1.2770
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 104 [100/469] loss_D: 0.6297 loss_G: 0.7692
+Epoch 104 [200/469] loss_D: 0.6180 loss_G: 0.7940
+Epoch 104 [300/469] loss_D: 0.6256 loss_G: 0.8699
+Epoch 104 [400/469] loss_D: 0.7578 loss_G: 0.4514
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 105 [100/469] loss_D: 0.6237 loss_G: 0.6430
+Epoch 105 [200/469] loss_D: 0.6043 loss_G: 1.0859
+Epoch 105 [300/469] loss_D: 0.6132 loss_G: 0.9701
+Epoch 105 [400/469] loss_D: 0.6995 loss_G: 0.4981
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 106 [100/469] loss_D: 0.6233 loss_G: 0.6502
+Epoch 106 [200/469] loss_D: 0.5359 loss_G: 1.1994
+Epoch 106 [300/469] loss_D: 0.5954 loss_G: 0.8977
+Epoch 106 [400/469] loss_D: 0.8165 loss_G: 0.3218
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 107 [100/469] loss_D: 0.6276 loss_G: 1.4299
+Epoch 107 [200/469] loss_D: 0.6567 loss_G: 0.5155
+Epoch 107 [300/469] loss_D: 0.5699 loss_G: 1.0882
+Epoch 107 [400/469] loss_D: 0.6493 loss_G: 1.5085
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 108 [100/469] loss_D: 0.6988 loss_G: 1.4353
+Epoch 108 [200/469] loss_D: 0.6716 loss_G: 0.5297
+Epoch 108 [300/469] loss_D: 0.6263 loss_G: 0.9765
+Epoch 108 [400/469] loss_D: 0.6450 loss_G: 0.8643
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 109 [100/469] loss_D: 0.5985 loss_G: 0.7811
+Epoch 109 [200/469] loss_D: 0.6369 loss_G: 0.5426
+Epoch 109 [300/469] loss_D: 0.6184 loss_G: 0.6013
+Epoch 109 [400/469] loss_D: 0.5803 loss_G: 0.9189
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 110 [100/469] loss_D: 0.6347 loss_G: 1.2517
+Epoch 110 [200/469] loss_D: 0.6855 loss_G: 1.2906
+Epoch 110 [300/469] loss_D: 0.6037 loss_G: 0.9905
+Epoch 110 [400/469] loss_D: 0.6028 loss_G: 0.9609
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 111 [100/469] loss_D: 0.6016 loss_G: 0.9110
+Epoch 111 [200/469] loss_D: 0.5929 loss_G: 0.7990
+Epoch 111 [300/469] loss_D: 0.5271 loss_G: 1.1311
+Epoch 111 [400/469] loss_D: 0.6387 loss_G: 1.1460
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 112 [100/469] loss_D: 0.6178 loss_G: 0.7574
+Epoch 112 [200/469] loss_D: 0.6257 loss_G: 0.9458
+Epoch 112 [300/469] loss_D: 0.5997 loss_G: 1.0116
+Epoch 112 [400/469] loss_D: 0.6773 loss_G: 0.7691
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 113 [100/469] loss_D: 0.8324 loss_G: 0.2962
+Epoch 113 [200/469] loss_D: 0.5885 loss_G: 1.1381
+Epoch 113 [300/469] loss_D: 0.5701 loss_G: 1.0680
+Epoch 113 [400/469] loss_D: 0.6083 loss_G: 1.0639
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 114 [100/469] loss_D: 0.6523 loss_G: 0.9325
+Epoch 114 [200/469] loss_D: 0.6167 loss_G: 1.3725
+Epoch 114 [300/469] loss_D: 0.6028 loss_G: 1.0536
+Epoch 114 [400/469] loss_D: 0.6736 loss_G: 0.5104
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 115 [100/469] loss_D: 0.5210 loss_G: 1.0827
+Epoch 115 [200/469] loss_D: 0.6184 loss_G: 1.3743
+Epoch 115 [300/469] loss_D: 0.5818 loss_G: 0.7828
+Epoch 115 [400/469] loss_D: 0.5920 loss_G: 1.0983
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 116 [100/469] loss_D: 0.6764 loss_G: 0.5204
+Epoch 116 [200/469] loss_D: 0.5664 loss_G: 0.7738
+Epoch 116 [300/469] loss_D: 0.6283 loss_G: 0.9267
+Epoch 116 [400/469] loss_D: 0.5732 loss_G: 0.9942
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 117 [100/469] loss_D: 0.5588 loss_G: 1.0553
+Epoch 117 [200/469] loss_D: 0.6726 loss_G: 0.5010
+Epoch 117 [300/469] loss_D: 0.5277 loss_G: 1.4144
+Epoch 117 [400/469] loss_D: 0.6074 loss_G: 0.9564
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 118 [100/469] loss_D: 0.6665 loss_G: 0.8472
+Epoch 118 [200/469] loss_D: 0.5697 loss_G: 1.2945
+Epoch 118 [300/469] loss_D: 0.6432 loss_G: 1.8324
+Epoch 118 [400/469] loss_D: 0.6101 loss_G: 2.0707
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 119 [100/469] loss_D: 0.6187 loss_G: 1.0380
+Epoch 119 [200/469] loss_D: 0.7054 loss_G: 0.4413
+Epoch 119 [300/469] loss_D: 0.6778 loss_G: 0.5446
+Epoch 119 [400/469] loss_D: 0.6198 loss_G: 1.1388
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 120 [100/469] loss_D: 0.9317 loss_G: 0.2256
+Epoch 120 [200/469] loss_D: 0.5946 loss_G: 1.3803
+Epoch 120 [300/469] loss_D: 0.6232 loss_G: 0.6714
+Epoch 120 [400/469] loss_D: 0.5740 loss_G: 1.0704
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 121 [100/469] loss_D: 0.6037 loss_G: 1.0855
+Epoch 121 [200/469] loss_D: 0.5926 loss_G: 1.0510
+Epoch 121 [300/469] loss_D: 0.6294 loss_G: 0.6613
+Epoch 121 [400/469] loss_D: 0.5897 loss_G: 0.9820
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 122 [100/469] loss_D: 0.5799 loss_G: 0.9818
+Epoch 122 [200/469] loss_D: 0.5867 loss_G: 1.6479
+Epoch 122 [300/469] loss_D: 0.7370 loss_G: 2.1863
+Epoch 122 [400/469] loss_D: 0.6494 loss_G: 0.6306
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 123 [100/469] loss_D: 0.6501 loss_G: 0.6515
+Epoch 123 [200/469] loss_D: 0.7009 loss_G: 0.5072
+Epoch 123 [300/469] loss_D: 0.5504 loss_G: 1.0997
+Epoch 123 [400/469] loss_D: 0.5876 loss_G: 0.7850
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 124 [100/469] loss_D: 0.6742 loss_G: 0.9443
+Epoch 124 [200/469] loss_D: 0.6502 loss_G: 0.8031
+Epoch 124 [300/469] loss_D: 0.6752 loss_G: 0.7312
+Epoch 124 [400/469] loss_D: 0.6066 loss_G: 1.1598
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 125 [100/469] loss_D: 0.6515 loss_G: 0.9727
+Epoch 125 [200/469] loss_D: 0.5957 loss_G: 0.6717
+Epoch 125 [300/469] loss_D: 0.5697 loss_G: 1.0709
+Epoch 125 [400/469] loss_D: 0.6337 loss_G: 0.9133
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 126 [100/469] loss_D: 0.5665 loss_G: 1.2822
+Epoch 126 [200/469] loss_D: 0.6635 loss_G: 0.5513
+Epoch 126 [300/469] loss_D: 0.5131 loss_G: 1.3844
+Epoch 126 [400/469] loss_D: 0.5974 loss_G: 1.0486
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 127 [100/469] loss_D: 0.6205 loss_G: 0.9312
+Epoch 127 [200/469] loss_D: 0.6758 loss_G: 1.6945
+Epoch 127 [300/469] loss_D: 0.5805 loss_G: 1.0377
+Epoch 127 [400/469] loss_D: 0.6565 loss_G: 0.6731
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 128 [100/469] loss_D: 0.6621 loss_G: 0.5650
+Epoch 128 [200/469] loss_D: 0.5905 loss_G: 0.8700
+Epoch 128 [300/469] loss_D: 0.6387 loss_G: 1.2159
+Epoch 128 [400/469] loss_D: 0.6960 loss_G: 0.6732
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 129 [100/469] loss_D: 0.6122 loss_G: 0.9347
+Epoch 129 [200/469] loss_D: 0.6674 loss_G: 0.7063
+Epoch 129 [300/469] loss_D: 0.6226 loss_G: 0.7149
+Epoch 129 [400/469] loss_D: 0.5223 loss_G: 1.4055
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 130 [100/469] loss_D: 0.6018 loss_G: 0.7449
+Epoch 130 [200/469] loss_D: 0.6614 loss_G: 0.8973
+Epoch 130 [300/469] loss_D: 0.6216 loss_G: 0.5400
+Epoch 130 [400/469] loss_D: 0.6014 loss_G: 0.6864
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 131 [100/469] loss_D: 0.8883 loss_G: 0.2490
+Epoch 131 [200/469] loss_D: 0.5409 loss_G: 1.3322
+Epoch 131 [300/469] loss_D: 0.5834 loss_G: 1.1220
+Epoch 131 [400/469] loss_D: 0.6360 loss_G: 0.6535
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 132 [100/469] loss_D: 0.6138 loss_G: 0.9895
+Epoch 132 [200/469] loss_D: 0.7226 loss_G: 0.4442
+Epoch 132 [300/469] loss_D: 0.5478 loss_G: 1.1413
+Epoch 132 [400/469] loss_D: 0.6225 loss_G: 0.9552
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 133 [100/469] loss_D: 0.5488 loss_G: 1.3337
+Epoch 133 [200/469] loss_D: 0.6291 loss_G: 1.0804
+Epoch 133 [300/469] loss_D: 0.5949 loss_G: 1.0240
+Epoch 133 [400/469] loss_D: 0.6047 loss_G: 1.1354
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 134 [100/469] loss_D: 0.6816 loss_G: 0.7392
+Epoch 134 [200/469] loss_D: 0.5723 loss_G: 1.4860
+Epoch 134 [300/469] loss_D: 0.6228 loss_G: 0.7410
+Epoch 134 [400/469] loss_D: 0.8286 loss_G: 0.3147
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 135 [100/469] loss_D: 0.6512 loss_G: 0.6004
+Epoch 135 [200/469] loss_D: 0.5633 loss_G: 1.3611
+Epoch 135 [300/469] loss_D: 0.6162 loss_G: 0.8209
+Epoch 135 [400/469] loss_D: 0.6283 loss_G: 1.2981
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 136 [100/469] loss_D: 0.5991 loss_G: 0.9916
+Epoch 136 [200/469] loss_D: 0.6814 loss_G: 1.4795
+Epoch 136 [300/469] loss_D: 0.5757 loss_G: 0.8731
+Epoch 136 [400/469] loss_D: 0.5480 loss_G: 1.0257
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 137 [100/469] loss_D: 0.6099 loss_G: 0.8842
+Epoch 137 [200/469] loss_D: 0.5645 loss_G: 1.2251
+Epoch 137 [300/469] loss_D: 0.6378 loss_G: 0.8471
+Epoch 137 [400/469] loss_D: 0.6056 loss_G: 1.0769
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 138 [100/469] loss_D: 0.6289 loss_G: 2.2806
+Epoch 138 [200/469] loss_D: 0.6189 loss_G: 0.8219
+Epoch 138 [300/469] loss_D: 0.5546 loss_G: 0.9494
+Epoch 138 [400/469] loss_D: 0.6815 loss_G: 0.8539
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 139 [100/469] loss_D: 0.6791 loss_G: 0.6988
+Epoch 139 [200/469] loss_D: 0.6825 loss_G: 0.4750
+Epoch 139 [300/469] loss_D: 0.6270 loss_G: 1.6381
+Epoch 139 [400/469] loss_D: 0.5838 loss_G: 1.2681
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 140 [100/469] loss_D: 0.7588 loss_G: 0.4148
+Epoch 140 [200/469] loss_D: 0.5167 loss_G: 1.3779
+Epoch 140 [300/469] loss_D: 0.6016 loss_G: 0.8532
+Epoch 140 [400/469] loss_D: 0.6025 loss_G: 1.8043
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 141 [100/469] loss_D: 0.5821 loss_G: 1.0070
+Epoch 141 [200/469] loss_D: 0.6439 loss_G: 0.7147
+Epoch 141 [300/469] loss_D: 0.5849 loss_G: 1.0477
+Epoch 141 [400/469] loss_D: 0.6397 loss_G: 0.9854
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 142 [100/469] loss_D: 0.6474 loss_G: 0.7944
+Epoch 142 [200/469] loss_D: 0.5989 loss_G: 0.9914
+Epoch 142 [300/469] loss_D: 0.5631 loss_G: 0.8614
+Epoch 142 [400/469] loss_D: 0.5758 loss_G: 1.1616
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 143 [100/469] loss_D: 0.5323 loss_G: 1.4722
+Epoch 143 [200/469] loss_D: 0.6678 loss_G: 0.5816
+Epoch 143 [300/469] loss_D: 0.4952 loss_G: 1.5392
+Epoch 143 [400/469] loss_D: 0.6373 loss_G: 0.7672
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 144 [100/469] loss_D: 0.6099 loss_G: 1.0475
+Epoch 144 [200/469] loss_D: 0.6634 loss_G: 1.9421
+Epoch 144 [300/469] loss_D: 0.5951 loss_G: 0.9208
+Epoch 144 [400/469] loss_D: 0.5916 loss_G: 1.1390
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 145 [100/469] loss_D: 0.6383 loss_G: 0.8122
+Epoch 145 [200/469] loss_D: 0.5762 loss_G: 1.1894
+Epoch 145 [300/469] loss_D: 0.5372 loss_G: 1.5435
+Epoch 145 [400/469] loss_D: 0.5968 loss_G: 1.0263
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 146 [100/469] loss_D: 0.6524 loss_G: 0.8622
+Epoch 146 [200/469] loss_D: 0.5761 loss_G: 0.8658
+Epoch 146 [300/469] loss_D: 0.6362 loss_G: 0.8194
+Epoch 146 [400/469] loss_D: 0.6014 loss_G: 0.8567
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 147 [100/469] loss_D: 0.5569 loss_G: 1.2486
+Epoch 147 [200/469] loss_D: 0.5728 loss_G: 1.1427
+Epoch 147 [300/469] loss_D: 0.5797 loss_G: 2.1153
+Epoch 147 [400/469] loss_D: 0.4944 loss_G: 1.8017
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 148 [100/469] loss_D: 0.6527 loss_G: 0.8151
+Epoch 148 [200/469] loss_D: 0.5389 loss_G: 0.9695
+Epoch 148 [300/469] loss_D: 0.6184 loss_G: 0.7814
+Epoch 148 [400/469] loss_D: 0.5694 loss_G: 1.0404
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 149 [100/469] loss_D: 0.5289 loss_G: 1.7195
+Epoch 149 [200/469] loss_D: 0.6262 loss_G: 0.6663
+Epoch 149 [300/469] loss_D: 0.5242 loss_G: 0.8898
+Epoch 149 [400/469] loss_D: 0.6134 loss_G: 1.5211
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 150 [100/469] loss_D: 0.5761 loss_G: 1.0148
+Epoch 150 [200/469] loss_D: 0.5436 loss_G: 1.5045
+Epoch 150 [300/469] loss_D: 0.5808 loss_G: 0.8585
+Epoch 150 [400/469] loss_D: 0.6404 loss_G: 0.8886
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 151 [100/469] loss_D: 0.5921 loss_G: 0.9500
+Epoch 151 [200/469] loss_D: 0.5560 loss_G: 1.1114
+Epoch 151 [300/469] loss_D: 0.5428 loss_G: 0.8500
+Epoch 151 [400/469] loss_D: 0.5747 loss_G: 1.3974
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 152 [100/469] loss_D: 0.5730 loss_G: 0.8437
+Epoch 152 [200/469] loss_D: 0.5310 loss_G: 1.7344
+Epoch 152 [300/469] loss_D: 0.5477 loss_G: 1.1653
+Epoch 152 [400/469] loss_D: 0.6560 loss_G: 0.9459
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 153 [100/469] loss_D: 0.5487 loss_G: 1.0697
+Epoch 153 [200/469] loss_D: 0.5871 loss_G: 0.9740
+Epoch 153 [300/469] loss_D: 0.6681 loss_G: 0.4920
+Epoch 153 [400/469] loss_D: 0.5802 loss_G: 1.2963
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 154 [100/469] loss_D: 0.5947 loss_G: 1.0003
+Epoch 154 [200/469] loss_D: 0.6109 loss_G: 1.0993
+Epoch 154 [300/469] loss_D: 0.6441 loss_G: 0.6455
+Epoch 154 [400/469] loss_D: 0.6164 loss_G: 1.3978
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 155 [100/469] loss_D: 0.5937 loss_G: 0.7187
+Epoch 155 [200/469] loss_D: 0.5714 loss_G: 1.0549
+Epoch 155 [300/469] loss_D: 0.6433 loss_G: 0.7645
+Epoch 155 [400/469] loss_D: 0.6485 loss_G: 0.8282
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 156 [100/469] loss_D: 0.5669 loss_G: 0.9261
+Epoch 156 [200/469] loss_D: 0.5808 loss_G: 1.1919
+Epoch 156 [300/469] loss_D: 0.5017 loss_G: 1.2209
+Epoch 156 [400/469] loss_D: 0.6034 loss_G: 1.2503
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 157 [100/469] loss_D: 0.6097 loss_G: 1.0379
+Epoch 157 [200/469] loss_D: 0.5949 loss_G: 1.1072
+Epoch 157 [300/469] loss_D: 0.5938 loss_G: 0.7694
+Epoch 157 [400/469] loss_D: 0.6441 loss_G: 1.3820
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 158 [100/469] loss_D: 0.6303 loss_G: 0.8638
+Epoch 158 [200/469] loss_D: 0.5655 loss_G: 0.8142
+Epoch 158 [300/469] loss_D: 0.5369 loss_G: 1.0273
+Epoch 158 [400/469] loss_D: 0.5647 loss_G: 1.1687
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 159 [100/469] loss_D: 0.6314 loss_G: 0.9393
+Epoch 159 [200/469] loss_D: 0.5801 loss_G: 0.9174
+Epoch 159 [300/469] loss_D: 0.6032 loss_G: 0.9425
+Epoch 159 [400/469] loss_D: 0.5615 loss_G: 1.0853
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 160 [100/469] loss_D: 0.5858 loss_G: 0.8798
+Epoch 160 [200/469] loss_D: 0.5411 loss_G: 1.3350
+Epoch 160 [300/469] loss_D: 0.6559 loss_G: 0.8272
+Epoch 160 [400/469] loss_D: 0.5925 loss_G: 0.9419
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 161 [100/469] loss_D: 0.6333 loss_G: 0.6268
+Epoch 161 [200/469] loss_D: 0.5690 loss_G: 1.0012
+Epoch 161 [300/469] loss_D: 0.4695 loss_G: 1.8667
+Epoch 161 [400/469] loss_D: 0.6068 loss_G: 0.9421
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 162 [100/469] loss_D: 0.6263 loss_G: 1.0857
+Epoch 162 [200/469] loss_D: 0.5375 loss_G: 1.0942
+Epoch 162 [300/469] loss_D: 0.5647 loss_G: 1.6237
+Epoch 162 [400/469] loss_D: 0.5856 loss_G: 1.7060
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 163 [100/469] loss_D: 0.5821 loss_G: 0.9195
+Epoch 163 [200/469] loss_D: 0.6434 loss_G: 0.8830
+Epoch 163 [300/469] loss_D: 0.5772 loss_G: 1.2437
+Epoch 163 [400/469] loss_D: 0.6104 loss_G: 1.3303
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 164 [100/469] loss_D: 0.6125 loss_G: 0.8999
+Epoch 164 [200/469] loss_D: 0.5615 loss_G: 1.1148
+Epoch 164 [300/469] loss_D: 0.5874 loss_G: 1.0311
+Epoch 164 [400/469] loss_D: 0.5291 loss_G: 1.3498
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 165 [100/469] loss_D: 0.6551 loss_G: 1.1051
+Epoch 165 [200/469] loss_D: 0.6782 loss_G: 0.5601
+Epoch 165 [300/469] loss_D: 0.5775 loss_G: 0.7559
+Epoch 165 [400/469] loss_D: 0.5795 loss_G: 1.6172
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 166 [100/469] loss_D: 0.5488 loss_G: 1.1438
+Epoch 166 [200/469] loss_D: 0.6157 loss_G: 0.8511
+Epoch 166 [300/469] loss_D: 0.5689 loss_G: 1.3163
+Epoch 166 [400/469] loss_D: 0.5231 loss_G: 1.4740
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 167 [100/469] loss_D: 0.5894 loss_G: 1.2062
+Epoch 167 [200/469] loss_D: 0.6059 loss_G: 0.9478
+Epoch 167 [300/469] loss_D: 0.5719 loss_G: 1.1767
+Epoch 167 [400/469] loss_D: 0.6153 loss_G: 1.0022
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 168 [100/469] loss_D: 0.5411 loss_G: 1.1145
+Epoch 168 [200/469] loss_D: 0.5749 loss_G: 1.1053
+Epoch 168 [300/469] loss_D: 0.5336 loss_G: 1.2931
+Epoch 168 [400/469] loss_D: 0.5154 loss_G: 1.1040
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 169 [100/469] loss_D: 0.5130 loss_G: 1.0357
+Epoch 169 [200/469] loss_D: 0.6146 loss_G: 0.7976
+Epoch 169 [300/469] loss_D: 0.5813 loss_G: 0.9338
+Epoch 169 [400/469] loss_D: 0.6301 loss_G: 0.8762
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 170 [100/469] loss_D: 0.5871 loss_G: 0.9617
+Epoch 170 [200/469] loss_D: 0.5896 loss_G: 0.9132
+Epoch 170 [300/469] loss_D: 0.6507 loss_G: 0.9396
+Epoch 170 [400/469] loss_D: 0.5292 loss_G: 1.4297
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 171 [100/469] loss_D: 0.5754 loss_G: 1.1505
+Epoch 171 [200/469] loss_D: 0.6942 loss_G: 2.0971
+Epoch 171 [300/469] loss_D: 0.6291 loss_G: 0.8391
+Epoch 171 [400/469] loss_D: 0.4838 loss_G: 1.5086
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 172 [100/469] loss_D: 0.7740 loss_G: 0.4483
+Epoch 172 [200/469] loss_D: 0.5774 loss_G: 0.8848
+Epoch 172 [300/469] loss_D: 0.5960 loss_G: 1.0233
+Epoch 172 [400/469] loss_D: 0.6690 loss_G: 0.7819
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 173 [100/469] loss_D: 0.6206 loss_G: 0.6212
+Epoch 173 [200/469] loss_D: 0.5967 loss_G: 0.8187
+Epoch 173 [300/469] loss_D: 0.5488 loss_G: 1.5376
+Epoch 173 [400/469] loss_D: 0.5828 loss_G: 1.1546
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 174 [100/469] loss_D: 0.6105 loss_G: 0.9227
+Epoch 174 [200/469] loss_D: 0.5910 loss_G: 1.8708
+Epoch 174 [300/469] loss_D: 0.5529 loss_G: 1.4082
+Epoch 174 [400/469] loss_D: 0.5930 loss_G: 1.0527
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 175 [100/469] loss_D: 0.5740 loss_G: 1.0609
+Epoch 175 [200/469] loss_D: 0.5916 loss_G: 0.9388
+Epoch 175 [300/469] loss_D: 0.5732 loss_G: 0.8229
+Epoch 175 [400/469] loss_D: 0.5717 loss_G: 1.3156
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 176 [100/469] loss_D: 0.5761 loss_G: 1.2189
+Epoch 176 [200/469] loss_D: 0.5033 loss_G: 1.5290
+Epoch 176 [300/469] loss_D: 0.5586 loss_G: 0.8191
+Epoch 176 [400/469] loss_D: 0.6621 loss_G: 0.7035
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 177 [100/469] loss_D: 0.6266 loss_G: 0.9666
+Epoch 177 [200/469] loss_D: 0.4876 loss_G: 1.3790
+Epoch 177 [300/469] loss_D: 0.6329 loss_G: 0.8040
+Epoch 177 [400/469] loss_D: 0.5356 loss_G: 1.4946
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 178 [100/469] loss_D: 0.5400 loss_G: 0.9246
+Epoch 178 [200/469] loss_D: 0.5675 loss_G: 1.6097
+Epoch 178 [300/469] loss_D: 0.5424 loss_G: 1.2652
+Epoch 178 [400/469] loss_D: 0.6211 loss_G: 1.4756
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 179 [100/469] loss_D: 0.6315 loss_G: 0.7749
+Epoch 179 [200/469] loss_D: 0.5768 loss_G: 0.9724
+Epoch 179 [300/469] loss_D: 0.5513 loss_G: 1.1562
+Epoch 179 [400/469] loss_D: 0.6151 loss_G: 1.1196
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 180 [100/469] loss_D: 0.5487 loss_G: 1.2813
+Epoch 180 [200/469] loss_D: 0.6142 loss_G: 1.1408
+Epoch 180 [300/469] loss_D: 0.8992 loss_G: 3.4683
+Epoch 180 [400/469] loss_D: 0.5868 loss_G: 0.7865
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 181 [100/469] loss_D: 0.6229 loss_G: 1.1490
+Epoch 181 [200/469] loss_D: 0.5494 loss_G: 0.8341
+Epoch 181 [300/469] loss_D: 0.5794 loss_G: 0.9627
+Epoch 181 [400/469] loss_D: 0.5349 loss_G: 2.4034
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 182 [100/469] loss_D: 0.5705 loss_G: 1.1440
+Epoch 182 [200/469] loss_D: 0.5274 loss_G: 1.3023
+Epoch 182 [300/469] loss_D: 0.5676 loss_G: 1.2026
+Epoch 182 [400/469] loss_D: 0.6210 loss_G: 0.8588
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 183 [100/469] loss_D: 0.5218 loss_G: 1.1856
+Epoch 183 [200/469] loss_D: 0.5192 loss_G: 1.2741
+Epoch 183 [300/469] loss_D: 0.6580 loss_G: 0.6340
+Epoch 183 [400/469] loss_D: 0.5547 loss_G: 1.0581
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 184 [100/469] loss_D: 0.5339 loss_G: 1.1828
+Epoch 184 [200/469] loss_D: 0.6426 loss_G: 0.9072
+Epoch 184 [300/469] loss_D: 0.5373 loss_G: 1.0931
+Epoch 184 [400/469] loss_D: 0.5513 loss_G: 1.3150
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 185 [100/469] loss_D: 0.5608 loss_G: 1.6239
+Epoch 185 [200/469] loss_D: 0.5436 loss_G: 0.8955
+Epoch 185 [300/469] loss_D: 0.4893 loss_G: 1.5385
+Epoch 185 [400/469] loss_D: 0.5807 loss_G: 1.1585
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 186 [100/469] loss_D: 0.6734 loss_G: 1.0410
+Epoch 186 [200/469] loss_D: 0.5626 loss_G: 1.4727
+Epoch 186 [300/469] loss_D: 0.6413 loss_G: 0.9107
+Epoch 186 [400/469] loss_D: 0.6004 loss_G: 1.1230
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 187 [100/469] loss_D: 0.5553 loss_G: 1.3859
+Epoch 187 [200/469] loss_D: 0.4874 loss_G: 1.3899
+Epoch 187 [300/469] loss_D: 0.5723 loss_G: 0.9200
+Epoch 187 [400/469] loss_D: 0.5842 loss_G: 1.0410
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 188 [100/469] loss_D: 0.5301 loss_G: 1.3899
+Epoch 188 [200/469] loss_D: 0.6052 loss_G: 1.2121
+Epoch 188 [300/469] loss_D: 0.5495 loss_G: 1.2770
+Epoch 188 [400/469] loss_D: 0.5569 loss_G: 1.2052
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 189 [100/469] loss_D: 0.4725 loss_G: 1.7447
+Epoch 189 [200/469] loss_D: 0.6025 loss_G: 0.9278
+Epoch 189 [300/469] loss_D: 0.5252 loss_G: 1.3169
+Epoch 189 [400/469] loss_D: 0.4913 loss_G: 1.5380
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 190 [100/469] loss_D: 0.5862 loss_G: 1.1328
+Epoch 190 [200/469] loss_D: 0.5853 loss_G: 0.7382
+Epoch 190 [300/469] loss_D: 0.4882 loss_G: 1.6444
+Epoch 190 [400/469] loss_D: 0.6051 loss_G: 1.0673
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 191 [100/469] loss_D: 0.5287 loss_G: 1.2871
+Epoch 191 [200/469] loss_D: 0.5011 loss_G: 1.6499
+Epoch 191 [300/469] loss_D: 0.5644 loss_G: 1.4234
+Epoch 191 [400/469] loss_D: 0.5395 loss_G: 1.7653
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 192 [100/469] loss_D: 0.6737 loss_G: 0.7565
+Epoch 192 [200/469] loss_D: 0.4327 loss_G: 1.7441
+Epoch 192 [300/469] loss_D: 0.5267 loss_G: 1.2944
+Epoch 192 [400/469] loss_D: 0.5219 loss_G: 1.0110
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 193 [100/469] loss_D: 0.5829 loss_G: 1.4263
+Epoch 193 [200/469] loss_D: 0.5610 loss_G: 1.1784
+Epoch 193 [300/469] loss_D: 0.5541 loss_G: 2.2225
+Epoch 193 [400/469] loss_D: 0.5359 loss_G: 1.7486
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 194 [100/469] loss_D: 0.5527 loss_G: 2.2581
+Epoch 194 [200/469] loss_D: 0.6304 loss_G: 0.8187
+Epoch 194 [300/469] loss_D: 0.5667 loss_G: 1.0419
+Epoch 194 [400/469] loss_D: 0.4670 loss_G: 2.6986
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 195 [100/469] loss_D: 0.5204 loss_G: 0.8313
+Epoch 195 [200/469] loss_D: 0.4943 loss_G: 0.9695
+Epoch 195 [300/469] loss_D: 0.5974 loss_G: 0.9537
+Epoch 195 [400/469] loss_D: 0.5762 loss_G: 0.9733
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 196 [100/469] loss_D: 0.5040 loss_G: 1.4286
+Epoch 196 [200/469] loss_D: 0.4984 loss_G: 1.4627
+Epoch 196 [300/469] loss_D: 0.5207 loss_G: 1.2311
+Epoch 196 [400/469] loss_D: 0.6205 loss_G: 2.4289
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 197 [100/469] loss_D: 0.4605 loss_G: 1.2245
+Epoch 197 [200/469] loss_D: 0.6134 loss_G: 1.0835
+Epoch 197 [300/469] loss_D: 0.5889 loss_G: 1.0145
+Epoch 197 [400/469] loss_D: 0.5869 loss_G: 1.5490
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 198 [100/469] loss_D: 0.5575 loss_G: 0.9772
+Epoch 198 [200/469] loss_D: 0.5150 loss_G: 1.5014
+Epoch 198 [300/469] loss_D: 0.5834 loss_G: 0.8579
+Epoch 198 [400/469] loss_D: 0.4769 loss_G: 1.5468
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+Epoch 199 [100/469] loss_D: 0.4724 loss_G: 1.5994
+Epoch 199 [200/469] loss_D: 0.6172 loss_G: 0.7946
+Epoch 199 [300/469] loss_D: 0.5018 loss_G: 1.1842
+Epoch 199 [400/469] loss_D: 0.5844 loss_G: 0.9164
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+
+Saving models to cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128, 100, 1, 1]) torch.Size([128])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([16])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])
+torch.Size([16])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])
+PyTorch version: 2.2.2+cu121
+CUDA version: 12.1
+
+         Args         |    Type    |    Value
+--------------------------------------------------
+  model               |  str       |  cgan
+  cuda                |  bool      |  True
+  train               |  bool      |  False
+  data_dir            |  str       |  ../Datasets/mnist
+  out_dir             |  str       |  output
+  epochs              |  int       |  200
+  batch_size          |  int       |  128
+  lr                  |  float     |  0.0002
+  latent_dim          |  int       |  100
+  classes             |  int       |  10
+  img_size            |  int       |  64
+  channels            |  int       |  1
+  log_interval        |  int       |  100
+  seed                |  int       |  1
+
+Loading models from cgan_G.pt and cgan_D.pt ...
+torch.Size([128])

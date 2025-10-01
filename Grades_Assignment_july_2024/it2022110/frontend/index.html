@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksAPP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <h1>Add a new book to the database</h1>
+        <form id="post_form" name="form">
+
+            <input type="text" placeholder="Author/συγγραφέας" name="author"> <br>
+            <input type="text" placeholder="Title/Τίτλος" name="title"> <br>
+            <label>Διάλεξε τύπο: </label> <br>
+
+            <select name="Τύπος">
+                <option>Action and Adventure</option>
+                <option>Romance</option>
+                <option>Science fiction</option>
+                <option>Satire</option>
+                <option>Mystery</option>
+                <option>Horror</option>
+                <option>Drama</option>
+                
+            </select> <br>
+
+            <input type="text" placeholder="Price/Τιμή" name="price"> <br><br>
+
+            <input type="submit" id="book_upload" value="Submit book"> 
+
+            <div id="error_response" style="visibility: hidden;"></div>
+
+        </form>
+    
+        <br><br><br><br><br>
+
+        <h1>Search book</h1>
+
+        <form>
+            <input type="text" id="search_bar" placeholder="Τίτλος/Title"> <br><br>
+            <input type="button" id="book_search" value="Search book"> 
+
+            <div id="error_response1" style="visibility: hidden;"></div>
+        </form>
+
+        <div id="error_response" style="visibility: hidden;"></div>
+        
+        <br><br>
+    
+        <table style="visibility: hidden;" id="output_table">
+            <tr>
+                <td>Author</td>
+                <td>Title</td>
+                <td>Genre</td>
+                <td>Price</td>
+                
+                
+            </tr>
+        </table>
+
+        <script src="./js/index.js"></script>
+
+    </body>
+</html>

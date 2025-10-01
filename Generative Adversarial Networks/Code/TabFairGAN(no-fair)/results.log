@@ -1,0 +1,3 @@
+num_trainings: 4, num_epochs: 300, batchsize: 256
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier
+0, 0.815148, 0.786285 , 0.028864, 0.618182, 0.554608, 0.063574

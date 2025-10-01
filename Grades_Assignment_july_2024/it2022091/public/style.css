@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('Untitled design.png'); 
+    background-size: cover; /* Adjust background size */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Keep the background image fixed */
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+/* Apply styling to form groups */
+.form-group {
+    margin-bottom: 15px; /* Add some margin at the bottom of each form group */
+}
+
+/* Style labels within form groups */
+.form-group label {
+    display: block;     /* Display labels as block elements */
+    margin-bottom: 5px; /* Add some margin at the bottom of each label */
+}
+
+/* Apply styling to input fields and select dropdowns within form groups */
+.form-group input, .form-group select {
+    width: 20%; /* Set the width of inputs and selects */
+    padding: 8px; /* Add padding to inputs and selects of the dropdown list */
+    box-sizing: border-box;
+}
+
+/* Ensure buttons are styled consistently */
+.form-group button {
+    padding: 10px 20px; /* Add padding to buttons */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Apply styling to search books container */
+.results {
+    position: fixed; /* Fix the results container */
+    top: 20px; /* Adjust top position */
+    right: 20px; /* Adjust right position */
+    width: 250px; /* Adjust the width as needed */
+    max-height: calc(100vh - 40px); /* Ensure it fits within the viewport */
+    overflow-y: auto; /* Allow vertical scrolling if necessary */
+}
+
+/* Style individual search books */
+.results div {
+    padding: 10px;
+    border: 15px solid #b57406; /* Add a border around each book */
+    margin-bottom: 20px; /* Add some margin at the bottom of each book */
+    background: rgba(230, 228, 228, 0.8); /* White background with transparency */
+}

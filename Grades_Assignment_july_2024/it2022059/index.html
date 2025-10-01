@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+<div class="container">
+    <h1 style="color: aliceblue">Book Management</h1>
+    <h2 style="color: aliceblue">Add New Book</h2>
+
+    <div class="form-group">
+        <label for="author" style="color: aliceblue">Author:</label>
+        <input type="text" id="author" name="author" required>
+    </div>
+
+    <div class="form-group">
+        <label for="title" style="color: aliceblue">Title:</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+
+    <div class="form-group">
+        <label for="genre" style="color: aliceblue">Genre:</label>
+        <select id="genre" name="genre" required>
+            <option value="Science fiction">Science fiction</option>
+            <option value="Satire">Satire</option>
+            <option value="Drama">Drama</option>
+            <option value="Action and Adventure">Action and Adventure</option>
+            <option value="Romance">Romance</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Horror">Horror</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="price" style="color: aliceblue">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+    </div>
+
+    <button onclick="addBook()">Add Book</button>
+
+    <h2 style="color: aliceblue">Search Book</h2>
+
+    <div class="form-group">
+        <label for="search" style="color: aliceblue">Title:</label>
+        <input type="text" id="search" name="search" required>
+    </div>
+
+    <button onclick="searchBook()">Search</button>
+
+    <div class="results" id="results"></div>
+</div>
+</body>
+</html>

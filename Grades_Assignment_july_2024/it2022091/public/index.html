@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title> <!-- Title --> 
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to the CSS file-->
+</head>
+<body>
+    
+    <h1>Book Management</h1> <!-- Main header -->
+
+    <h2>Add New Book</h2> <!-- Header to add a book -->
+    <div>
+        <!-- Form group to add an author -->
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <!-- Form group to add book title -->
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <!-- Form group to choose book genre(Dropdown list)-->
+        <div class="form-group">
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre">
+                <option value="Science fiction">Science fiction</option>
+                <option value="Satire">Satire</option>
+                <option value="Drama">Drama</option>
+                <option value="Action and Adventure">Action and Adventure</option>
+                <option value="Romance">Romance</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Horror">Horror</option>
+            </select>
+        </div>
+        <!-- Form group for price input -->
+        <div class="form-group">
+            <label for="price">Price in Euros</label>
+            <input type="text" id="price" name="price">
+        </div>
+        <!-- Add new book button -->
+        <div class="form-group">
+            <button id="addBookButton" onclick="addBook()">Add Book</button>
+        </div>
+        <div id="add-book-message"></div>
+    </div>
+    
+    <h2>Search Books</h2><!-- Header to search a book -->
+    <div>
+        <!-- Form group to search by keyword -->
+        <div class="form-group">
+            <label for="keyword">Keyword</label>
+            <input type="text" id="keyword" name="keyword">
+        </div>
+        <!-- Search book button -->
+        <div class="form-group">
+            <button id="searchBookButton" onclick="searchBook()">Search</button>
+        </div>
+        <div class="results" id="search-results"></div>
+    </div>
+
+    <script>
+      
+        //URL for the API
+        const bookUrl = window.origin + '/books/';
+        //Add book Function
+        async function addBook() {
+            //Get values from the user input fields
+            const author = document.getElementById('author').value;
+            const title = document.getElementById('title').value;
+            const genre = document.getElementById('genre').value;
+            const price = document.getElementById('price').value;
+
+            //Check if all inputs are valid
+            if (!author || !title || !genre || !price || isNaN(price) || price < 0) {
+                document.getElementById('add-book-message').innerText = 'Please provide valid inputs.';
+                return;
+            }
+            //Create the book object
+            const book = { author, title, genre, price: parseFloat(price) };
+
+            try {
+                //Send POST request to add book
+                const response = await fetch(bookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(book)
+                });
+                const result = await response.json();
+                //Display success message
+                if (result.success) {
+                    document.getElementById('add-book-message').innerHTML = '<b>Book added successfully!</b>';
+                } else {
+                    document.getElementById('add-book-message').innerHTML = '<b>Book already exists!</b>';
+                }
+            } catch (error) {
+                //Display error message
+                document.getElementById('add-book-message').innerText = 'Error: ' + error.message;
+            }
+        }
+
+        //Search book function
+        async function searchBook() {
+            //Get the key word from user input field
+            const keyword = document.getElementById('keyword').value;
+
+            try {
+                //Send a GET Request using fetch to search book 
+                const response = await fetch(`${bookUrl}${keyword}`);
+                const books = await response.json();
+                const resultsDiv = document.getElementById('search-results');// Clear previous search results
+                resultsDiv.innerHTML = '';
+                // Display the search results
+                // Check if there are any books in the books table
+                if (books.length > 0) {
+                    books.forEach(book => {
+                        // Create a new 'div' element for each book
+                        const bookDiv = document.createElement('div');
+                        // Set the inner HTML of the bookDiv with the book's details
+                        bookDiv.innerHTML = `
+                            <b>${book.title}</b><br> 
+                            Author: ${book.author}<br>
+                            Genre: ${book.genre}<br>
+                            Price: €${book.price.toFixed(2)}
+                        `;
+                        // Append the bookDiv to the resultsDiv element in the DOM
+                        resultsDiv.appendChild(bookDiv);
+                    });
+                } else {
+                    //Display a message if there is no book title containing the keyword given
+                    resultsDiv.innerHTML = '<b>No books found.</b>';
+
+                }
+            } catch (error) {
+                document.getElementById('search-results').innerText = 'Error: ' + error.message;
+            }
+        }
+
+
+      
+        
+
+       
+
+    </script>
+    
+
+    
+</body>
+</html>
