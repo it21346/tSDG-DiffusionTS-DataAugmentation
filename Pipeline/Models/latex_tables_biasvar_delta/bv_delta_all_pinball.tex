@@ -1,0 +1,21 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% across all model/scaler/batch configurations. Negative = improvement.}
+\label{tab:bvdelta_all}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l l l l rrrrrrrr}
+\toprule
+Model & Scaler & Batch & Metric & 200 & 400 & 800 & 1200 & 1600 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+BiLSTM & standard & 32 & Bias$^2$ (Δ\%) & 4.5\% & 5.9\% & -7.5\% & -18.7\% & \textbf{-19.5\%} & \textbf{-19.5\%} & \textbf{1600} & 273.2 \\
+BiLSTM & standard & 32 & Variance (Δ\%) & 34.9\% & 18.3\% & 34.7\% & \textbf{0.7\%} & 2.0\% & \textbf{0.7\%} & \textbf{1200} & 91.3 \\
+BiLSTM & standard & 16 & Bias$^2$ (Δ\%) & -0.5\% & -1.5\% & \textbf{-20.2\%} & -13.3\% & -10.4\% & \textbf{-20.2\%} & \textbf{800} & 252.1 \\
+BiLSTM & standard & 16 & Variance (Δ\%) & \textbf{-42.6\%} & -8.8\% & -9.7\% & -19.3\% & -38.5\% & \textbf{-42.6\%} & \textbf{200} & 105.8 \\
+TFT & standard & 16 & Bias$^2$ (Δ\%) & \textbf{-2.9\%} & 8.2\% & 7.0\% & -1.7\% & 6.2\% & \textbf{-2.9\%} & \textbf{200} & 168.2 \\
+TFT & standard & 16 & Variance (Δ\%) & -38.8\% & \textbf{-46.9\%} & 8.0\% & -24.4\% & -0.5\% & \textbf{-46.9\%} & \textbf{400} & 49.9 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

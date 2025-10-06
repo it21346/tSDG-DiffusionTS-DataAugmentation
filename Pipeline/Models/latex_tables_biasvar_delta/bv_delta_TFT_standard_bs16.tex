@@ -1,0 +1,17 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% (relative to Real) across synthetic lengths for TFT | standard | bs=16. Negative is improvement. Best entries per row are in bold.}
+\label{tab:bvdelta_TFT_standard_bs16}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Metric & 200 & 400 & 800 & 1200 & 1600 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+Bias$^2$ (Δ\%) & 15.0\% & 8.0\% & \textbf{6.4\%} & 18.3\% & 15.3\% & \textbf{6.4\%} & \textbf{800} & 145.3 \\
+Variance (Δ\%) & \textbf{52.1\%} & 197.2\% & 131.4\% & 70.9\% & 121.9\% & \textbf{52.1\%} & \textbf{200} & 29.4 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

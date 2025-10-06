@@ -1,0 +1,17 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% (relative to Real) across synthetic lengths for BiLSTM | standard | bs=16. Negative is improvement. Best entries per row are in bold.}
+\label{tab:bvdelta_BiLSTM_standard_bs16}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Metric & 200 & 400 & 800 & 1200 & 1600 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+Bias$^2$ (Δ\%) & -5.4\% & -2.8\% & \textbf{-8.2\%} & -3.1\% & -7.5\% & \textbf{-8.2\%} & \textbf{800} & 175.7 \\
+Variance (Δ\%) & 22.5\% & 13.4\% & 7.7\% & 20.1\% & \textbf{4.9\%} & \textbf{4.9\%} & \textbf{1600} & 27.5 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

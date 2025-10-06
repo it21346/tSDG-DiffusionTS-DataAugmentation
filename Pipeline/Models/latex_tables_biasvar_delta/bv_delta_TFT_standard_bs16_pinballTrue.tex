@@ -1,0 +1,17 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% (relative to Real) across synthetic lengths for TFT | standard | bs=16 | pinball=True. Negative is improvement. Best entries per row are in bold.}
+\label{tab:bvdelta_TFT_standard_bs16_pinballTrue}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Metric & 200 & 400 & 800 & 1200 & 1600 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+Bias$^2$ (Δ\%) & \textbf{-2.9\%} & 8.2\% & 7.0\% & -1.7\% & 6.2\% & \textbf{-2.9\%} & \textbf{200} & 168.2 \\
+Variance (Δ\%) & -38.8\% & \textbf{-46.9\%} & 8.0\% & -24.4\% & -0.5\% & \textbf{-46.9\%} & \textbf{400} & 49.9 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

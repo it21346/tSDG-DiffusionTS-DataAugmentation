@@ -1,0 +1,17 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% (relative to Real) across synthetic lengths for LSTM | min-max | bs=16. Negative is improvement. Best entries per row are in bold.}
+\label{tab:bvdelta_LSTM_min-max_bs16}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Metric & 200 & 400 & 800 & 1200 & 1600 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+Bias$^2$ (Δ\%) & -8.9\% & -1.7\% & \textbf{-15.4\%} & -7.3\% & -9.2\% & \textbf{-15.4\%} & \textbf{800} & 260.9 \\
+Variance (Δ\%) & 0.1\% & \textbf{-28.5\%} & 24.7\% & 18.1\% & 5.3\% & \textbf{-28.5\%} & \textbf{400} & 19.9 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}
