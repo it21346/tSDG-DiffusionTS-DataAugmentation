@@ -1,0 +1,35 @@
+\begin{table}
+\caption{Lift (Δ%) across all model/scaler/batch configurations.}
+\label{tab:lift_all}
+\begin{tabular}{lllcccccccc}
+\toprule
+Model & Scaler & Batch & Metric & 200 & 400 & 800 & 1200 & 1600 & Best (lift) & Best n \\
+\midrule
+LSTM & min-max & 16 & val\_SMAPE & -5.7±12.2\textbackslash \% & 0.9±24.9\textbackslash \% & -12.2±12.7\textbackslash \% & -9.0±12.4\textbackslash \% & -10.4±13.6\textbackslash \% & -12.2\textbackslash \% ↓ & 800 \\
+LSTM & min-max & 16 & val\_RMSE & -4.5±2.9\textbackslash \% & -1.4±5.6\textbackslash \% & -7.1±6.5\textbackslash \% & -2.6±8.8\textbackslash \% & -4.0±7.9\textbackslash \% & -7.1\textbackslash \% ↓ & 800 \\
+LSTM & min-max & 16 & val\_MAE & -5.1±3.4\textbackslash \% & -1.5±8.3\textbackslash \% & -8.8±4.7\textbackslash \% & -5.1±8.9\textbackslash \% & -5.8±7.7\textbackslash \% & -8.8\textbackslash \% ↓ & 800 \\
+LSTM & min-max & 16 & val\_MSE & -8.7±5.6\textbackslash \% & -2.6±10.8\textbackslash \% & -13.4±12.1\textbackslash \% & -4.6±17.9\textbackslash \% & -7.3±15.0\textbackslash \% & -13.4\textbackslash \% ↓ & 800 \\
+LSTM & min-max & 16 & val\_R2 & 0.7±0.5\textbackslash \% & 0.3±1.1\textbackslash \% & 1.1±1.1\textbackslash \% & 0.5±1.5\textbackslash \% & 0.7±1.5\textbackslash \% & 1.1\textbackslash \% ↑ & 800 \\
+LSTM & standard & 16 & val\_SMAPE & -1.4±7.4\textbackslash \% & 3.9±6.0\textbackslash \% & -0.3±4.7\textbackslash \% & -2.3±9.2\textbackslash \% & -3.6±6.2\textbackslash \% & -3.6\textbackslash \% ↓ & 1600 \\
+LSTM & standard & 16 & val\_RMSE & -0.6±3.9\textbackslash \% & -0.6±2.3\textbackslash \% & -2.4±4.4\textbackslash \% & -4.4±3.3\textbackslash \% & -4.7±3.3\textbackslash \% & -4.7\textbackslash \% ↓ & 1600 \\
+LSTM & standard & 16 & val\_MAE & -1.2±3.8\textbackslash \% & -0.3±1.3\textbackslash \% & -1.8±2.9\textbackslash \% & -4.0±2.8\textbackslash \% & -3.2±3.1\textbackslash \% & -4.0\textbackslash \% ↓ & 1200 \\
+LSTM & standard & 16 & val\_MSE & -1.0±7.6\textbackslash \% & -1.2±4.7\textbackslash \% & -4.7±8.4\textbackslash \% & -8.6±6.2\textbackslash \% & -9.0±6.2\textbackslash \% & -9.0\textbackslash \% ↓ & 1600 \\
+LSTM & standard & 16 & val\_R2 & 0.1±0.5\textbackslash \% & 0.1±0.3\textbackslash \% & 0.3±0.5\textbackslash \% & 0.6±0.4\textbackslash \% & 0.6±0.4\textbackslash \% & 0.6\textbackslash \% ↑ & 1600 \\
+BiLSTM & standard & 16 & val\_SMAPE & 3.4±14.7\textbackslash \% & -4.9±7.4\textbackslash \% & -4.3±3.0\textbackslash \% & -1.2±5.5\textbackslash \% & 2.6±19.9\textbackslash \% & -4.9\textbackslash \% ↓ & 400 \\
+BiLSTM & standard & 16 & val\_RMSE & -1.2±8.0\textbackslash \% & -0.5±2.6\textbackslash \% & -3.2±3.6\textbackslash \% & -0.2±4.4\textbackslash \% & -3.1±3.0\textbackslash \% & -3.2\textbackslash \% ↓ & 800 \\
+BiLSTM & standard & 16 & val\_MAE & -0.8±6.4\textbackslash \% & -1.7±2.8\textbackslash \% & -2.6±1.8\textbackslash \% & 0.7±2.1\textbackslash \% & -2.5±2.6\textbackslash \% & -2.6\textbackslash \% ↓ & 800 \\
+BiLSTM & standard & 16 & val\_MSE & -1.9±15.5\textbackslash \% & -1.0±5.0\textbackslash \% & -6.2±6.9\textbackslash \% & -0.3±8.8\textbackslash \% & -6.0±5.8\textbackslash \% & -6.2\textbackslash \% ↓ & 800 \\
+BiLSTM & standard & 16 & val\_R2 & 0.1±1.0\textbackslash \% & 0.1±0.3\textbackslash \% & 0.4±0.4\textbackslash \% & 0.0±0.5\textbackslash \% & 0.4±0.4\textbackslash \% & 0.4\textbackslash \% ↑ & 800 \\
+BiLSTM & standard & 32 & val\_SMAPE & -6.5±3.4\textbackslash \% & -8.1±4.5\textbackslash \% & -4.3±7.7\textbackslash \% & -10.5±5.9\textbackslash \% & -10.2±3.6\textbackslash \% & -10.5\textbackslash \% ↓ & 1200 \\
+BiLSTM & standard & 32 & val\_RMSE & -0.8±4.3\textbackslash \% & -1.8±4.0\textbackslash \% & -1.7±5.3\textbackslash \% & -3.5±3.3\textbackslash \% & -3.9±7.2\textbackslash \% & -3.9\textbackslash \% ↓ & 1600 \\
+BiLSTM & standard & 32 & val\_MAE & -1.9±5.2\textbackslash \% & -3.2±3.0\textbackslash \% & -1.2±6.3\textbackslash \% & -3.7±5.4\textbackslash \% & -3.6±8.5\textbackslash \% & -3.7\textbackslash \% ↓ & 1200 \\
+BiLSTM & standard & 32 & val\_MSE & -1.4±8.3\textbackslash \% & -3.5±7.7\textbackslash \% & -3.1±10.4\textbackslash \% & -6.9±6.3\textbackslash \% & -7.2±13.9\textbackslash \% & -7.2\textbackslash \% ↓ & 1600 \\
+BiLSTM & standard & 32 & val\_R2 & 0.1±0.6\textbackslash \% & 0.3±0.5\textbackslash \% & 0.2±0.7\textbackslash \% & 0.4±0.4\textbackslash \% & 0.5±0.9\textbackslash \% & 0.5\textbackslash \% ↑ & 1600 \\
+TFT & standard & 16 & val\_SMAPE & -2.7±24.6\textbackslash \% & 17.8±41.5\textbackslash \% & 3.9±24.1\textbackslash \% & -3.7±24.8\textbackslash \% & -6.1±21.5\textbackslash \% & -6.1\textbackslash \% ↓ & 1600 \\
+TFT & standard & 16 & val\_RMSE & 10.1±8.7\textbackslash \% & 14.6±14.4\textbackslash \% & 11.6±16.1\textbackslash \% & 12.4±9.2\textbackslash \% & 14.3±9.0\textbackslash \% & 10.1\textbackslash \% ↓ & 200 \\
+TFT & standard & 16 & val\_MAE & 7.5±9.8\textbackslash \% & 17.0±16.1\textbackslash \% & 11.3±15.2\textbackslash \% & 10.9±10.9\textbackslash \% & 11.6±7.8\textbackslash \% & 7.5\textbackslash \% ↓ & 200 \\
+TFT & standard & 16 & val\_MSE & 21.8±18.6\textbackslash \% & 33.1±33.7\textbackslash \% & 26.7±36.6\textbackslash \% & 27.1±21.6\textbackslash \% & 31.3±20.7\textbackslash \% & 21.8\textbackslash \% ↓ & 200 \\
+TFT & standard & 16 & val\_R2 & -1.0±0.9\textbackslash \% & -1.8±2.0\textbackslash \% & -1.2±1.7\textbackslash \% & -1.3±0.9\textbackslash \% & -1.6±0.9\textbackslash \% & -1.0\textbackslash \% ↑ & 200 \\
+\bottomrule
+\end{tabular}
+\end{table}

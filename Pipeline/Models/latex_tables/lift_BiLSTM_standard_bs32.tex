@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Lift (Δ%) vs. baseline across synthetic lengths for BiLSTM | standard | bs=32. Negative is better for error metrics; positive is better for R².}
+\label{tab:lift_BiLSTM_standard_bs32}
+\begin{tabular}{lccccccc}
+\toprule
+Metric & 200 & 400 & 800 & 1200 & 1600 & Best (lift) & Best n \\
+\midrule
+val\_SMAPE & -6.5±3.4\textbackslash \% & -8.1±4.5\textbackslash \% & -4.3±7.7\textbackslash \% & -10.5±5.9\textbackslash \% & -10.2±3.6\textbackslash \% & -10.5\textbackslash \% ↓ & 1200 \\
+val\_RMSE & -0.8±4.3\textbackslash \% & -1.8±4.0\textbackslash \% & -1.7±5.3\textbackslash \% & -3.5±3.3\textbackslash \% & -3.9±7.2\textbackslash \% & -3.9\textbackslash \% ↓ & 1600 \\
+val\_MAE & -1.9±5.2\textbackslash \% & -3.2±3.0\textbackslash \% & -1.2±6.3\textbackslash \% & -3.7±5.4\textbackslash \% & -3.6±8.5\textbackslash \% & -3.7\textbackslash \% ↓ & 1200 \\
+val\_MSE & -1.4±8.3\textbackslash \% & -3.5±7.7\textbackslash \% & -3.1±10.4\textbackslash \% & -6.9±6.3\textbackslash \% & -7.2±13.9\textbackslash \% & -7.2\textbackslash \% ↓ & 1600 \\
+val\_R2 & 0.1±0.6\textbackslash \% & 0.3±0.5\textbackslash \% & 0.2±0.7\textbackslash \% & 0.4±0.4\textbackslash \% & 0.5±0.9\textbackslash \% & 0.5\textbackslash \% ↑ & 1600 \\
+\bottomrule
+\end{tabular}
+\end{table}
