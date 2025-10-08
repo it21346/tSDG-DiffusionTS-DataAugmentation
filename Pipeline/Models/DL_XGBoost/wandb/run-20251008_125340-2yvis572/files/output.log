@@ -1,0 +1,72 @@
+Size of training data is:  (1102, 50, 11)
+Training BiLSTM...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1759917221.558255   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.597351   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.597609   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.599051   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.599259   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.599442   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.660939   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.661180   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759917221.661378   49041 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-10-08 12:53:41.661536: I tensorflow/core/common_runtime/gpu/gpu_device.cc:2021] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3743 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.9
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 99ms/step - loss: 0.6878 - mae: 0.6354 - mape: 269.9109 - val_loss: 0.2513 - val_mae: 0.3811 - val_mape: 388.1478
+Epoch 2/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.5257 - mae: 0.5522 - mape: 275.6314 - val_loss: 0.2510 - val_mae: 0.3962 - val_mape: 616.9153
+Epoch 3/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 85ms/step - loss: 0.4962 - mae: 0.5407 - mape: 295.7016 - val_loss: 0.2888 - val_mae: 0.4289 - val_mape: 579.7797
+Epoch 4/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 85ms/step - loss: 0.4670 - mae: 0.5252 - mape: 298.1279 - val_loss: 0.2168 - val_mae: 0.3658 - val_mape: 485.5761
+Epoch 5/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.4612 - mae: 0.5248 - mape: 259.8083 - val_loss: 0.2389 - val_mae: 0.3844 - val_mape: 442.6536
+Epoch 6/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 90ms/step - loss: 0.4414 - mae: 0.5166 - mape: 259.9188 - val_loss: 0.2459 - val_mae: 0.4023 - val_mape: 576.3204
+Epoch 7/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.4167 - mae: 0.4921 - mape: 293.7108 - val_loss: 0.2494 - val_mae: 0.4041 - val_mape: 472.6765
+Epoch 8/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3880 - mae: 0.4754 - mape: 247.7125 - val_loss: 0.2598 - val_mae: 0.3975 - val_mape: 355.7234
+Epoch 9/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.3808 - mae: 0.4666 - mape: 264.7875 - val_loss: 0.2131 - val_mae: 0.3660 - val_mape: 379.1565
+Epoch 10/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.3861 - mae: 0.4730 - mape: 229.8614 - val_loss: 0.2394 - val_mae: 0.3722 - val_mape: 540.2144
+Epoch 11/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3448 - mae: 0.4496 - mape: 243.3468 - val_loss: 0.2288 - val_mae: 0.3704 - val_mape: 476.5779
+Epoch 12/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3411 - mae: 0.4502 - mape: 241.3280 - val_loss: 0.2401 - val_mae: 0.4105 - val_mape: 572.9492
+Epoch 13/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3321 - mae: 0.4431 - mape: 288.7617 - val_loss: 0.3273 - val_mae: 0.4626 - val_mape: 570.6393
+Epoch 14/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3268 - mae: 0.4443 - mape: 279.4234 - val_loss: 0.3335 - val_mae: 0.4459 - val_mape: 627.8325
+Epoch 15/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3234 - mae: 0.4345 - mape: 217.6366 - val_loss: 0.2601 - val_mae: 0.4006 - val_mape: 609.6470
+Epoch 16/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3112 - mae: 0.4342 - mape: 269.1742 - val_loss: 0.3144 - val_mae: 0.4281 - val_mape: 540.3336
+Epoch 17/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2712 - mae: 0.4010 - mape: 279.5555 - val_loss: 0.2823 - val_mae: 0.4191 - val_mape: 538.9193
+Epoch 18/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2966 - mae: 0.4169 - mape: 269.2867 - val_loss: 0.2942 - val_mae: 0.4101 - val_mape: 564.0129
+Epoch 19/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.2592 - mae: 0.4011 - mape: 222.7770 - val_loss: 0.4043 - val_mae: 0.4826 - val_mape: 631.8965
+Epoch 20/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 85ms/step - loss: 0.2372 - mae: 0.3796 - mape: 233.5290 - val_loss: 0.3865 - val_mae: 0.5030 - val_mape: 706.5620
+Epoch 21/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2152 - mae: 0.3643 - mape: 230.6553 - val_loss: 0.2998 - val_mae: 0.4237 - val_mape: 612.4572
+Epoch 22/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.2111 - mae: 0.3621 - mape: 231.6134 - val_loss: 0.3937 - val_mae: 0.5054 - val_mape: 792.8616
+Epoch 23/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.2009 - mae: 0.3427 - mape: 210.3601 - val_loss: 0.2837 - val_mae: 0.3930 - val_mape: 752.8026
+Epoch 24/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.1807 - mae: 0.3283 - mape: 204.3533 - val_loss: 0.3098 - val_mae: 0.4451 - val_mape: 789.9240
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 374ms/step
+Mean Absolute Error (MAE): 3.6295685022263307
+Mean squared error (MSE): 20.95639005205494
+Root Mean Squared Error (RMSE): 4.577814986656291
+R² Score: -0.885771235505804
+SMAPE score: 13.746014216982724
+MASE score: 0.9840531457908418
+(21, 1) (21, 1)
+(21,)

@@ -1,0 +1,13 @@
+{"time":"2025-10-08T14:31:33.326542396+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-08T14:31:33.692370257+03:00","level":"INFO","msg":"stream: created new stream","id":"afkqxp2r"}
+{"time":"2025-10-08T14:31:33.692431232+03:00","level":"INFO","msg":"stream: started","id":"afkqxp2r"}
+{"time":"2025-10-08T14:31:33.692497097+03:00","level":"INFO","msg":"handler: started","stream_id":"afkqxp2r"}
+{"time":"2025-10-08T14:31:33.692498419+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"afkqxp2r"}
+{"time":"2025-10-08T14:31:33.692523186+03:00","level":"INFO","msg":"sender: started","stream_id":"afkqxp2r"}
+{"time":"2025-10-08T14:32:08.421733412+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_42_augmentation_32_scaler_min-max_DA_False_pinball_False","runtime_seconds":1.161041827}],"total_operations":1}}
+{"time":"2025-10-08T14:32:09.291721746+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-08T14:32:09.579859379+03:00","level":"INFO","msg":"stream: closing","id":"afkqxp2r"}
+{"time":"2025-10-08T14:32:09.579879497+03:00","level":"INFO","msg":"handler: closed","stream_id":"afkqxp2r"}
+{"time":"2025-10-08T14:32:09.579891169+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"afkqxp2r"}
+{"time":"2025-10-08T14:32:09.57989702+03:00","level":"INFO","msg":"sender: closed","stream_id":"afkqxp2r"}
+{"time":"2025-10-08T14:32:09.579951983+03:00","level":"INFO","msg":"stream: closed","id":"afkqxp2r"}

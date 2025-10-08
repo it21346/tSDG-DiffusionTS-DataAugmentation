@@ -1,0 +1,10 @@
+(34579, 1) (34579, 20) (34579,)
+Shape of Y_test:  (1560, 1)
+Shapes - Predictions: (1560, 1), Y_test: (1560, 1)
+Mean Absolute Error (MAE): 0.3299615241850594
+Mean squared error (MSE): 0.26421924213274856
+Root Mean Squared Error (RMSE): 0.5140226085813235
+R² Score: 0.5480203765749917
+SMAPE score: 30.60027275050076
+MASE score: 0.825004003379886
+(1718,)

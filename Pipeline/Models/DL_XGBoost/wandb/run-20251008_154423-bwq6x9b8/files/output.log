@@ -1,0 +1,11 @@
+(8623, 1) (8623, 35) (8623,)
+(406, 1)
+Shapes - Predictions: (406, 1), Y_test: (406, 1)
+Mean Absolute Error (MAE): 1.309220799687774
+Mean squared error (MSE): 3.0345543333551563
+Root Mean Squared Error (RMSE): 1.7419972254154588
+R² Score: 0.4486416203959934
+SMAPE score: 30.720125444876338
+MASE score: 0.5653270749558764
+(431,)
+(406,)

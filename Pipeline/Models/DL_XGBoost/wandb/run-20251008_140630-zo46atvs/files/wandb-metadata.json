@@ -1,0 +1,17 @@
+{
+  "os":  "Linux-6.11.0-26-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.2",
+  "startedAt":  "2025-10-08T11:06:30.765993Z",
+  "program":  "/home/stelio/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/forecasting_pipeline_IHEPC_dataset.ipynb",
+  "codePath":  "Pipeline/Models/DL_XGBoost/forecasting_pipeline_IHEPC_dataset.ipynb",
+  "codePathLocal":  "forecasting_pipeline_IHEPC_dataset.ipynb",
+  "git":  {
+    "remote":  "https://github.com/it21346/tSDG-DiffusionTS-DataAugmentation.git",
+    "commit":  "496988534779626807dc77ea385fdf7a92558bed"
+  },
+  "email":  "steliosbombai@gmail.com",
+  "root":  "/home/stelio/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost",
+  "host":  "stelio-LOQ-15ARP9",
+  "executable":  "/home/stelio/miniconda3/envs/tensorflow_gpu/bin/python",
+  "writerId":  "jlwxdnas5spex5zzxkinsdw7u6oq20co"
+}

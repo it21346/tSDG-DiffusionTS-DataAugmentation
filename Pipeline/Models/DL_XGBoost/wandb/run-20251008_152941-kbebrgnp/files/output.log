@@ -1,0 +1,11 @@
+(1434, 1) (1434, 18) (1434,)
+(20, 1)
+Shapes - Predictions: (20, 1), Y_test: (20, 1)
+Mean Absolute Error (MAE): 3.406199249928793
+Mean squared error (MSE): 17.11869342056071
+Root Mean Squared Error (RMSE): 4.137474280350357
+R² Score: -0.355279783040068
+SMAPE score: 13.482467109522018
+MASE score: 0.8755731590211843
+(71,)
+(20,)

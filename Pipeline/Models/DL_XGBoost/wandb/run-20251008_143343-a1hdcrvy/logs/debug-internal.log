@@ -1,0 +1,13 @@
+{"time":"2025-10-08T14:33:43.504027795+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-08T14:33:43.878986566+03:00","level":"INFO","msg":"stream: created new stream","id":"a1hdcrvy"}
+{"time":"2025-10-08T14:33:43.879033465+03:00","level":"INFO","msg":"stream: started","id":"a1hdcrvy"}
+{"time":"2025-10-08T14:33:43.879063672+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"a1hdcrvy"}
+{"time":"2025-10-08T14:33:43.879080033+03:00","level":"INFO","msg":"handler: started","stream_id":"a1hdcrvy"}
+{"time":"2025-10-08T14:33:43.879113035+03:00","level":"INFO","msg":"sender: started","stream_id":"a1hdcrvy"}
+{"time":"2025-10-08T14:34:18.879820827+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_2021_augmentation_32_scaler_min-max_DA_False_pinball_False","runtime_seconds":1.162418465},{"desc":"uploading media/images/train vs val_predictions_16_0a51d55ee2d0d19ef074.png","runtime_seconds":0.756374066,"progress":"93.7KB/93.7KB"}],"total_operations":2}}
+{"time":"2025-10-08T14:34:19.777147772+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-08T14:34:20.072808611+03:00","level":"INFO","msg":"stream: closing","id":"a1hdcrvy"}
+{"time":"2025-10-08T14:34:20.07282371+03:00","level":"INFO","msg":"handler: closed","stream_id":"a1hdcrvy"}
+{"time":"2025-10-08T14:34:20.072833668+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a1hdcrvy"}
+{"time":"2025-10-08T14:34:20.072844629+03:00","level":"INFO","msg":"sender: closed","stream_id":"a1hdcrvy"}
+{"time":"2025-10-08T14:34:20.072893922+03:00","level":"INFO","msg":"stream: closed","id":"a1hdcrvy"}

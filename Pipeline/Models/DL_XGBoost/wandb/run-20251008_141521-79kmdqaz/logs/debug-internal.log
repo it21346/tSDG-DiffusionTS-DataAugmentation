@@ -1,0 +1,13 @@
+{"time":"2025-10-08T14:15:21.7944394+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-08T14:15:22.154925342+03:00","level":"INFO","msg":"stream: created new stream","id":"79kmdqaz"}
+{"time":"2025-10-08T14:15:22.154954688+03:00","level":"INFO","msg":"stream: started","id":"79kmdqaz"}
+{"time":"2025-10-08T14:15:22.154987319+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"79kmdqaz"}
+{"time":"2025-10-08T14:15:22.154996627+03:00","level":"INFO","msg":"sender: started","stream_id":"79kmdqaz"}
+{"time":"2025-10-08T14:15:22.155015843+03:00","level":"INFO","msg":"handler: started","stream_id":"79kmdqaz"}
+{"time":"2025-10-08T14:16:19.45702386+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_32_scaler_standard_DA_False_pinball_False","runtime_seconds":1.164098449}],"total_operations":1}}
+{"time":"2025-10-08T14:16:20.352115446+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-08T14:16:20.723805009+03:00","level":"INFO","msg":"stream: closing","id":"79kmdqaz"}
+{"time":"2025-10-08T14:16:20.723824516+03:00","level":"INFO","msg":"handler: closed","stream_id":"79kmdqaz"}
+{"time":"2025-10-08T14:16:20.723840596+03:00","level":"INFO","msg":"sender: closed","stream_id":"79kmdqaz"}
+{"time":"2025-10-08T14:16:20.723836368+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"79kmdqaz"}
+{"time":"2025-10-08T14:16:20.723892775+03:00","level":"INFO","msg":"stream: closed","id":"79kmdqaz"}

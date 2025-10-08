@@ -1,0 +1,22 @@
+Size of training data is:  (1102, 50, 11)
+Training BiLSTM...
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7s[0m 109ms/step - loss: 0.7308 - mae: 0.6618 - mape: 268.9342 - val_loss: 0.3128 - val_mae: 0.4418 - val_mape: 663.3422
+Epoch 2/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.5140 - mae: 0.5505 - mape: 311.0438 - val_loss: 0.2706 - val_mae: 0.4099 - val_mape: 596.9499
+Epoch 3/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.4984 - mae: 0.5298 - mape: 314.5728 - val_loss: 0.2542 - val_mae: 0.4004 - val_mape: 502.4005
+Epoch 4/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 90ms/step - loss: 0.4740 - mae: 0.5171 - mape: 310.8371 - val_loss: 0.2993 - val_mae: 0.4483 - val_mape: 707.8533
+Epoch 5/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.4776 - mae: 0.5165 - mape: 288.7711 - val_loss: 0.2822 - val_mae: 0.4279 - val_mape: 473.3763
+Epoch 6/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.4545 - mae: 0.5139 - mape: 303.8029 - val_loss: 0.2901 - val_mae: 0.4310 - val_mape: 372.4787
+Epoch 7/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 92ms/step - loss: 0.4342 - mae: 0.4944 - mape: 258.6064 - val_loss: 0.2867 - val_mae: 0.4417 - val_mape: 444.1015
+Epoch 8/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3887 - mae: 0.4739 - mape: 243.7263 - val_loss: 0.2456 - val_mae: 0.4102 - val_mape: 368.8827
+Epoch 9/500
+[1m23/35[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m1s[0m 88ms/step - loss: 0.3959 - mae: 0.4735 - mape: 223.6204

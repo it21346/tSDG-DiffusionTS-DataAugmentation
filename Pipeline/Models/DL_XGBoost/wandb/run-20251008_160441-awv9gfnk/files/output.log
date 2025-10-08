@@ -1,0 +1,25 @@
+Size of training data is:  (29062, 168, 13)
+Training BiLSTM...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1759928682.988595  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.025863  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.026120  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.027500  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.027713  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.027902  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.086888  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.087147  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1759928683.087347  223080 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-10-08 16:04:43.087502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:2021] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3865 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.9
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m455/455[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m137s[0m 288ms/step - loss: 0.4749 - mae: 0.5010 - mape: 2397.9412 - val_loss: 0.2860 - val_mae: 0.3758 - val_mape: 232.5432
+Epoch 2/500
+[1m455/455[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m131s[0m 288ms/step - loss: 0.3746 - mae: 0.4287 - mape: 2241.5276 - val_loss: 0.2813 - val_mae: 0.3712 - val_mape: 269.4038
+Epoch 3/500
+[1m455/455[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m131s[0m 288ms/step - loss: 0.3619 - mae: 0.4178 - mape: 2286.8679 - val_loss: 0.2680 - val_mae: 0.3665 - val_mape: 238.8783
+Epoch 4/500
+[1m455/455[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m131s[0m 288ms/step - loss: 0.3551 - mae: 0.4141 - mape: 2237.3674 - val_loss: 0.2593 - val_mae: 0.3605 - val_mape: 235.1777
+Epoch 5/500
+[1m284/455[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m48s[0m 285ms/step - loss: 0.3439 - mae: 0.4073 - mape: 1297.6110

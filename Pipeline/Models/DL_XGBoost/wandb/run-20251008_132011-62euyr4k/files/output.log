@@ -1,0 +1,45 @@
+Size of training data is:  (1102, 50, 11)
+Training LSTM...
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m5s[0m 58ms/step - loss: 0.0539 - mae: 0.1735 - mape: 45209.4492 - val_loss: 0.0044 - val_mae: 0.0520 - val_mape: 14.9411
+Epoch 2/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 51ms/step - loss: 0.0207 - mae: 0.1115 - mape: 63272.8008 - val_loss: 0.0050 - val_mae: 0.0546 - val_mape: 15.7795
+Epoch 3/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 50ms/step - loss: 0.0192 - mae: 0.1050 - mape: 25851.7910 - val_loss: 0.0051 - val_mae: 0.0542 - val_mape: 16.5270
+Epoch 4/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 52ms/step - loss: 0.0181 - mae: 0.1037 - mape: 40217.2227 - val_loss: 0.0062 - val_mae: 0.0606 - val_mape: 18.6980
+Epoch 5/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 52ms/step - loss: 0.0168 - mae: 0.1001 - mape: 69855.2734 - val_loss: 0.0050 - val_mae: 0.0548 - val_mape: 16.1400
+Epoch 6/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 51ms/step - loss: 0.0184 - mae: 0.1021 - mape: 24165.8281 - val_loss: 0.0052 - val_mae: 0.0558 - val_mape: 16.9454
+Epoch 7/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 50ms/step - loss: 0.0176 - mae: 0.1013 - mape: 41920.4062 - val_loss: 0.0049 - val_mae: 0.0543 - val_mape: 15.9897
+Epoch 8/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 52ms/step - loss: 0.0170 - mae: 0.0994 - mape: 22132.2656 - val_loss: 0.0050 - val_mae: 0.0546 - val_mape: 16.0726
+Epoch 9/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 50ms/step - loss: 0.0170 - mae: 0.0991 - mape: 37195.5703 - val_loss: 0.0051 - val_mae: 0.0562 - val_mape: 16.5164
+Epoch 10/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 54ms/step - loss: 0.0172 - mae: 0.0991 - mape: 26025.0918 - val_loss: 0.0053 - val_mae: 0.0568 - val_mape: 16.6130
+Epoch 11/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 52ms/step - loss: 0.0176 - mae: 0.1025 - mape: 37665.3633 - val_loss: 0.0050 - val_mae: 0.0552 - val_mape: 16.2370
+Epoch 12/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 50ms/step - loss: 0.0167 - mae: 0.0988 - mape: 24392.2168 - val_loss: 0.0050 - val_mae: 0.0555 - val_mape: 16.4569
+Epoch 13/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 51ms/step - loss: 0.0162 - mae: 0.0978 - mape: 27970.1660 - val_loss: 0.0051 - val_mae: 0.0570 - val_mape: 16.9280
+Epoch 14/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 50ms/step - loss: 0.0164 - mae: 0.0980 - mape: 45299.0625 - val_loss: 0.0051 - val_mae: 0.0570 - val_mape: 16.8501
+Epoch 15/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 52ms/step - loss: 0.0155 - mae: 0.0957 - mape: 52427.5859 - val_loss: 0.0051 - val_mae: 0.0557 - val_mape: 16.2957
+Epoch 16/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 51ms/step - loss: 0.0165 - mae: 0.0967 - mape: 29252.6836 - val_loss: 0.0050 - val_mae: 0.0553 - val_mape: 15.9721
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 196ms/step
+Mean Absolute Error (MAE): 3.1045936369880796
+Mean squared error (MSE): 15.59597085770143
+Root Mean Squared Error (RMSE): 3.949173439810086
+R² Score: -0.40341123448197225
+SMAPE score: 12.289530032361307
+MASE score: 0.8417213046141436
+(21, 1) (21, 1)
+(21,)

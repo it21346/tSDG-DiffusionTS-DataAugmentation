@@ -1,0 +1,11 @@
+(34579, 1) (34579, 20) (34579,)
+(1718, 1)
+Shapes - Predictions: (1718, 1), Y_test: (1718, 1)
+Mean Absolute Error (MAE): 0.36043924490420276
+Mean squared error (MSE): 0.25775524755896767
+Root Mean Squared Error (RMSE): 0.5076960188527853
+R² Score: 0.5769181858030752
+SMAPE score: 34.708622120453875
+MASE score: 0.8863581280175415
+(1729,)
+(1718,)

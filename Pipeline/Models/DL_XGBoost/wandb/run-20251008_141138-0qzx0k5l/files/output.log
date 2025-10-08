@@ -1,0 +1,51 @@
+Size of training data is:  (1123, 50, 11)
+Training BiLSTM...
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7s[0m 102ms/step - loss: 0.7432 - mae: 0.6558 - mape: 308.9120 - val_loss: 0.1990 - val_mae: 0.3914 - val_mape: 106.9833
+Epoch 2/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.5163 - mae: 0.5512 - mape: 268.7794 - val_loss: 0.1699 - val_mae: 0.3555 - val_mape: 121.2384
+Epoch 3/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.5022 - mae: 0.5392 - mape: 291.1074 - val_loss: 0.1684 - val_mae: 0.3600 - val_mape: 107.8521
+Epoch 4/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.4938 - mae: 0.5375 - mape: 293.5110 - val_loss: 0.1506 - val_mae: 0.3453 - val_mape: 112.5187
+Epoch 5/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.4647 - mae: 0.5079 - mape: 284.8071 - val_loss: 0.1920 - val_mae: 0.3789 - val_mape: 151.4504
+Epoch 6/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.4383 - mae: 0.5035 - mape: 256.6317 - val_loss: 0.1716 - val_mae: 0.3604 - val_mape: 132.8141
+Epoch 7/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.4212 - mae: 0.4899 - mape: 250.6611 - val_loss: 0.1650 - val_mae: 0.3326 - val_mape: 140.9449
+Epoch 8/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3837 - mae: 0.4646 - mape: 252.6907 - val_loss: 0.1764 - val_mae: 0.3517 - val_mape: 124.6683
+Epoch 9/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.3773 - mae: 0.4649 - mape: 268.8373 - val_loss: 0.2250 - val_mae: 0.4028 - val_mape: 154.9600
+Epoch 10/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3647 - mae: 0.4627 - mape: 247.4988 - val_loss: 0.1975 - val_mae: 0.3861 - val_mape: 148.3158
+Epoch 11/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.3632 - mae: 0.4491 - mape: 272.0744 - val_loss: 0.2590 - val_mae: 0.4072 - val_mape: 180.7993
+Epoch 12/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3115 - mae: 0.4240 - mape: 223.6356 - val_loss: 0.1938 - val_mae: 0.3605 - val_mape: 147.7584
+Epoch 13/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3264 - mae: 0.4330 - mape: 292.7036 - val_loss: 0.2142 - val_mae: 0.3844 - val_mape: 142.6710
+Epoch 14/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.2880 - mae: 0.4216 - mape: 199.9092 - val_loss: 0.2211 - val_mae: 0.3813 - val_mape: 163.4366
+Epoch 15/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.2903 - mae: 0.4198 - mape: 251.9872 - val_loss: 0.2735 - val_mae: 0.4357 - val_mape: 180.2200
+Epoch 16/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2755 - mae: 0.4126 - mape: 255.5684 - val_loss: 0.2093 - val_mae: 0.3791 - val_mape: 150.8971
+Epoch 17/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.2658 - mae: 0.4006 - mape: 269.9520 - val_loss: 0.2941 - val_mae: 0.4335 - val_mape: 194.5701
+Epoch 18/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2640 - mae: 0.3989 - mape: 254.6431 - val_loss: 0.3168 - val_mae: 0.4508 - val_mape: 201.0922
+Epoch 19/500
+[1m36/36[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.2269 - mae: 0.3664 - mape: 227.7867 - val_loss: 0.2654 - val_mae: 0.4272 - val_mape: 168.4741
+[1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 197ms/step
+Mean Absolute Error (MAE): 4.708565202515514
+Mean squared error (MSE): 41.48076974342062
+Root Mean Squared Error (RMSE): 6.440556633041947
+R² Score: -0.06111112748015457
+SMAPE score: 18.054109519825197
+MASE score: 0.8422012027870163
+(94, 1) (94, 1)
+(94,)

@@ -1,0 +1,72 @@
+Size of training data is:  (1102, 50, 11)
+Training BiLSTM...
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7s[0m 100ms/step - loss: 0.7497 - mae: 0.6526 - mape: 249.7155 - val_loss: 0.2751 - val_mae: 0.4121 - val_mape: 374.0152
+Epoch 2/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.5377 - mae: 0.5591 - mape: 264.0049 - val_loss: 0.2596 - val_mae: 0.3885 - val_mape: 350.7580
+Epoch 3/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.5417 - mae: 0.5524 - mape: 254.9256 - val_loss: 0.3013 - val_mae: 0.4480 - val_mape: 794.6829
+Epoch 4/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.4905 - mae: 0.5418 - mape: 249.2316 - val_loss: 0.2662 - val_mae: 0.4157 - val_mape: 757.0487
+Epoch 5/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 86ms/step - loss: 0.4704 - mae: 0.5112 - mape: 230.2533 - val_loss: 0.3063 - val_mae: 0.4549 - val_mape: 820.1763
+Epoch 6/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.4661 - mae: 0.5149 - mape: 234.6986 - val_loss: 0.2886 - val_mae: 0.4465 - val_mape: 690.6223
+Epoch 7/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.4252 - mae: 0.4898 - mape: 247.6971 - val_loss: 0.3153 - val_mae: 0.4643 - val_mape: 597.3933
+Epoch 8/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.3968 - mae: 0.4916 - mape: 218.7286 - val_loss: 0.2836 - val_mae: 0.4365 - val_mape: 479.0992
+Epoch 9/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 91ms/step - loss: 0.3812 - mae: 0.4755 - mape: 249.4077 - val_loss: 0.2140 - val_mae: 0.3668 - val_mape: 327.2862
+Epoch 10/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.3869 - mae: 0.4752 - mape: 242.1201 - val_loss: 0.2575 - val_mae: 0.4191 - val_mape: 512.6683
+Epoch 11/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 91ms/step - loss: 0.3989 - mae: 0.4851 - mape: 247.8887 - val_loss: 0.2648 - val_mae: 0.4233 - val_mape: 529.6064
+Epoch 12/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 90ms/step - loss: 0.3399 - mae: 0.4489 - mape: 250.4374 - val_loss: 0.2677 - val_mae: 0.4384 - val_mape: 585.3109
+Epoch 13/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 91ms/step - loss: 0.3720 - mae: 0.4547 - mape: 250.7000 - val_loss: 0.2349 - val_mae: 0.3892 - val_mape: 443.5880
+Epoch 14/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3415 - mae: 0.4444 - mape: 237.3412 - val_loss: 0.2071 - val_mae: 0.3638 - val_mape: 483.9204
+Epoch 15/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.3128 - mae: 0.4288 - mape: 229.7090 - val_loss: 0.2502 - val_mae: 0.3940 - val_mape: 546.5003
+Epoch 16/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.3003 - mae: 0.4245 - mape: 256.0689 - val_loss: 0.2678 - val_mae: 0.4129 - val_mape: 663.6779
+Epoch 17/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2827 - mae: 0.4127 - mape: 258.6971 - val_loss: 0.2306 - val_mae: 0.3819 - val_mape: 640.3185
+Epoch 18/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.2654 - mae: 0.3999 - mape: 216.7781 - val_loss: 0.2463 - val_mae: 0.4304 - val_mape: 710.8203
+Epoch 19/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.2527 - mae: 0.3919 - mape: 264.9912 - val_loss: 0.2553 - val_mae: 0.4096 - val_mape: 832.2503
+Epoch 20/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.2348 - mae: 0.3708 - mape: 210.2804 - val_loss: 0.3107 - val_mae: 0.4778 - val_mape: 1071.4810
+Epoch 21/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.2607 - mae: 0.3905 - mape: 223.9062 - val_loss: 0.2903 - val_mae: 0.4546 - val_mape: 1016.8638
+Epoch 22/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.2292 - mae: 0.3665 - mape: 189.9825 - val_loss: 0.3358 - val_mae: 0.4902 - val_mape: 1060.2744
+Epoch 23/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 87ms/step - loss: 0.1845 - mae: 0.3352 - mape: 208.1489 - val_loss: 0.2926 - val_mae: 0.4341 - val_mape: 935.5101
+Epoch 24/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.1912 - mae: 0.3366 - mape: 191.8198 - val_loss: 0.2901 - val_mae: 0.4396 - val_mape: 894.2717
+Epoch 25/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 90ms/step - loss: 0.1983 - mae: 0.3401 - mape: 202.4435 - val_loss: 0.3378 - val_mae: 0.4834 - val_mape: 984.6757
+Epoch 26/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 94ms/step - loss: 0.1829 - mae: 0.3405 - mape: 206.8200 - val_loss: 0.2925 - val_mae: 0.4579 - val_mape: 852.3482
+Epoch 27/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 89ms/step - loss: 0.1627 - mae: 0.3162 - mape: 160.3947 - val_loss: 0.3053 - val_mae: 0.4514 - val_mape: 1154.5811
+Epoch 28/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.1381 - mae: 0.2931 - mape: 182.2536 - val_loss: 0.3133 - val_mae: 0.4740 - val_mape: 1017.0991
+Epoch 29/500
+[1m35/35[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 88ms/step - loss: 0.1493 - mae: 0.3029 - mape: 187.2899 - val_loss: 0.2761 - val_mae: 0.4258 - val_mape: 841.6103
+WARNING:tensorflow:5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x79c1ec6f7f60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 362ms/step
+Mean Absolute Error (MAE): 3.607733464413598
+Mean squared error (MSE): 20.36723241706507
+Root Mean Squared Error (RMSE): 4.513007026037636
+R² Score: -0.8327555911852507
+SMAPE score: 13.904638752758828
+MASE score: 0.9781332030662722
+(21, 1) (21, 1)
+(21,)
