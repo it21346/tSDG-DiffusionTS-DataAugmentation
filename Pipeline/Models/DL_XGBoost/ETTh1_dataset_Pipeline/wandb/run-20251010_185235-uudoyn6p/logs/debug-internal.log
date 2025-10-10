@@ -1,0 +1,17 @@
+{"time":"2025-10-10T18:52:35.675176386+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-10T18:52:35.675187377+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251010_185235-uudoyn6p/logs/debug-core.log"}
+{"time":"2025-10-10T18:52:35.779152974+03:00","level":"INFO","msg":"created new stream","id":"uudoyn6p"}
+{"time":"2025-10-10T18:52:35.779175406+03:00","level":"INFO","msg":"stream: started","id":"uudoyn6p"}
+{"time":"2025-10-10T18:52:35.779217837+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"uudoyn6p"}}
+{"time":"2025-10-10T18:52:35.779440779+03:00","level":"INFO","msg":"sender: started","stream_id":"uudoyn6p"}
+{"time":"2025-10-10T18:52:35.779206175+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"uudoyn6p"}}
+{"time":"2025-10-10T18:52:36.096624101+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-10T19:08:22.92031922+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-10T19:08:22.920669925+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-10T19:08:23.920607534+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_42_augmentation_128_scaler_standard_DA_True_pinball_False","runtime_seconds":1.116377647,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_42_augmentation_128_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.290364181,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_44_27ab01b60b7054d0382f.png","runtime_seconds":0.788532347,"progress":"130.8KB/130.8KB"}],"total_operations":2}}
+{"time":"2025-10-10T19:08:25.98663509+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-10T19:08:27.30598395+03:00","level":"INFO","msg":"stream: closing","id":"uudoyn6p"}
+{"time":"2025-10-10T19:08:27.305998658+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"uudoyn6p"}}
+{"time":"2025-10-10T19:08:27.306013366+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"uudoyn6p"}}
+{"time":"2025-10-10T19:08:27.306028856+03:00","level":"INFO","msg":"sender: closed","stream_id":"uudoyn6p"}
+{"time":"2025-10-10T19:08:27.30606279+03:00","level":"INFO","msg":"stream: closed","id":"uudoyn6p"}

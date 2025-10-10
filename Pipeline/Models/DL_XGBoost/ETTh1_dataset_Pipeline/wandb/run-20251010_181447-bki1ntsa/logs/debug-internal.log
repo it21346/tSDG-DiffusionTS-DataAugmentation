@@ -1,0 +1,17 @@
+{"time":"2025-10-10T18:14:48.001796188+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-10T18:14:48.001803942+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251010_181447-bki1ntsa/logs/debug-core.log"}
+{"time":"2025-10-10T18:14:48.105613551+03:00","level":"INFO","msg":"created new stream","id":"bki1ntsa"}
+{"time":"2025-10-10T18:14:48.105642205+03:00","level":"INFO","msg":"stream: started","id":"bki1ntsa"}
+{"time":"2025-10-10T18:14:48.105664988+03:00","level":"INFO","msg":"sender: started","stream_id":"bki1ntsa"}
+{"time":"2025-10-10T18:14:48.105659718+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"bki1ntsa"}}
+{"time":"2025-10-10T18:14:48.105726104+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"bki1ntsa"}}
+{"time":"2025-10-10T18:14:48.443497021+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-10T18:28:07.323711236+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-10T18:28:07.32398781+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-10T18:28:08.324045621+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_42_augmentation_128_scaler_standard_DA_False_pinball_False","runtime_seconds":1.117873812,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_42_augmentation_128_scaler_standard_DA_False_pinball_False.npz","runtime_seconds":0.217125472,"progress":"19.0KB/19.0KB"}]}],"total_operations":1}}
+{"time":"2025-10-10T18:28:09.814098914+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-10T18:28:11.115162837+03:00","level":"INFO","msg":"stream: closing","id":"bki1ntsa"}
+{"time":"2025-10-10T18:28:11.115177465+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"bki1ntsa"}}
+{"time":"2025-10-10T18:28:11.115193496+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"bki1ntsa"}}
+{"time":"2025-10-10T18:28:11.115245825+03:00","level":"INFO","msg":"sender: closed","stream_id":"bki1ntsa"}
+{"time":"2025-10-10T18:28:11.115250854+03:00","level":"INFO","msg":"stream: closed","id":"bki1ntsa"}

@@ -1,0 +1,42 @@
+{
+  "os":  "Linux-6.14.0-33-generic-x86_64-with-glibc2.39",
+  "python":  "3.12.2",
+  "startedAt":  "2025-10-10T12:49:56.960875Z",
+  "program":  "/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/forecasting_pipeline_ETTh1_dataset.ipynb",
+  "git":  {
+    "remote":  "https://github.com/it21346/tSDG-DiffusionTS-DataAugmentation.git",
+    "commit":  "07f4848d8fe746389c99be3718d90a5ac61bae2f"
+  },
+  "email":  "steliosbombai@gmail.com",
+  "root":  "/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline",
+  "host":  "stelios-pc-X670-AORUS-ELITE-AX",
+  "username":  "stelios-pc",
+  "executable":  "/home/stelios-pc/anaconda3/envs/tensorflow_gpu/bin/python",
+  "codePathLocal":  "forecasting_pipeline_ETTh1_dataset.ipynb",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 3080",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "380738252800",
+      "used":  "263128182784"
+    }
+  },
+  "memory":  {
+    "total":  "32712466432"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  16
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3080",
+      "memoryTotal":  "10737418240",
+      "cudaCores":  8704,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}
