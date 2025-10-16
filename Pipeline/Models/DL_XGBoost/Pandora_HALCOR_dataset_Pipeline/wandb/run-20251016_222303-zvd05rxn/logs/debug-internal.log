@@ -1,0 +1,14 @@
+{"time":"2025-10-16T22:23:04.131146477+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-16T22:23:04.524480212+03:00","level":"INFO","msg":"stream: created new stream","id":"zvd05rxn"}
+{"time":"2025-10-16T22:23:04.524531179+03:00","level":"INFO","msg":"handler: started","stream_id":"zvd05rxn"}
+{"time":"2025-10-16T22:23:04.524546107+03:00","level":"INFO","msg":"stream: started","id":"zvd05rxn"}
+{"time":"2025-10-16T22:23:04.524567568+03:00","level":"INFO","msg":"sender: started","stream_id":"zvd05rxn"}
+{"time":"2025-10-16T22:23:04.524589038+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"zvd05rxn"}
+{"time":"2025-10-16T22:24:05.335866453+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/synthetic-data-gan/PANDORA-HALCOR-ENERGY-TIMESERIES-FORECASTING-MSE-TESTING/zvd05rxn/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-10-16T22:26:44.661853659+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_777_augmentation_32_scaler_standard_DA_True_pinball_False","runtime_seconds":1.168994677,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_777_augmentation_32_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.102512972,"progress":"2.5KB/2.5KB"}]}],"total_operations":1}}
+{"time":"2025-10-16T22:26:45.760143857+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-16T22:26:46.23492918+03:00","level":"INFO","msg":"stream: closing","id":"zvd05rxn"}
+{"time":"2025-10-16T22:26:46.234945952+03:00","level":"INFO","msg":"handler: closed","stream_id":"zvd05rxn"}
+{"time":"2025-10-16T22:26:46.234956021+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zvd05rxn"}
+{"time":"2025-10-16T22:26:46.234971981+03:00","level":"INFO","msg":"sender: closed","stream_id":"zvd05rxn"}
+{"time":"2025-10-16T22:26:46.235038607+03:00","level":"INFO","msg":"stream: closed","id":"zvd05rxn"}

@@ -1,0 +1,13 @@
+{"time":"2025-10-15T16:07:04.868718934+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-15T16:07:05.226830612+03:00","level":"INFO","msg":"stream: created new stream","id":"oux0yayn"}
+{"time":"2025-10-15T16:07:05.226864215+03:00","level":"INFO","msg":"stream: started","id":"oux0yayn"}
+{"time":"2025-10-15T16:07:05.226912687+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"oux0yayn"}
+{"time":"2025-10-15T16:07:05.226925371+03:00","level":"INFO","msg":"sender: started","stream_id":"oux0yayn"}
+{"time":"2025-10-15T16:07:05.226943725+03:00","level":"INFO","msg":"handler: started","stream_id":"oux0yayn"}
+{"time":"2025-10-15T16:17:10.370520781+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_1234_augmentation_16_scaler_standard_DA_False_pinball_False","runtime_seconds":1.176049434,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_1234_augmentation_16_scaler_standard_DA_False_pinball_False.npz","runtime_seconds":0.26716911,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_92_f5c6e6ab44f018b6e31f.png","runtime_seconds":0.783355213,"progress":"130.0KB/130.0KB"}],"total_operations":2}}
+{"time":"2025-10-15T16:17:11.89623496+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T16:17:12.231743873+03:00","level":"INFO","msg":"stream: closing","id":"oux0yayn"}
+{"time":"2025-10-15T16:17:12.231759473+03:00","level":"INFO","msg":"handler: closed","stream_id":"oux0yayn"}
+{"time":"2025-10-15T16:17:12.231768319+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oux0yayn"}
+{"time":"2025-10-15T16:17:12.231779611+03:00","level":"INFO","msg":"sender: closed","stream_id":"oux0yayn"}
+{"time":"2025-10-15T16:17:12.231824225+03:00","level":"INFO","msg":"stream: closed","id":"oux0yayn"}
