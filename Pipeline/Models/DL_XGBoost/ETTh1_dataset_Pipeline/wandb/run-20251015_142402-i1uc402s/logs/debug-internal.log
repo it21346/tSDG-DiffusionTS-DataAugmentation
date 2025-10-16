@@ -1,0 +1,17 @@
+{"time":"2025-10-15T14:24:02.353663826+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-15T14:24:02.353671531+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251015_142402-i1uc402s/logs/debug-core.log"}
+{"time":"2025-10-15T14:24:02.457837819+03:00","level":"INFO","msg":"created new stream","id":"i1uc402s"}
+{"time":"2025-10-15T14:24:02.457871212+03:00","level":"INFO","msg":"stream: started","id":"i1uc402s"}
+{"time":"2025-10-15T14:24:02.457889827+03:00","level":"INFO","msg":"sender: started","stream_id":"i1uc402s"}
+{"time":"2025-10-15T14:24:02.457887793+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"i1uc402s"}}
+{"time":"2025-10-15T14:24:02.45788587+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"i1uc402s"}}
+{"time":"2025-10-15T14:24:02.783695004+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T15:38:28.106361761+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T15:38:28.106684733+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T15:38:29.106666082+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.134866277,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.184041987,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_89_1d89e17b6bb34e86edb4.png","runtime_seconds":0.7701354,"progress":"207.4KB/207.4KB"}],"total_operations":2}}
+{"time":"2025-10-15T15:38:30.844365145+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T15:38:32.168588625+03:00","level":"INFO","msg":"stream: closing","id":"i1uc402s"}
+{"time":"2025-10-15T15:38:32.168605316+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"i1uc402s"}}
+{"time":"2025-10-15T15:38:32.168620826+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"i1uc402s"}}
+{"time":"2025-10-15T15:38:32.168625555+03:00","level":"INFO","msg":"sender: closed","stream_id":"i1uc402s"}
+{"time":"2025-10-15T15:38:32.16868094+03:00","level":"INFO","msg":"stream: closed","id":"i1uc402s"}

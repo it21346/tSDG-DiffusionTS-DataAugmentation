@@ -1,0 +1,17 @@
+{"time":"2025-10-15T15:38:37.24576467+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-15T15:38:37.245774028+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251015_153837-y88yieus/logs/debug-core.log"}
+{"time":"2025-10-15T15:38:37.349624542+03:00","level":"INFO","msg":"created new stream","id":"y88yieus"}
+{"time":"2025-10-15T15:38:37.34964989+03:00","level":"INFO","msg":"stream: started","id":"y88yieus"}
+{"time":"2025-10-15T15:38:37.349687201+03:00","level":"INFO","msg":"sender: started","stream_id":"y88yieus"}
+{"time":"2025-10-15T15:38:37.349668716+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"y88yieus"}}
+{"time":"2025-10-15T15:38:37.349804253+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"y88yieus"}}
+{"time":"2025-10-15T15:38:37.684011698+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T16:37:46.1564099+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T16:37:46.156675594+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T16:37:47.156699379+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.133341844,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.198995784,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_71_c98edcec826d0a6a93c4.png","runtime_seconds":0.775843524,"progress":"208.0KB/208.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.56758239,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.359751682,"progress":"2.2KB/2.2KB"},{"desc":"uploading output.log","runtime_seconds":0.359744529,"progress":"21.3KB/21.3KB"}],"total_operations":5}}
+{"time":"2025-10-15T16:37:48.951726802+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T16:37:50.266460832+03:00","level":"INFO","msg":"stream: closing","id":"y88yieus"}
+{"time":"2025-10-15T16:37:50.266473507+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"y88yieus"}}
+{"time":"2025-10-15T16:37:50.266487273+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"y88yieus"}}
+{"time":"2025-10-15T16:37:50.266492633+03:00","level":"INFO","msg":"sender: closed","stream_id":"y88yieus"}
+{"time":"2025-10-15T16:37:50.266535935+03:00","level":"INFO","msg":"stream: closed","id":"y88yieus"}

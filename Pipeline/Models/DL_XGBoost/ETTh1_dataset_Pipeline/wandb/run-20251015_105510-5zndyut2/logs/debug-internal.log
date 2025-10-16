@@ -1,0 +1,17 @@
+{"time":"2025-10-15T10:55:10.659695812+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-15T10:55:10.659703517+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251015_105510-5zndyut2/logs/debug-core.log"}
+{"time":"2025-10-15T10:55:10.764047301+03:00","level":"INFO","msg":"created new stream","id":"5zndyut2"}
+{"time":"2025-10-15T10:55:10.764262069+03:00","level":"INFO","msg":"stream: started","id":"5zndyut2"}
+{"time":"2025-10-15T10:55:10.764333424+03:00","level":"INFO","msg":"sender: started","stream_id":"5zndyut2"}
+{"time":"2025-10-15T10:55:10.764332522+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"5zndyut2"}}
+{"time":"2025-10-15T10:55:10.764326621+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"5zndyut2"}}
+{"time":"2025-10-15T10:55:11.116206547+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T11:58:18.939575518+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T11:58:18.939931552+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T11:58:19.939881871+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.143358509}],"total_operations":1}}
+{"time":"2025-10-15T11:58:21.908687565+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T11:58:23.230574021+03:00","level":"INFO","msg":"stream: closing","id":"5zndyut2"}
+{"time":"2025-10-15T11:58:23.230588568+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"5zndyut2"}}
+{"time":"2025-10-15T11:58:23.230603507+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"5zndyut2"}}
+{"time":"2025-10-15T11:58:23.230609829+03:00","level":"INFO","msg":"sender: closed","stream_id":"5zndyut2"}
+{"time":"2025-10-15T11:58:23.23065265+03:00","level":"INFO","msg":"stream: closed","id":"5zndyut2"}

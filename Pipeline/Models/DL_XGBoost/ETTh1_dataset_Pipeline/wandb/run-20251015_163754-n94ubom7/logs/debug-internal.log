@@ -1,0 +1,17 @@
+{"time":"2025-10-15T16:37:54.471308153+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-15T16:37:54.471315827+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251015_163754-n94ubom7/logs/debug-core.log"}
+{"time":"2025-10-15T16:37:54.575911602+03:00","level":"INFO","msg":"created new stream","id":"n94ubom7"}
+{"time":"2025-10-15T16:37:54.575935297+03:00","level":"INFO","msg":"stream: started","id":"n94ubom7"}
+{"time":"2025-10-15T16:37:54.575959242+03:00","level":"INFO","msg":"sender: started","stream_id":"n94ubom7"}
+{"time":"2025-10-15T16:37:54.575953071+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"n94ubom7"}}
+{"time":"2025-10-15T16:37:54.57594752+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"n94ubom7"}}
+{"time":"2025-10-15T16:37:54.918195894+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T17:30:20.200280442+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T17:30:20.200620347+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T17:30:21.200558931+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.137795682,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.16099865,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_65_5177940a0f786e0d7f0c.png","runtime_seconds":0.78275168,"progress":"228.7KB/228.7KB"}],"total_operations":2}}
+{"time":"2025-10-15T17:30:22.920972873+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T17:30:24.399738656+03:00","level":"INFO","msg":"stream: closing","id":"n94ubom7"}
+{"time":"2025-10-15T17:30:24.399752482+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"n94ubom7"}}
+{"time":"2025-10-15T17:30:24.399765156+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"n94ubom7"}}
+{"time":"2025-10-15T17:30:24.399773151+03:00","level":"INFO","msg":"sender: closed","stream_id":"n94ubom7"}
+{"time":"2025-10-15T17:30:24.399812606+03:00","level":"INFO","msg":"stream: closed","id":"n94ubom7"}

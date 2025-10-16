@@ -1,0 +1,17 @@
+{"time":"2025-10-15T05:12:19.676922995+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-15T05:12:19.676932634+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251015_051219-ctwuczvv/logs/debug-core.log"}
+{"time":"2025-10-15T05:12:19.781604909+03:00","level":"INFO","msg":"created new stream","id":"ctwuczvv"}
+{"time":"2025-10-15T05:12:19.781628334+03:00","level":"INFO","msg":"stream: started","id":"ctwuczvv"}
+{"time":"2025-10-15T05:12:19.781646949+03:00","level":"INFO","msg":"sender: started","stream_id":"ctwuczvv"}
+{"time":"2025-10-15T05:12:19.781640126+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ctwuczvv"}}
+{"time":"2025-10-15T05:12:19.781643853+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ctwuczvv"}}
+{"time":"2025-10-15T05:12:20.12750633+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T06:36:30.018743205+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T06:36:30.019092267+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T06:36:31.019092904+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.148308383,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.065923234,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_67_b0fd687fd8cdd452d85c.png","runtime_seconds":0.769252501,"progress":"247.7KB/247.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.307029471,"progress":"2.2KB/2.2KB"}],"total_operations":3}}
+{"time":"2025-10-15T06:36:32.774188652+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T06:36:34.070512117+03:00","level":"INFO","msg":"stream: closing","id":"ctwuczvv"}
+{"time":"2025-10-15T06:36:34.07052434+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ctwuczvv"}}
+{"time":"2025-10-15T06:36:34.070537124+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ctwuczvv"}}
+{"time":"2025-10-15T06:36:34.070559978+03:00","level":"INFO","msg":"sender: closed","stream_id":"ctwuczvv"}
+{"time":"2025-10-15T06:36:34.070578814+03:00","level":"INFO","msg":"stream: closed","id":"ctwuczvv"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-15T07:44:28.855394923+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-15T07:44:28.855402798+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251015_074428-c511r55y/logs/debug-core.log"}
+{"time":"2025-10-15T07:44:28.960070654+03:00","level":"INFO","msg":"created new stream","id":"c511r55y"}
+{"time":"2025-10-15T07:44:28.960097054+03:00","level":"INFO","msg":"stream: started","id":"c511r55y"}
+{"time":"2025-10-15T07:44:28.960112453+03:00","level":"INFO","msg":"sender: started","stream_id":"c511r55y"}
+{"time":"2025-10-15T07:44:28.960112152+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"c511r55y"}}
+{"time":"2025-10-15T07:44:28.960107273+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"c511r55y"}}
+{"time":"2025-10-15T07:44:29.279851017+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T08:59:03.000047297+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T08:59:03.000335474+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T08:59:04.00030851+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.128598338,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.231769474,"progress":"19.0KB/19.0KB"}]}],"total_operations":1}}
+{"time":"2025-10-15T08:59:05.537294887+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T08:59:06.917289001+03:00","level":"INFO","msg":"stream: closing","id":"c511r55y"}
+{"time":"2025-10-15T08:59:06.917303088+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"c511r55y"}}
+{"time":"2025-10-15T08:59:06.917316373+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"c511r55y"}}
+{"time":"2025-10-15T08:59:06.917326072+03:00","level":"INFO","msg":"sender: closed","stream_id":"c511r55y"}
+{"time":"2025-10-15T08:59:06.917354816+03:00","level":"INFO","msg":"stream: closed","id":"c511r55y"}
