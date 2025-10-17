@@ -1,0 +1,13 @@
+{"time":"2025-10-17T04:39:14.356513368+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-17T04:39:14.747311999+03:00","level":"INFO","msg":"stream: created new stream","id":"4o9mp1k8"}
+{"time":"2025-10-17T04:39:14.74734979+03:00","level":"INFO","msg":"stream: started","id":"4o9mp1k8"}
+{"time":"2025-10-17T04:39:14.747413901+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"4o9mp1k8"}
+{"time":"2025-10-17T04:39:14.747478233+03:00","level":"INFO","msg":"handler: started","stream_id":"4o9mp1k8"}
+{"time":"2025-10-17T04:39:14.747544789+03:00","level":"INFO","msg":"sender: started","stream_id":"4o9mp1k8"}
+{"time":"2025-10-17T04:44:44.536017972+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_777_augmentation_16_scaler_standard_DA_True_pinball_False","runtime_seconds":1.164586301,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_777_augmentation_16_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.238685066,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_35_159664d91dca47fdd30b.png","runtime_seconds":0.777711879,"progress":"128.3KB/128.3KB"},{"desc":"uploading output.log","runtime_seconds":0.777686662,"progress":"9.7KB/9.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.516830149,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-17T04:44:45.516535372+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-17T04:44:46.075952835+03:00","level":"INFO","msg":"stream: closing","id":"4o9mp1k8"}
+{"time":"2025-10-17T04:44:46.07597105+03:00","level":"INFO","msg":"handler: closed","stream_id":"4o9mp1k8"}
+{"time":"2025-10-17T04:44:46.075980988+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4o9mp1k8"}
+{"time":"2025-10-17T04:44:46.076035641+03:00","level":"INFO","msg":"sender: closed","stream_id":"4o9mp1k8"}
+{"time":"2025-10-17T04:44:46.07607235+03:00","level":"INFO","msg":"stream: closed","id":"4o9mp1k8"}

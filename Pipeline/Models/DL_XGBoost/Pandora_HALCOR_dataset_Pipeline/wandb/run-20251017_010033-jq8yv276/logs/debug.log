@@ -22,3 +22,13 @@ config: {'_wandb': {}}
 2025-10-17 01:00:34,513 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_redirect():2375] Wrapping output streams.
 2025-10-17 01:00:34,513 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_redirect():2398] Redirects installed.
 2025-10-17 01:00:34,514 INFO    Thread-160 (_run_job):434754 [wandb_init.py:init():1075] run started, returning control to user process
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_finish():2224] finishing run synthetic-data-gan/PANDORA-HALCOR-ENERGY-TIMESERIES-FORECASTING-MSE-TESTING/jq8yv276
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [jupyter.py:save_history():480] not saving jupyter history
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [jupyter.py:save_ipynb():404] not saving jupyter notebook
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [wandb_init.py:_jupyter_teardown():607] cleaning up jupyter logic
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_atexit_cleanup():2423] got exitcode: 0
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_restore():2405] restore
+2025-10-17 01:06:12,270 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_restore():2411] restore done
+2025-10-17 01:06:14,790 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_footer_history_summary_info():3903] rendering history
+2025-10-17 01:06:14,791 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_footer_history_summary_info():3935] rendering summary
+2025-10-17 01:06:14,791 INFO    Thread-160 (_run_job):434754 [wandb_run.py:_footer_sync_info():3864] logging synced files
