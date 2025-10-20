@@ -1,0 +1,17 @@
+{"time":"2025-10-20T03:17:32.181951252+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T03:17:32.181958886+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_031732-a2tgoucu/logs/debug-core.log"}
+{"time":"2025-10-20T03:17:32.286192388+03:00","level":"INFO","msg":"created new stream","id":"a2tgoucu"}
+{"time":"2025-10-20T03:17:32.286215652+03:00","level":"INFO","msg":"stream: started","id":"a2tgoucu"}
+{"time":"2025-10-20T03:17:32.286358544+03:00","level":"INFO","msg":"sender: started","stream_id":"a2tgoucu"}
+{"time":"2025-10-20T03:17:32.286229629+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"a2tgoucu"}}
+{"time":"2025-10-20T03:17:32.286258464+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"a2tgoucu"}}
+{"time":"2025-10-20T03:17:32.635992575+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T03:43:25.229984852+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T03:43:25.230277476+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T03:43:26.230338963+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.114068098,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_2021_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.275069182,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading wandb-summary.json","runtime_seconds":0.54604605,"progress":"798B/798B"},{"desc":"uploading config.yaml","runtime_seconds":0.321617488,"progress":"1.9KB/1.9KB"},{"desc":"uploading output.log","runtime_seconds":0.321610695,"progress":"9.1KB/9.1KB"}],"total_operations":4}}
+{"time":"2025-10-20T03:43:28.322435278+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T03:43:29.663853062+03:00","level":"INFO","msg":"stream: closing","id":"a2tgoucu"}
+{"time":"2025-10-20T03:43:29.663865876+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"a2tgoucu"}}
+{"time":"2025-10-20T03:43:29.663879091+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"a2tgoucu"}}
+{"time":"2025-10-20T03:43:29.6638838+03:00","level":"INFO","msg":"sender: closed","stream_id":"a2tgoucu"}
+{"time":"2025-10-20T03:43:29.663923295+03:00","level":"INFO","msg":"stream: closed","id":"a2tgoucu"}

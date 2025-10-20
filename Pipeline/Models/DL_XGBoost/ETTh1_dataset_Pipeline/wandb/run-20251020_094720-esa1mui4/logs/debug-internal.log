@@ -1,0 +1,19 @@
+{"time":"2025-10-20T09:47:20.344093753+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T09:47:20.344101207+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_094720-esa1mui4/logs/debug-core.log"}
+{"time":"2025-10-20T09:47:20.449039076+03:00","level":"INFO","msg":"created new stream","id":"esa1mui4"}
+{"time":"2025-10-20T09:47:20.449071778+03:00","level":"INFO","msg":"stream: started","id":"esa1mui4"}
+{"time":"2025-10-20T09:47:20.449087688+03:00","level":"INFO","msg":"sender: started","stream_id":"esa1mui4"}
+{"time":"2025-10-20T09:47:20.449086325+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"esa1mui4"}}
+{"time":"2025-10-20T09:47:20.449083991+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"esa1mui4"}}
+{"time":"2025-10-20T09:47:20.806218517+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T09:48:06.692466431+03:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/synthetic-data-gan/ETTh1-ENERGY-TIMESERIES-FORECASTING-MSE-TESTING/esa1mui4/file_stream"}
+{"time":"2025-10-20T09:48:09.204612915+03:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/synthetic-data-gan/ETTh1-ENERGY-TIMESERIES-FORECASTING-MSE-TESTING/esa1mui4/file_stream"}
+{"time":"2025-10-20T10:27:32.553123149+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T10:27:32.553506676+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T10:27:33.553385666+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.116468166,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.194952129,"progress":"19.0KB/19.0KB"}]}],"total_operations":1}}
+{"time":"2025-10-20T10:27:35.130347519+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T10:27:36.454184447+03:00","level":"INFO","msg":"stream: closing","id":"esa1mui4"}
+{"time":"2025-10-20T10:27:36.454198834+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"esa1mui4"}}
+{"time":"2025-10-20T10:27:36.454214494+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"esa1mui4"}}
+{"time":"2025-10-20T10:27:36.454251945+03:00","level":"INFO","msg":"sender: closed","stream_id":"esa1mui4"}
+{"time":"2025-10-20T10:27:36.454258207+03:00","level":"INFO","msg":"stream: closed","id":"esa1mui4"}

@@ -1,0 +1,20 @@
+Before scaling:
+(14469, 168, 6)
+Before scaling fake:
+(7234, 168, 6)
+Size of training data is:  (21703, 168, 13)
+Training BiLSTM...
+/home/stelios-pc/anaconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m340/340[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m70s[0m 197ms/step - loss: 0.1034 - mae: 0.2262 - mape: 239.4323 - val_loss: 0.0182 - val_mae: 0.1062 - val_mape: 18.6788
+Epoch 2/500
+[1m340/340[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m67s[0m 196ms/step - loss: 0.0338 - mae: 0.1332 - mape: 123.6111 - val_loss: 0.0141 - val_mae: 0.0920 - val_mape: 19.1928
+Epoch 3/500
+[1m340/340[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m67s[0m 196ms/step - loss: 0.0258 - mae: 0.1146 - mape: 102.7710 - val_loss: 0.0081 - val_mae: 0.0704 - val_mape: 14.6151
+Epoch 4/500
+[1m340/340[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m67s[0m 196ms/step - loss: 0.0232 - mae: 0.1074 - mape: 99.5086 - val_loss: 0.0089 - val_mae: 0.0724 - val_mape: 13.9861
+Epoch 5/500
+[1m340/340[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m67s[0m 196ms/step - loss: 0.0232 - mae: 0.1058 - mape: 101.2845 - val_loss: 0.0119 - val_mae: 0.0814 - val_mape: 13.6553
+Epoch 6/500
+[1m306/340[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m6s[0m 200ms/step - loss: 0.0196 - mae: 0.0993 - mape: 90.3826

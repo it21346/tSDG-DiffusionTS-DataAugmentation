@@ -1,0 +1,17 @@
+{"time":"2025-10-20T02:50:42.760725308+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T02:50:42.760734244+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_025042-mvbsmf8s/logs/debug-core.log"}
+{"time":"2025-10-20T02:50:42.864694918+03:00","level":"INFO","msg":"created new stream","id":"mvbsmf8s"}
+{"time":"2025-10-20T02:50:42.864717591+03:00","level":"INFO","msg":"stream: started","id":"mvbsmf8s"}
+{"time":"2025-10-20T02:50:42.864861084+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"mvbsmf8s"}}
+{"time":"2025-10-20T02:50:42.864735375+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"mvbsmf8s"}}
+{"time":"2025-10-20T02:50:42.864922811+03:00","level":"INFO","msg":"sender: started","stream_id":"mvbsmf8s"}
+{"time":"2025-10-20T02:50:43.258850061+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T03:17:26.022702638+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T03:17:26.023018719+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T03:17:27.022989966+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.112487697,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.20255764,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.322380807,"progress":"1.9KB/1.9KB"}],"total_operations":2}}
+{"time":"2025-10-20T03:17:28.574117899+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T03:17:29.927029874+03:00","level":"INFO","msg":"stream: closing","id":"mvbsmf8s"}
+{"time":"2025-10-20T03:17:29.927042528+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"mvbsmf8s"}}
+{"time":"2025-10-20T03:17:29.927058018+03:00","level":"INFO","msg":"sender: closed","stream_id":"mvbsmf8s"}
+{"time":"2025-10-20T03:17:29.927056755+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"mvbsmf8s"}}
+{"time":"2025-10-20T03:17:29.927118493+03:00","level":"INFO","msg":"stream: closed","id":"mvbsmf8s"}

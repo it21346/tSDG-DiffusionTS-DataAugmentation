@@ -1,0 +1,17 @@
+{"time":"2025-10-20T09:22:19.021091049+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T09:22:19.021098814+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_092219-775qonxx/logs/debug-core.log"}
+{"time":"2025-10-20T09:22:19.125491004+03:00","level":"INFO","msg":"created new stream","id":"775qonxx"}
+{"time":"2025-10-20T09:22:19.125516964+03:00","level":"INFO","msg":"stream: started","id":"775qonxx"}
+{"time":"2025-10-20T09:22:19.125545107+03:00","level":"INFO","msg":"sender: started","stream_id":"775qonxx"}
+{"time":"2025-10-20T09:22:19.125535218+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"775qonxx"}}
+{"time":"2025-10-20T09:22:19.125544025+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"775qonxx"}}
+{"time":"2025-10-20T09:22:19.518850839+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T09:47:15.058261119+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T09:47:15.058552411+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T09:47:16.058561455+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.10429241,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.177485175,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.371384362,"progress":"1.9KB/1.9KB"}],"total_operations":2}}
+{"time":"2025-10-20T09:47:17.635824415+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T09:47:18.949885385+03:00","level":"INFO","msg":"stream: closing","id":"775qonxx"}
+{"time":"2025-10-20T09:47:18.949897378+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"775qonxx"}}
+{"time":"2025-10-20T09:47:18.949909901+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"775qonxx"}}
+{"time":"2025-10-20T09:47:18.949925611+03:00","level":"INFO","msg":"sender: closed","stream_id":"775qonxx"}
+{"time":"2025-10-20T09:47:18.949962531+03:00","level":"INFO","msg":"stream: closed","id":"775qonxx"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-20T06:50:41.917654812+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T06:50:41.917668598+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_065041-jqtbsvli/logs/debug-core.log"}
+{"time":"2025-10-20T06:50:42.021798093+03:00","level":"INFO","msg":"created new stream","id":"jqtbsvli"}
+{"time":"2025-10-20T06:50:42.021820084+03:00","level":"INFO","msg":"stream: started","id":"jqtbsvli"}
+{"time":"2025-10-20T06:50:42.02183336+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jqtbsvli"}}
+{"time":"2025-10-20T06:50:42.022029572+03:00","level":"INFO","msg":"sender: started","stream_id":"jqtbsvli"}
+{"time":"2025-10-20T06:50:42.021837327+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jqtbsvli"}}
+{"time":"2025-10-20T06:50:42.337847112+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T07:08:25.601003576+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T07:08:25.601285731+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T07:08:26.60128089+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.112024806,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.184291587,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.390538365,"progress":"1.9KB/1.9KB"}],"total_operations":2}}
+{"time":"2025-10-20T07:08:28.143526533+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T07:08:29.475522042+03:00","level":"INFO","msg":"stream: closing","id":"jqtbsvli"}
+{"time":"2025-10-20T07:08:29.475534596+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"jqtbsvli"}}
+{"time":"2025-10-20T07:08:29.475546749+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"jqtbsvli"}}
+{"time":"2025-10-20T07:08:29.475553973+03:00","level":"INFO","msg":"sender: closed","stream_id":"jqtbsvli"}
+{"time":"2025-10-20T07:08:29.475581134+03:00","level":"INFO","msg":"stream: closed","id":"jqtbsvli"}
