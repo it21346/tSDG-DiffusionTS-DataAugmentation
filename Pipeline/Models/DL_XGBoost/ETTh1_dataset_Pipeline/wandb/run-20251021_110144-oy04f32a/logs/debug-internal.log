@@ -1,0 +1,17 @@
+{"time":"2025-10-21T11:01:44.182347111+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-21T11:01:44.182355216+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251021_110144-oy04f32a/logs/debug-core.log"}
+{"time":"2025-10-21T11:01:44.287162803+03:00","level":"INFO","msg":"created new stream","id":"oy04f32a"}
+{"time":"2025-10-21T11:01:44.287187019+03:00","level":"INFO","msg":"stream: started","id":"oy04f32a"}
+{"time":"2025-10-21T11:01:44.287206636+03:00","level":"INFO","msg":"sender: started","stream_id":"oy04f32a"}
+{"time":"2025-10-21T11:01:44.287204582+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"oy04f32a"}}
+{"time":"2025-10-21T11:01:44.287198641+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"oy04f32a"}}
+{"time":"2025-10-21T11:01:44.58709487+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T11:36:43.722128462+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T11:36:43.72242782+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T11:36:44.722399723+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.123838722}],"total_operations":1}}
+{"time":"2025-10-21T11:36:46.106805374+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T11:36:47.395992735+03:00","level":"INFO","msg":"stream: closing","id":"oy04f32a"}
+{"time":"2025-10-21T11:36:47.396005309+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"oy04f32a"}}
+{"time":"2025-10-21T11:36:47.396025107+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"oy04f32a"}}
+{"time":"2025-10-21T11:36:47.396031459+03:00","level":"INFO","msg":"sender: closed","stream_id":"oy04f32a"}
+{"time":"2025-10-21T11:36:47.396073549+03:00","level":"INFO","msg":"stream: closed","id":"oy04f32a"}

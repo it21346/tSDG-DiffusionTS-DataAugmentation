@@ -1,0 +1,8 @@
+{"time":"2025-10-21T00:10:21.042129973+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-21T00:10:21.042137658+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251021_001021-jzzqprfz/logs/debug-core.log"}
+{"time":"2025-10-21T00:10:21.146235534+03:00","level":"INFO","msg":"created new stream","id":"jzzqprfz"}
+{"time":"2025-10-21T00:10:21.146389335+03:00","level":"INFO","msg":"stream: started","id":"jzzqprfz"}
+{"time":"2025-10-21T00:10:21.146440132+03:00","level":"INFO","msg":"sender: started","stream_id":"jzzqprfz"}
+{"time":"2025-10-21T00:10:21.146404354+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jzzqprfz"}}
+{"time":"2025-10-21T00:10:21.146498042+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jzzqprfz"}}
+{"time":"2025-10-21T00:10:21.536293256+03:00","level":"INFO","msg":"Starting system monitor"}

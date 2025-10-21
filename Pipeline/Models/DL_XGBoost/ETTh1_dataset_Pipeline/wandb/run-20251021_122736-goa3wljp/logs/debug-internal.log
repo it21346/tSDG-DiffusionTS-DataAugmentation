@@ -1,0 +1,17 @@
+{"time":"2025-10-21T12:27:36.660180007+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-21T12:27:36.660188002+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251021_122736-goa3wljp/logs/debug-core.log"}
+{"time":"2025-10-21T12:27:36.764505269+03:00","level":"INFO","msg":"created new stream","id":"goa3wljp"}
+{"time":"2025-10-21T12:27:36.76452665+03:00","level":"INFO","msg":"stream: started","id":"goa3wljp"}
+{"time":"2025-10-21T12:27:36.764545746+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"goa3wljp"}}
+{"time":"2025-10-21T12:27:36.764544524+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"goa3wljp"}}
+{"time":"2025-10-21T12:27:36.76479575+03:00","level":"INFO","msg":"sender: started","stream_id":"goa3wljp"}
+{"time":"2025-10-21T12:27:37.166826873+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T13:31:09.18780605+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T13:31:09.18811726+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T13:31:10.188085136+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.131208397,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.193523636,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_70_9ddf8d1e6c94394d5b43.png","runtime_seconds":0.765059374,"progress":"202.4KB/202.4KB"}],"total_operations":2}}
+{"time":"2025-10-21T13:31:11.91021666+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T13:31:13.242305184+03:00","level":"INFO","msg":"stream: closing","id":"goa3wljp"}
+{"time":"2025-10-21T13:31:13.242317838+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"goa3wljp"}}
+{"time":"2025-10-21T13:31:13.242336183+03:00","level":"INFO","msg":"sender: closed","stream_id":"goa3wljp"}
+{"time":"2025-10-21T13:31:13.242330893+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"goa3wljp"}}
+{"time":"2025-10-21T13:31:13.242399242+03:00","level":"INFO","msg":"stream: closed","id":"goa3wljp"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-21T08:16:19.69808695+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-21T08:16:19.698094714+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251021_081619-jwve4ii9/logs/debug-core.log"}
+{"time":"2025-10-21T08:16:19.801595859+03:00","level":"INFO","msg":"created new stream","id":"jwve4ii9"}
+{"time":"2025-10-21T08:16:19.801618572+03:00","level":"INFO","msg":"stream: started","id":"jwve4ii9"}
+{"time":"2025-10-21T08:16:19.801898503+03:00","level":"INFO","msg":"sender: started","stream_id":"jwve4ii9"}
+{"time":"2025-10-21T08:16:19.801764519+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jwve4ii9"}}
+{"time":"2025-10-21T08:16:19.801631386+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jwve4ii9"}}
+{"time":"2025-10-21T08:16:20.13645981+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T08:53:33.05331532+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T08:53:33.053628494+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T08:53:34.053580838+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.125384695},{"desc":"uploading wandb-summary.json","runtime_seconds":0.567718208,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.354731595,"progress":"2.2KB/2.2KB"},{"desc":"uploading output.log","runtime_seconds":0.354723279,"progress":"22.7KB/22.7KB"}],"total_operations":4}}
+{"time":"2025-10-21T08:53:35.528491674+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T08:53:36.850472131+03:00","level":"INFO","msg":"stream: closing","id":"jwve4ii9"}
+{"time":"2025-10-21T08:53:36.850487139+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"jwve4ii9"}}
+{"time":"2025-10-21T08:53:36.850503019+03:00","level":"INFO","msg":"sender: closed","stream_id":"jwve4ii9"}
+{"time":"2025-10-21T08:53:36.850501757+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"jwve4ii9"}}
+{"time":"2025-10-21T08:53:36.850576619+03:00","level":"INFO","msg":"stream: closed","id":"jwve4ii9"}

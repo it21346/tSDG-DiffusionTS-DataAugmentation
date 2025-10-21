@@ -1,0 +1,17 @@
+{"time":"2025-10-21T03:37:08.871454389+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-21T03:37:08.871463386+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251021_033708-fcvpjoxv/logs/debug-core.log"}
+{"time":"2025-10-21T03:37:08.97723507+03:00","level":"INFO","msg":"created new stream","id":"fcvpjoxv"}
+{"time":"2025-10-21T03:37:08.977256239+03:00","level":"INFO","msg":"stream: started","id":"fcvpjoxv"}
+{"time":"2025-10-21T03:37:08.977272369+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"fcvpjoxv"}}
+{"time":"2025-10-21T03:37:08.977527203+03:00","level":"INFO","msg":"sender: started","stream_id":"fcvpjoxv"}
+{"time":"2025-10-21T03:37:08.977527634+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fcvpjoxv"}}
+{"time":"2025-10-21T03:37:09.314444604+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T04:47:23.669172433+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T04:47:23.6695546+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T04:47:24.6694123+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.572921337}],"total_operations":1}}
+{"time":"2025-10-21T04:47:27.399346254+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T04:47:28.740643061+03:00","level":"INFO","msg":"stream: closing","id":"fcvpjoxv"}
+{"time":"2025-10-21T04:47:28.740658801+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"fcvpjoxv"}}
+{"time":"2025-10-21T04:47:28.740674942+03:00","level":"INFO","msg":"sender: closed","stream_id":"fcvpjoxv"}
+{"time":"2025-10-21T04:47:28.740673489+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"fcvpjoxv"}}
+{"time":"2025-10-21T04:47:28.740745516+03:00","level":"INFO","msg":"stream: closed","id":"fcvpjoxv"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-21T07:24:24.890466051+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-21T07:24:24.890474187+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251021_072424-3pv12cff/logs/debug-core.log"}
+{"time":"2025-10-21T07:24:24.994396089+03:00","level":"INFO","msg":"created new stream","id":"3pv12cff"}
+{"time":"2025-10-21T07:24:24.994431456+03:00","level":"INFO","msg":"stream: started","id":"3pv12cff"}
+{"time":"2025-10-21T07:24:24.994472183+03:00","level":"INFO","msg":"sender: started","stream_id":"3pv12cff"}
+{"time":"2025-10-21T07:24:24.994441004+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3pv12cff"}}
+{"time":"2025-10-21T07:24:24.994435313+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3pv12cff"}}
+{"time":"2025-10-21T07:24:25.301629539+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T08:16:05.25529061+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T08:16:05.255589136+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T08:16:06.255565196+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.135418547},{"desc":"uploading media/images/train vs val_predictions_65_5177940a0f786e0d7f0c.png","runtime_seconds":0.79224109,"progress":"228.7KB/228.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.360364374,"progress":"2.2KB/2.2KB"}],"total_operations":3}}
+{"time":"2025-10-21T08:16:07.737763751+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T08:16:09.054578095+03:00","level":"INFO","msg":"stream: closing","id":"3pv12cff"}
+{"time":"2025-10-21T08:16:09.05459133+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"3pv12cff"}}
+{"time":"2025-10-21T08:16:09.054603733+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"3pv12cff"}}
+{"time":"2025-10-21T08:16:09.054609735+03:00","level":"INFO","msg":"sender: closed","stream_id":"3pv12cff"}
+{"time":"2025-10-21T08:16:09.054649851+03:00","level":"INFO","msg":"stream: closed","id":"3pv12cff"}

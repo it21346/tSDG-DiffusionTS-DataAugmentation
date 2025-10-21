@@ -1,0 +1,17 @@
+{"time":"2025-10-20T13:14:21.31616578+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T13:14:21.316173835+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_131421-knbgudrj/logs/debug-core.log"}
+{"time":"2025-10-20T13:14:21.420901092+03:00","level":"INFO","msg":"created new stream","id":"knbgudrj"}
+{"time":"2025-10-20T13:14:21.420924476+03:00","level":"INFO","msg":"stream: started","id":"knbgudrj"}
+{"time":"2025-10-20T13:14:21.420944875+03:00","level":"INFO","msg":"sender: started","stream_id":"knbgudrj"}
+{"time":"2025-10-20T13:14:21.420936619+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"knbgudrj"}}
+{"time":"2025-10-20T13:14:21.420941419+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"knbgudrj"}}
+{"time":"2025-10-20T13:14:21.748010221+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T13:42:15.623847952+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T13:42:15.624174741+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T13:42:16.624101648+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.116633991,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.102044022,"progress":"19.0KB/19.0KB"}]}],"total_operations":1}}
+{"time":"2025-10-20T13:42:18.318331802+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T13:42:19.631629166+03:00","level":"INFO","msg":"stream: closing","id":"knbgudrj"}
+{"time":"2025-10-20T13:42:19.631642862+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"knbgudrj"}}
+{"time":"2025-10-20T13:42:19.631657259+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"knbgudrj"}}
+{"time":"2025-10-20T13:42:19.631673821+03:00","level":"INFO","msg":"sender: closed","stream_id":"knbgudrj"}
+{"time":"2025-10-20T13:42:19.631714858+03:00","level":"INFO","msg":"stream: closed","id":"knbgudrj"}

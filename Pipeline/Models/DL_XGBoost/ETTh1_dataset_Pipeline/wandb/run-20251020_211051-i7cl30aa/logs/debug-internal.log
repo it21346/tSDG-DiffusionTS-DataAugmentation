@@ -1,0 +1,17 @@
+{"time":"2025-10-20T21:10:51.108045276+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T21:10:51.108052921+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_211051-i7cl30aa/logs/debug-core.log"}
+{"time":"2025-10-20T21:10:51.212048692+03:00","level":"INFO","msg":"created new stream","id":"i7cl30aa"}
+{"time":"2025-10-20T21:10:51.212072377+03:00","level":"INFO","msg":"stream: started","id":"i7cl30aa"}
+{"time":"2025-10-20T21:10:51.212102304+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"i7cl30aa"}}
+{"time":"2025-10-20T21:10:51.212344333+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"i7cl30aa"}}
+{"time":"2025-10-20T21:10:51.212127151+03:00","level":"INFO","msg":"sender: started","stream_id":"i7cl30aa"}
+{"time":"2025-10-20T21:10:51.538381183+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-20T21:42:23.297961655+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-20T21:42:23.29825923+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-20T21:42:24.298474942+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.10632305,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.178354992,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_22_1ca4736461f69056890d.png","runtime_seconds":0.78638922,"progress":"122.2KB/122.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.554613179,"progress":"800B/800B"},{"desc":"uploading config.yaml","runtime_seconds":0.344422658,"progress":"1.9KB/1.9KB"},{"desc":"uploading output.log","runtime_seconds":0.344414844,"progress":"6.6KB/6.6KB"}],"total_operations":5}}
+{"time":"2025-10-20T21:42:25.886281609+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-20T21:42:27.197115104+03:00","level":"INFO","msg":"stream: closing","id":"i7cl30aa"}
+{"time":"2025-10-20T21:42:27.197128971+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"i7cl30aa"}}
+{"time":"2025-10-20T21:42:27.197142987+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"i7cl30aa"}}
+{"time":"2025-10-20T21:42:27.197162745+03:00","level":"INFO","msg":"sender: closed","stream_id":"i7cl30aa"}
+{"time":"2025-10-20T21:42:27.19719159+03:00","level":"INFO","msg":"stream: closed","id":"i7cl30aa"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-20T23:44:29.08628718+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-20T23:44:29.086298251+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251020_234429-wxoxok9f/logs/debug-core.log"}
+{"time":"2025-10-20T23:44:29.190235358+03:00","level":"INFO","msg":"created new stream","id":"wxoxok9f"}
+{"time":"2025-10-20T23:44:29.19025747+03:00","level":"INFO","msg":"stream: started","id":"wxoxok9f"}
+{"time":"2025-10-20T23:44:29.190271627+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"wxoxok9f"}}
+{"time":"2025-10-20T23:44:29.190289591+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"wxoxok9f"}}
+{"time":"2025-10-20T23:44:29.190553091+03:00","level":"INFO","msg":"sender: started","stream_id":"wxoxok9f"}
+{"time":"2025-10-20T23:44:29.517575819+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T00:10:13.371143869+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T00:10:13.371450962+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T00:10:14.371487869+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_False","runtime_seconds":1.1133327,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_False.npz","runtime_seconds":0.22916159,"progress":"19.0KB/19.0KB"}]}],"total_operations":1}}
+{"time":"2025-10-21T00:10:15.919445386+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T00:10:17.219274926+03:00","level":"INFO","msg":"stream: closing","id":"wxoxok9f"}
+{"time":"2025-10-21T00:10:17.219288853+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"wxoxok9f"}}
+{"time":"2025-10-21T00:10:17.21930326+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"wxoxok9f"}}
+{"time":"2025-10-21T00:10:17.219307548+03:00","level":"INFO","msg":"sender: closed","stream_id":"wxoxok9f"}
+{"time":"2025-10-21T00:10:17.219343056+03:00","level":"INFO","msg":"stream: closed","id":"wxoxok9f"}
