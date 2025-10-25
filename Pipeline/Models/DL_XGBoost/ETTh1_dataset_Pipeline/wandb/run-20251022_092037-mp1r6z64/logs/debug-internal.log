@@ -1,0 +1,17 @@
+{"time":"2025-10-22T09:20:37.695012114+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-22T09:20:37.695023065+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251022_092037-mp1r6z64/logs/debug-core.log"}
+{"time":"2025-10-22T09:20:37.799144143+03:00","level":"INFO","msg":"created new stream","id":"mp1r6z64"}
+{"time":"2025-10-22T09:20:37.799268208+03:00","level":"INFO","msg":"stream: started","id":"mp1r6z64"}
+{"time":"2025-10-22T09:20:37.799373799+03:00","level":"INFO","msg":"sender: started","stream_id":"mp1r6z64"}
+{"time":"2025-10-22T09:20:37.799306571+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"mp1r6z64"}}
+{"time":"2025-10-22T09:20:37.799420317+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"mp1r6z64"}}
+{"time":"2025-10-22T09:20:38.127988314+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T10:50:54.020571263+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T10:50:54.020994776+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T10:50:55.020837359+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.137251762,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.144607293,"progress":"19.0KB/19.0KB"}]}],"total_operations":1}}
+{"time":"2025-10-22T10:50:56.709375339+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T10:50:58.006847102+03:00","level":"INFO","msg":"stream: closing","id":"mp1r6z64"}
+{"time":"2025-10-22T10:50:58.00686207+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"mp1r6z64"}}
+{"time":"2025-10-22T10:50:58.006880685+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"mp1r6z64"}}
+{"time":"2025-10-22T10:50:58.006889843+03:00","level":"INFO","msg":"sender: closed","stream_id":"mp1r6z64"}
+{"time":"2025-10-22T10:50:58.00693591+03:00","level":"INFO","msg":"stream: closed","id":"mp1r6z64"}

@@ -122,6 +122,7 @@ def visualization(ori_data, generated_data, analysis, compare=3000):
         plt.title('PCA plot')
         plt.xlabel('x-pca')
         plt.ylabel('y_pca')
+        plt.savefig("ETTh1_pca_plot.png", dpi=600)
         plt.show()
 
     elif analysis == 'tsne':
@@ -146,6 +147,7 @@ def visualization(ori_data, generated_data, analysis, compare=3000):
         plt.title('t-SNE plot')
         plt.xlabel('x-tsne')
         plt.ylabel('y_tsne')
+        plt.savefig("ETTh1_tsne_plot.png", dpi=600)
         plt.show()
 
     elif analysis == 'kernel':
@@ -166,7 +168,9 @@ def visualization(ori_data, generated_data, analysis, compare=3000):
 
         # plt.savefig(str(args.save_dir)+"/"+args.model1+"_histo.png", dpi=100,bbox_inches='tight')
         # plt.ylim((0, 12))
+        plt.savefig("ETTh1_kernel_density_plot.png", dpi=600)
         plt.show()
+        
         plt.close()
 
 

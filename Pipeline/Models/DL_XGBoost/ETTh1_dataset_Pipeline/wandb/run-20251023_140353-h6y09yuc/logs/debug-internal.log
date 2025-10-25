@@ -1,0 +1,17 @@
+{"time":"2025-10-23T14:03:53.10651037+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-23T14:03:53.106518916+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251023_140353-h6y09yuc/logs/debug-core.log"}
+{"time":"2025-10-23T14:03:53.210710275+03:00","level":"INFO","msg":"created new stream","id":"h6y09yuc"}
+{"time":"2025-10-23T14:03:53.210737427+03:00","level":"INFO","msg":"stream: started","id":"h6y09yuc"}
+{"time":"2025-10-23T14:03:53.2107601+03:00","level":"INFO","msg":"sender: started","stream_id":"h6y09yuc"}
+{"time":"2025-10-23T14:03:53.21074989+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"h6y09yuc"}}
+{"time":"2025-10-23T14:03:53.210760541+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"h6y09yuc"}}
+{"time":"2025-10-23T14:03:53.545883754+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-23T15:02:40.454958668+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-23T15:02:40.455266592+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-23T15:02:41.455269166+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_64_scaler_standard_DA_False_pinball_True","runtime_seconds":1.167159267},{"desc":"uploading media/images/train vs val_predictions_77_8015eabf5a37ab6d14a8.png","runtime_seconds":0.790206541,"progress":"265.0KB/265.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.343166446,"progress":"2.2KB/2.2KB"}],"total_operations":3}}
+{"time":"2025-10-23T15:02:43.009966121+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T15:02:44.328021782+03:00","level":"INFO","msg":"stream: closing","id":"h6y09yuc"}
+{"time":"2025-10-23T15:02:44.328033534+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"h6y09yuc"}}
+{"time":"2025-10-23T15:02:44.328045337+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"h6y09yuc"}}
+{"time":"2025-10-23T15:02:44.328054173+03:00","level":"INFO","msg":"sender: closed","stream_id":"h6y09yuc"}
+{"time":"2025-10-23T15:02:44.32810014+03:00","level":"INFO","msg":"stream: closed","id":"h6y09yuc"}

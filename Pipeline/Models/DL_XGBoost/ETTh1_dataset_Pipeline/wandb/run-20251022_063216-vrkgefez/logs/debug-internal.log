@@ -1,0 +1,17 @@
+{"time":"2025-10-22T06:32:16.179012947+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-22T06:32:16.179020571+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251022_063216-vrkgefez/logs/debug-core.log"}
+{"time":"2025-10-22T06:32:16.282823692+03:00","level":"INFO","msg":"created new stream","id":"vrkgefez"}
+{"time":"2025-10-22T06:32:16.282846535+03:00","level":"INFO","msg":"stream: started","id":"vrkgefez"}
+{"time":"2025-10-22T06:32:16.283039642+03:00","level":"INFO","msg":"sender: started","stream_id":"vrkgefez"}
+{"time":"2025-10-22T06:32:16.283023541+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"vrkgefez"}}
+{"time":"2025-10-22T06:32:16.282863147+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"vrkgefez"}}
+{"time":"2025-10-22T06:32:16.685989104+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T07:49:56.964423181+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T07:49:56.964735112+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T07:49:57.964692+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.141960264},{"desc":"uploading wandb-summary.json","runtime_seconds":0.583233949,"progress":"1.1KB/1.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.38866958,"progress":"2.2KB/2.2KB"},{"desc":"uploading output.log","runtime_seconds":0.388660082,"progress":"21.4KB/21.4KB"}],"total_operations":4}}
+{"time":"2025-10-22T07:49:59.399780576+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T07:50:00.693064654+03:00","level":"INFO","msg":"stream: closing","id":"vrkgefez"}
+{"time":"2025-10-22T07:50:00.693093318+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"vrkgefez"}}
+{"time":"2025-10-22T07:50:00.693113456+03:00","level":"INFO","msg":"sender: closed","stream_id":"vrkgefez"}
+{"time":"2025-10-22T07:50:00.693107485+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"vrkgefez"}}
+{"time":"2025-10-22T07:50:00.69314718+03:00","level":"INFO","msg":"stream: closed","id":"vrkgefez"}

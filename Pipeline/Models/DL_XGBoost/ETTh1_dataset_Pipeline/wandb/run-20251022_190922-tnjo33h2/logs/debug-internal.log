@@ -1,0 +1,18 @@
+{"time":"2025-10-22T19:09:22.376401523+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-22T19:09:22.376409478+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251022_190922-tnjo33h2/logs/debug-core.log"}
+{"time":"2025-10-22T19:09:22.480661171+03:00","level":"INFO","msg":"created new stream","id":"tnjo33h2"}
+{"time":"2025-10-22T19:09:22.48068206+03:00","level":"INFO","msg":"stream: started","id":"tnjo33h2"}
+{"time":"2025-10-22T19:09:22.4808451+03:00","level":"INFO","msg":"sender: started","stream_id":"tnjo33h2"}
+{"time":"2025-10-22T19:09:22.48069769+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tnjo33h2"}}
+{"time":"2025-10-22T19:09:22.480736193+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tnjo33h2"}}
+{"time":"2025-10-22T19:09:22.815644642+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T19:35:23.662398925+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/synthetic-data-gan/ETTh1-ENERGY-TIMESERIES-FORECASTING-PINBALL-TESTING/tnjo33h2/file_stream"}
+{"time":"2025-10-22T21:04:05.185122819+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T21:04:05.185447615+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T21:04:06.185439359+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.136049416,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_2021_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.257944319,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_73_654ab8979e1ac809ff16.png","runtime_seconds":0.79374382,"progress":"219.1KB/219.1KB"}],"total_operations":2}}
+{"time":"2025-10-22T21:04:07.717080317+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T21:04:09.028094529+03:00","level":"INFO","msg":"stream: closing","id":"tnjo33h2"}
+{"time":"2025-10-22T21:04:09.028110029+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tnjo33h2"}}
+{"time":"2025-10-22T21:04:09.028122743+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tnjo33h2"}}
+{"time":"2025-10-22T21:04:09.028127422+03:00","level":"INFO","msg":"sender: closed","stream_id":"tnjo33h2"}
+{"time":"2025-10-22T21:04:09.028173128+03:00","level":"INFO","msg":"stream: closed","id":"tnjo33h2"}

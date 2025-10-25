@@ -1,0 +1,17 @@
+{"time":"2025-10-24T03:47:18.34988782+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-24T03:47:18.349896707+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251024_034718-ap45afpz/logs/debug-core.log"}
+{"time":"2025-10-24T03:47:18.454160548+03:00","level":"INFO","msg":"created new stream","id":"ap45afpz"}
+{"time":"2025-10-24T03:47:18.454190756+03:00","level":"INFO","msg":"stream: started","id":"ap45afpz"}
+{"time":"2025-10-24T03:47:18.45440636+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ap45afpz"}}
+{"time":"2025-10-24T03:47:18.454204111+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ap45afpz"}}
+{"time":"2025-10-24T03:47:18.454298423+03:00","level":"INFO","msg":"sender: started","stream_id":"ap45afpz"}
+{"time":"2025-10-24T03:47:18.821164035+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-24T04:34:10.265698553+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-24T04:34:10.266041523+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-24T04:34:11.265983937+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_False_pinball_True","runtime_seconds":1.599854885},{"desc":"uploading config.yaml","runtime_seconds":0.42431227,"progress":"2.2KB/2.2KB"},{"desc":"uploading output.log","runtime_seconds":0.424302661,"progress":"22.5KB/22.5KB"}],"total_operations":3}}
+{"time":"2025-10-24T04:34:12.562618465+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-24T04:34:13.853750481+03:00","level":"INFO","msg":"stream: closing","id":"ap45afpz"}
+{"time":"2025-10-24T04:34:13.853764027+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ap45afpz"}}
+{"time":"2025-10-24T04:34:13.853777653+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ap45afpz"}}
+{"time":"2025-10-24T04:34:13.853788463+03:00","level":"INFO","msg":"sender: closed","stream_id":"ap45afpz"}
+{"time":"2025-10-24T04:34:13.853816155+03:00","level":"INFO","msg":"stream: closed","id":"ap45afpz"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-22T05:33:13.573276859+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-22T05:33:13.573287749+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251022_053313-lmk4gkir/logs/debug-core.log"}
+{"time":"2025-10-22T05:33:13.678253684+03:00","level":"INFO","msg":"created new stream","id":"lmk4gkir"}
+{"time":"2025-10-22T05:33:13.67828295+03:00","level":"INFO","msg":"stream: started","id":"lmk4gkir"}
+{"time":"2025-10-22T05:33:13.678300593+03:00","level":"INFO","msg":"sender: started","stream_id":"lmk4gkir"}
+{"time":"2025-10-22T05:33:13.678293841+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"lmk4gkir"}}
+{"time":"2025-10-22T05:33:13.678303559+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"lmk4gkir"}}
+{"time":"2025-10-22T05:33:13.997171177+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T06:32:10.774173777+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T06:32:10.774543138+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T06:32:11.774464924+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.1450111490000001,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_2021_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.24621889,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_54_4fe3ee3f00ae5019bc0e.png","runtime_seconds":0.796336395,"progress":"218.5KB/218.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.556897709,"progress":"1.1KB/1.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.343885638,"progress":"2.2KB/2.2KB"},{"desc":"uploading output.log","runtime_seconds":0.34388138,"progress":"16.5KB/16.5KB"}],"total_operations":5}}
+{"time":"2025-10-22T06:32:13.406908533+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T06:32:14.736171776+03:00","level":"INFO","msg":"stream: closing","id":"lmk4gkir"}
+{"time":"2025-10-22T06:32:14.736183639+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"lmk4gkir"}}
+{"time":"2025-10-22T06:32:14.736197325+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"lmk4gkir"}}
+{"time":"2025-10-22T06:32:14.736205831+03:00","level":"INFO","msg":"sender: closed","stream_id":"lmk4gkir"}
+{"time":"2025-10-22T06:32:14.736243032+03:00","level":"INFO","msg":"stream: closed","id":"lmk4gkir"}

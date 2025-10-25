@@ -1,0 +1,10 @@
+Before scaling:
+(14469, 168, 6)
+Before scaling fake:
+(14469, 168, 6)
+Size of training data is:  (28938, 168, 13)
+Training BiLSTM for quantile 0.05...
+/home/stelios-pc/anaconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m 69/453[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m1:21[0m 211ms/step - loss: 0.0852 - mae: 0.8117 - mape: 589.4956 - mse: 0.9536

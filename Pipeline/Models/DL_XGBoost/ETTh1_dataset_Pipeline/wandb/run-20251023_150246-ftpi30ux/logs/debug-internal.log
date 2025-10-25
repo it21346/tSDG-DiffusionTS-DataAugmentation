@@ -1,0 +1,17 @@
+{"time":"2025-10-23T15:02:46.103716828+03:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-23T15:02:46.103725594+03:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/wandb/run-20251023_150246-ftpi30ux/logs/debug-core.log"}
+{"time":"2025-10-23T15:02:46.208274383+03:00","level":"INFO","msg":"created new stream","id":"ftpi30ux"}
+{"time":"2025-10-23T15:02:46.208299441+03:00","level":"INFO","msg":"stream: started","id":"ftpi30ux"}
+{"time":"2025-10-23T15:02:46.208327855+03:00","level":"INFO","msg":"sender: started","stream_id":"ftpi30ux"}
+{"time":"2025-10-23T15:02:46.208458562+03:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ftpi30ux"}}
+{"time":"2025-10-23T15:02:46.208575033+03:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ftpi30ux"}}
+{"time":"2025-10-23T15:02:46.54373843+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-23T16:01:42.683083926+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-23T16:01:42.68342351+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-23T16:01:43.68343218+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_False_pinball_True","runtime_seconds":1.13844644,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_False_pinball_True.npz","runtime_seconds":0.333833283,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_77_8fec2d06ed6303843ed3.png","runtime_seconds":0.776943401,"progress":"208.6KB/208.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.554300172,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.302525303,"progress":"2.2KB/2.2KB"},{"desc":"uploading output.log","runtime_seconds":0.302517578,"progress":"23.0KB/23.0KB"}],"total_operations":5}}
+{"time":"2025-10-23T16:01:58.582180872+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T16:01:59.873566884+03:00","level":"INFO","msg":"stream: closing","id":"ftpi30ux"}
+{"time":"2025-10-23T16:01:59.873583796+03:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ftpi30ux"}}
+{"time":"2025-10-23T16:01:59.873600788+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ftpi30ux"}}
+{"time":"2025-10-23T16:01:59.873605828+03:00","level":"INFO","msg":"sender: closed","stream_id":"ftpi30ux"}
+{"time":"2025-10-23T16:01:59.873676151+03:00","level":"INFO","msg":"stream: closed","id":"ftpi30ux"}
