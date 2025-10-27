@@ -1,0 +1,13 @@
+{"time":"2025-10-21T20:20:02.406094968+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-21T20:20:02.795399653+03:00","level":"INFO","msg":"stream: created new stream","id":"fcfuvh7c"}
+{"time":"2025-10-21T20:20:02.795431734+03:00","level":"INFO","msg":"stream: started","id":"fcfuvh7c"}
+{"time":"2025-10-21T20:20:02.795452453+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"fcfuvh7c"}
+{"time":"2025-10-21T20:20:02.795487078+03:00","level":"INFO","msg":"handler: started","stream_id":"fcfuvh7c"}
+{"time":"2025-10-21T20:20:02.795501235+03:00","level":"INFO","msg":"sender: started","stream_id":"fcfuvh7c"}
+{"time":"2025-10-21T21:01:19.566079096+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_False_pinball_False","runtime_seconds":1.100939724}],"total_operations":1}}
+{"time":"2025-10-21T21:01:20.547302435+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T21:01:20.847866121+03:00","level":"INFO","msg":"stream: closing","id":"fcfuvh7c"}
+{"time":"2025-10-21T21:01:20.847882913+03:00","level":"INFO","msg":"handler: closed","stream_id":"fcfuvh7c"}
+{"time":"2025-10-21T21:01:20.84789198+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fcfuvh7c"}
+{"time":"2025-10-21T21:01:20.847899554+03:00","level":"INFO","msg":"sender: closed","stream_id":"fcfuvh7c"}
+{"time":"2025-10-21T21:01:20.847969015+03:00","level":"INFO","msg":"stream: closed","id":"fcfuvh7c"}

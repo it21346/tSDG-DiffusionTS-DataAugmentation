@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Lift (Δ\%) vs. baseline across synthetic lengths for BiLSTM | standard | bs=64. Negative is better for error metrics; positive is better for R².}
+\label{tab:lift_BiLSTM_standard_bs64}
+\begin{tabular}{lccccccc}
+\toprule
+Metric & 0.1 & 0.25 & 0.5 & 0.75 & 1.0 & Best (lift) & Best n \\
+\midrule
+val\_RMSE &  &  &  &  & -6.8±20.8\textbackslash \% & -6.8\textbackslash \% ↓ & 1 \\
+val\_SMAPE &  &  &  &  & -1.1±22.8\textbackslash \% & -1.7\textbackslash \% ↓ & 0 \\
+val\_MAE &  &  &  &  & -3.6±23.6\textbackslash \% & -3.6\textbackslash \% ↓ & 1 \\
+val\_MSE &  &  &  &  & -9.7±39.7\textbackslash \% & -10.6\textbackslash \% ↓ & 0 \\
+val\_R2 &  &  &  &  & 11.8±32.7\textbackslash \% & 11.8\textbackslash \% ↑ & 1 \\
+Pinball\_0.05 &  &  &  &  & 3.9±16.8\textbackslash \% & -7.6\textbackslash \% ↓ & 0 \\
+Pinball\_0.50 &  &  &  &  & 0.2±0.4\textbackslash \% & -0.1\textbackslash \% ↓ & 0 \\
+Pinball\_0.95 &  &  &  &  & 14.1±39.1\textbackslash \% & -3.5\textbackslash \% ↓ & 0 \\
+Sharpness\_0.90 &  &  &  &  & 11.2±27.8\textbackslash \% & -5.6\textbackslash \% ↓ & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,10 @@
+(17416, 1) (17416, 16) (17416,)
+Shapes - Predictions: (1573, 1), Y_test: (1573, 1)
+Mean Absolute Error (MAE): 0.44234492592347785
+Mean squared error (MSE): 0.4418999981080569
+Root Mean Squared Error (RMSE): 0.6647555927617735
+R² Score: 0.9232872018589608
+SMAPE score: 4.8290949274001935
+MASE score: 1.0070065783866196
+(1742,)
+(1573,)

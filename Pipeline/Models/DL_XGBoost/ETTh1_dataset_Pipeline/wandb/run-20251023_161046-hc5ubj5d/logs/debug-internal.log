@@ -1,0 +1,13 @@
+{"time":"2025-10-23T16:10:46.27348816+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-23T16:10:46.66910319+03:00","level":"INFO","msg":"stream: created new stream","id":"hc5ubj5d"}
+{"time":"2025-10-23T16:10:46.66917232+03:00","level":"INFO","msg":"stream: started","id":"hc5ubj5d"}
+{"time":"2025-10-23T16:10:46.669212626+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"hc5ubj5d"}
+{"time":"2025-10-23T16:10:46.669236641+03:00","level":"INFO","msg":"sender: started","stream_id":"hc5ubj5d"}
+{"time":"2025-10-23T16:10:46.669236491+03:00","level":"INFO","msg":"handler: started","stream_id":"hc5ubj5d"}
+{"time":"2025-10-23T17:19:34.396652942+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_777_augmentation_64_scaler_standard_DA_False_pinball_True","runtime_seconds":1.179872344},{"desc":"uploading output.log","runtime_seconds":0.781187969,"progress":"30.4KB/30.4KB"},{"desc":"uploading config.yaml","runtime_seconds":0.572315489,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-10-23T17:19:35.338772203+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T17:19:35.649601737+03:00","level":"INFO","msg":"stream: closing","id":"hc5ubj5d"}
+{"time":"2025-10-23T17:19:35.649629129+03:00","level":"INFO","msg":"handler: closed","stream_id":"hc5ubj5d"}
+{"time":"2025-10-23T17:19:35.649645099+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hc5ubj5d"}
+{"time":"2025-10-23T17:19:35.649665899+03:00","level":"INFO","msg":"sender: closed","stream_id":"hc5ubj5d"}
+{"time":"2025-10-23T17:19:35.64974037+03:00","level":"INFO","msg":"stream: closed","id":"hc5ubj5d"}

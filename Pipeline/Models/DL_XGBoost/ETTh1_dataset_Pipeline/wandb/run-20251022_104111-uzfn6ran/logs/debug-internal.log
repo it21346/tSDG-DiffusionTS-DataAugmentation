@@ -1,0 +1,13 @@
+{"time":"2025-10-22T10:41:11.874825581+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-22T10:41:12.236907173+03:00","level":"INFO","msg":"stream: created new stream","id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:12.236949162+03:00","level":"INFO","msg":"stream: started","id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:12.236949933+03:00","level":"INFO","msg":"handler: started","stream_id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:12.236960483+03:00","level":"INFO","msg":"sender: started","stream_id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:12.237015156+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:38.120370243+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_XGBoost_predictions_seed_42_augmentation_0_scaler_standard_pinball_True","runtime_seconds":1.372514753}],"total_operations":1}}
+{"time":"2025-10-22T10:41:39.102185904+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T10:41:39.417002721+03:00","level":"INFO","msg":"stream: closing","id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:39.417029031+03:00","level":"INFO","msg":"handler: closed","stream_id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:39.417051052+03:00","level":"INFO","msg":"sender: closed","stream_id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:39.417043578+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uzfn6ran"}
+{"time":"2025-10-22T10:41:39.417115914+03:00","level":"INFO","msg":"stream: closed","id":"uzfn6ran"}

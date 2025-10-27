@@ -1,0 +1,17 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% (relative to Real) across synthetic lengths for LSTM | standard | bs=64. Negative is improvement. Best entries per row are in bold.}
+\label{tab:bvdelta_LSTM_standard_bs64}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Metric & 0.1 & 0.25 & 0.5 & 0.75 & 1 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+Bias$^2$ (Δ\%) & 41.9\% & 48.7\% & 46.1\% & 61.1\% & \textbf{31.1\%} & \textbf{31.1\%} & \textbf{1} & 4.6 \\
+Variance (Δ\%) & 13.0\% & \textbf{3.7\%} & 51.1\% & 47.6\% & 119.0\% & \textbf{3.7\%} & \textbf{0.25} & 2.3 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

@@ -1,0 +1,17 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Bias–variance Δ\% (relative to Real) across synthetic lengths for LSTM | standard | bs=64 | pinball=True. Negative is improvement. Best entries per row are in bold.}
+\label{tab:bvdelta_LSTM_standard_bs64_pinballTrue}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Metric & 0.1 & 0.25 & 0.5 & 0.75 & 1 & Best (Δ\%) & Best n & Real (abs) \\
+\midrule
+Bias$^2$ (Δ\%) & \textbf{-1.6\%} & 14.6\% & 14.1\% & 25.6\% & 54.0\% & \textbf{-1.6\%} & \textbf{0.1} & 3.3 \\
+Variance (Δ\%) & -50.3\% & -0.8\% & -25.6\% & \textbf{-71.3\%} & -38.2\% & \textbf{-71.3\%} & \textbf{0.75} & 0.5 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

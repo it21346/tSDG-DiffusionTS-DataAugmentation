@@ -1,0 +1,13 @@
+{"time":"2025-10-24T02:00:59.993285878+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-24T02:01:00.363439611+03:00","level":"INFO","msg":"stream: created new stream","id":"2fcn8rbp"}
+{"time":"2025-10-24T02:01:00.363473405+03:00","level":"INFO","msg":"stream: started","id":"2fcn8rbp"}
+{"time":"2025-10-24T02:01:00.36350234+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"2fcn8rbp"}
+{"time":"2025-10-24T02:01:00.363630464+03:00","level":"INFO","msg":"handler: started","stream_id":"2fcn8rbp"}
+{"time":"2025-10-24T02:01:00.363601108+03:00","level":"INFO","msg":"sender: started","stream_id":"2fcn8rbp"}
+{"time":"2025-10-24T03:21:03.667488405+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.186738209,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_4242_augmentation_64_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.229866888,"progress":"19.0KB/19.0KB"}]},{"desc":"uploading media/images/train vs val_predictions_63_4a5aca60dea261845437.png","runtime_seconds":0.774765823,"progress":"202.9KB/202.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.774699899,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.577840929,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-24T03:21:04.717168215+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-24T03:21:05.042462206+03:00","level":"INFO","msg":"stream: closing","id":"2fcn8rbp"}
+{"time":"2025-10-24T03:21:05.042479028+03:00","level":"INFO","msg":"handler: closed","stream_id":"2fcn8rbp"}
+{"time":"2025-10-24T03:21:05.042489047+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2fcn8rbp"}
+{"time":"2025-10-24T03:21:05.042497563+03:00","level":"INFO","msg":"sender: closed","stream_id":"2fcn8rbp"}
+{"time":"2025-10-24T03:21:05.042567666+03:00","level":"INFO","msg":"stream: closed","id":"2fcn8rbp"}

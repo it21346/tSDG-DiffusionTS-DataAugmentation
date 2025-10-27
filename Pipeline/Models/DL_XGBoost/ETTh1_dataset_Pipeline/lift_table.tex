@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Lift ($\Delta\%$) across all model/scaler/batch configurations. Negative = improvement.}
+\label{tab:lift}
+\begin{tabular}{l l r l c c c c c c c}
+\toprule
+Model & Scaler & Batch & Metric & 0.10 & 0.25 & 0.50 & 0.75 & 1.00 & Best (\%) & Best n \\
+\midrule
+BiLSTM & standard & 64 & val\textbackslash{}_SMAPE & \textbf{-3.6$\pm$17.4\%} & 0.0$\pm$30.0\% & 3.3$\pm$29.9\% & 13.7$\pm$39.9\% & -2.9$\pm$24.8\% & -3.6\% $\downarrow$ & 0.10 \\
+BiLSTM & standard & 64 & val\textbackslash{}_RMSE & -4.6$\pm$34.5\% & -3.1$\pm$66.2\% & \textbf{-18.9$\pm$39.9\%} & -1.8$\pm$71.5\% & -15.3$\pm$44.7\% & -18.9\% $\downarrow$ & 0.50 \\
+BiLSTM & standard & 64 & val\textbackslash{}_MAE & -5.5$\pm$19.6\% & -1.4$\pm$41.2\% & -1.8$\pm$37.5\% & 12.2$\pm$55.0\% & \textbf{-8.1$\pm$26.8\%} & -8.1\% $\downarrow$ & 1.00 \\
+BiLSTM & standard & 64 & val\textbackslash{}_MSE & -8.7$\pm$78.0\% & 3.2$\pm$159.4\% & \textbf{-28.4$\pm$81.0\%} & 24.4$\pm$208.4\% & -24.9$\pm$85.6\% & -28.4\% $\downarrow$ & 0.50 \\
+LSTM & standard & 64 & val\textbackslash{}_SMAPE & \textbf{10.1$\pm$49.6\%} & 22.8$\pm$42.3\% & 34.0$\pm$71.7\% & 35.2$\pm$68.1\% & 25.6$\pm$55.0\% & 10.1\% $\downarrow$ & 0.10 \\
+LSTM & standard & 64 & val\textbackslash{}_RMSE & 16.5$\pm$46.6\% & 18.9$\pm$43.8\% & \textbf{15.1$\pm$86.7\%} & 22.6$\pm$75.7\% & 16.9$\pm$78.8\% & 15.1\% $\downarrow$ & 0.50 \\
+LSTM & standard & 64 & val\textbackslash{}_MAE & \textbf{11.4$\pm$57.2\%} & 24.2$\pm$52.0\% & 33.7$\pm$94.6\% & 36.4$\pm$83.0\% & 26.4$\pm$73.2\% & 11.4\% $\downarrow$ & 0.10 \\
+LSTM & standard & 64 & val\textbackslash{}_MSE & \textbf{33.7$\pm$113.7\%} & 35.9$\pm$92.4\% & 47.5$\pm$313.6\% & 57.2$\pm$241.7\% & 56.1$\pm$235.9\% & 33.7\% $\downarrow$ & 0.10 \\
+\bottomrule
+\end{tabular}
+\end{table*}

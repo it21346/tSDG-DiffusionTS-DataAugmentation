@@ -1,0 +1,13 @@
+{"time":"2025-10-23T20:15:22.626831572+03:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-23T20:15:23.009839179+03:00","level":"INFO","msg":"stream: created new stream","id":"1bxq8vai"}
+{"time":"2025-10-23T20:15:23.009889655+03:00","level":"INFO","msg":"stream: started","id":"1bxq8vai"}
+{"time":"2025-10-23T20:15:23.009901367+03:00","level":"INFO","msg":"sender: started","stream_id":"1bxq8vai"}
+{"time":"2025-10-23T20:15:23.009926685+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"1bxq8vai"}
+{"time":"2025-10-23T20:15:23.00992964+03:00","level":"INFO","msg":"handler: started","stream_id":"1bxq8vai"}
+{"time":"2025-10-23T21:50:41.269311414+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_1234_augmentation_64_scaler_standard_DA_True_pinball_True","runtime_seconds":1.184656375},{"desc":"uploading output.log","runtime_seconds":0.750495502,"progress":"25.2KB/25.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.750483179,"progress":"1.0KB/1.0KB"},{"desc":"uploading media/images/train vs val_predictions_84_a5849eccbcc533754e55.png","runtime_seconds":0.750477478,"progress":"204.3KB/204.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.434801573,"progress":"2.8KB/2.8KB"}],"total_operations":5}}
+{"time":"2025-10-23T21:50:42.771476897+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T21:50:43.189819263+03:00","level":"INFO","msg":"stream: closing","id":"1bxq8vai"}
+{"time":"2025-10-23T21:50:43.189842086+03:00","level":"INFO","msg":"handler: closed","stream_id":"1bxq8vai"}
+{"time":"2025-10-23T21:50:43.189856604+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1bxq8vai"}
+{"time":"2025-10-23T21:50:43.189866412+03:00","level":"INFO","msg":"sender: closed","stream_id":"1bxq8vai"}
+{"time":"2025-10-23T21:50:43.18996576+03:00","level":"INFO","msg":"stream: closed","id":"1bxq8vai"}
