@@ -1,0 +1,13 @@
+{"time":"2025-10-28T04:52:34.334433612+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T04:52:34.711838888+02:00","level":"INFO","msg":"stream: created new stream","id":"zlmp1uzv"}
+{"time":"2025-10-28T04:52:34.711873203+02:00","level":"INFO","msg":"stream: started","id":"zlmp1uzv"}
+{"time":"2025-10-28T04:52:34.711901376+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zlmp1uzv"}
+{"time":"2025-10-28T04:52:34.711909732+02:00","level":"INFO","msg":"handler: started","stream_id":"zlmp1uzv"}
+{"time":"2025-10-28T04:52:34.711949517+02:00","level":"INFO","msg":"sender: started","stream_id":"zlmp1uzv"}
+{"time":"2025-10-28T05:06:48.926940492+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_4242_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.194100979},{"desc":"uploading media/images/train vs val_predictions_122_7353fdda3bfee4ce08a1.png","runtime_seconds":0.782174887,"progress":"207.5KB/207.5KB"},{"desc":"uploading output.log","runtime_seconds":0.782160749,"progress":"35.3KB/35.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.782156421,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.576944121,"progress":"2.8KB/2.8KB"}],"total_operations":5}}
+{"time":"2025-10-28T05:06:49.965472014+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T05:06:50.254467594+02:00","level":"INFO","msg":"stream: closing","id":"zlmp1uzv"}
+{"time":"2025-10-28T05:06:50.254478865+02:00","level":"INFO","msg":"handler: closed","stream_id":"zlmp1uzv"}
+{"time":"2025-10-28T05:06:50.254487091+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zlmp1uzv"}
+{"time":"2025-10-28T05:06:50.254502009+02:00","level":"INFO","msg":"sender: closed","stream_id":"zlmp1uzv"}
+{"time":"2025-10-28T05:06:50.254536143+02:00","level":"INFO","msg":"stream: closed","id":"zlmp1uzv"}

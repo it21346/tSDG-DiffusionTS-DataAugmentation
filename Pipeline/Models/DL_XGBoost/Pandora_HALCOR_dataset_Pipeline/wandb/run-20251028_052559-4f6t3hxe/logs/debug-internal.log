@@ -1,0 +1,13 @@
+{"time":"2025-10-28T05:25:59.36120804+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T05:25:59.723897155+02:00","level":"INFO","msg":"stream: created new stream","id":"4f6t3hxe"}
+{"time":"2025-10-28T05:25:59.723946307+02:00","level":"INFO","msg":"stream: started","id":"4f6t3hxe"}
+{"time":"2025-10-28T05:25:59.724036367+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4f6t3hxe"}
+{"time":"2025-10-28T05:25:59.724062376+02:00","level":"INFO","msg":"handler: started","stream_id":"4f6t3hxe"}
+{"time":"2025-10-28T05:25:59.724087454+02:00","level":"INFO","msg":"sender: started","stream_id":"4f6t3hxe"}
+{"time":"2025-10-28T05:39:40.112092482+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_1234_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.174211657,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_1234_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.274732515,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_117_e7142f37ec31229feb43.png","runtime_seconds":0.76696828,"progress":"173.4KB/173.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.766927923,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.570817078,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T05:39:41.083425931+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T05:39:41.50849491+02:00","level":"INFO","msg":"stream: closing","id":"4f6t3hxe"}
+{"time":"2025-10-28T05:39:41.508506431+02:00","level":"INFO","msg":"handler: closed","stream_id":"4f6t3hxe"}
+{"time":"2025-10-28T05:39:41.508514957+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4f6t3hxe"}
+{"time":"2025-10-28T05:39:41.508534464+02:00","level":"INFO","msg":"sender: closed","stream_id":"4f6t3hxe"}
+{"time":"2025-10-28T05:39:41.508578377+02:00","level":"INFO","msg":"stream: closed","id":"4f6t3hxe"}

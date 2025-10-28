@@ -1,0 +1,13 @@
+{"time":"2025-10-28T07:03:29.830430681+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T07:03:30.214206831+02:00","level":"INFO","msg":"stream: created new stream","id":"zipf097x"}
+{"time":"2025-10-28T07:03:30.214241156+02:00","level":"INFO","msg":"stream: started","id":"zipf097x"}
+{"time":"2025-10-28T07:03:30.214263027+02:00","level":"INFO","msg":"handler: started","stream_id":"zipf097x"}
+{"time":"2025-10-28T07:03:30.214257527+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zipf097x"}
+{"time":"2025-10-28T07:03:30.21429109+02:00","level":"INFO","msg":"sender: started","stream_id":"zipf097x"}
+{"time":"2025-10-28T07:21:31.860830774+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.088427034,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.170023253,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_129_35be01ab3b8a7b0a096a.png","runtime_seconds":0.777688941,"progress":"179.3KB/179.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.564009303,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-10-28T07:21:32.937535613+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T07:21:33.248505081+02:00","level":"INFO","msg":"stream: closing","id":"zipf097x"}
+{"time":"2025-10-28T07:21:33.248515491+02:00","level":"INFO","msg":"handler: closed","stream_id":"zipf097x"}
+{"time":"2025-10-28T07:21:33.248521472+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zipf097x"}
+{"time":"2025-10-28T07:21:33.248544225+02:00","level":"INFO","msg":"sender: closed","stream_id":"zipf097x"}
+{"time":"2025-10-28T07:21:33.248573931+02:00","level":"INFO","msg":"stream: closed","id":"zipf097x"}

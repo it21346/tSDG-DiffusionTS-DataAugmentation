@@ -1,0 +1,13 @@
+{"time":"2025-10-28T06:24:59.557582364+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T06:24:59.94018981+02:00","level":"INFO","msg":"stream: created new stream","id":"zhubctm9"}
+{"time":"2025-10-28T06:24:59.940233673+02:00","level":"INFO","msg":"stream: started","id":"zhubctm9"}
+{"time":"2025-10-28T06:24:59.940264451+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zhubctm9"}
+{"time":"2025-10-28T06:24:59.940273138+02:00","level":"INFO","msg":"handler: started","stream_id":"zhubctm9"}
+{"time":"2025-10-28T06:24:59.940326048+02:00","level":"INFO","msg":"sender: started","stream_id":"zhubctm9"}
+{"time":"2025-10-28T06:41:49.016822029+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.17961999,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.236380145,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_84_0324ad3e52e952be5de3.png","runtime_seconds":0.782591112,"progress":"206.2KB/206.2KB"},{"desc":"uploading output.log","runtime_seconds":0.782579681,"progress":"24.7KB/24.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.58512612,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T06:41:50.569052043+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T06:41:50.862434678+02:00","level":"INFO","msg":"stream: closing","id":"zhubctm9"}
+{"time":"2025-10-28T06:41:50.862450438+02:00","level":"INFO","msg":"handler: closed","stream_id":"zhubctm9"}
+{"time":"2025-10-28T06:41:50.862470365+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zhubctm9"}
+{"time":"2025-10-28T06:41:50.862489171+02:00","level":"INFO","msg":"sender: closed","stream_id":"zhubctm9"}
+{"time":"2025-10-28T06:41:50.8625632+02:00","level":"INFO","msg":"stream: closed","id":"zhubctm9"}

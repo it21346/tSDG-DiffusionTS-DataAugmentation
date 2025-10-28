@@ -1,0 +1,13 @@
+{"time":"2025-10-28T05:16:58.537765581+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T05:16:58.930187963+02:00","level":"INFO","msg":"stream: created new stream","id":"wpe1wyq3"}
+{"time":"2025-10-28T05:16:58.930265019+02:00","level":"INFO","msg":"stream: started","id":"wpe1wyq3"}
+{"time":"2025-10-28T05:16:58.930323419+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"wpe1wyq3"}
+{"time":"2025-10-28T05:16:58.930380056+02:00","level":"INFO","msg":"sender: started","stream_id":"wpe1wyq3"}
+{"time":"2025-10-28T05:16:58.930409551+02:00","level":"INFO","msg":"handler: started","stream_id":"wpe1wyq3"}
+{"time":"2025-10-28T05:25:55.075133175+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.180381014,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.124576589,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading output.log","runtime_seconds":0.77164699,"progress":"22.3KB/22.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.771643484,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.554526444,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T05:25:56.332818833+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T05:25:56.697753734+02:00","level":"INFO","msg":"stream: closing","id":"wpe1wyq3"}
+{"time":"2025-10-28T05:25:56.697768692+02:00","level":"INFO","msg":"handler: closed","stream_id":"wpe1wyq3"}
+{"time":"2025-10-28T05:25:56.69777787+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wpe1wyq3"}
+{"time":"2025-10-28T05:25:56.697794261+02:00","level":"INFO","msg":"sender: closed","stream_id":"wpe1wyq3"}
+{"time":"2025-10-28T05:25:56.697842933+02:00","level":"INFO","msg":"stream: closed","id":"wpe1wyq3"}

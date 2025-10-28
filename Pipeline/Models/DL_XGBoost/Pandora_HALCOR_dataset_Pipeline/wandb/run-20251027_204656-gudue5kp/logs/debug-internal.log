@@ -1,0 +1,13 @@
+{"time":"2025-10-27T20:46:56.672074171+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-27T20:46:57.06031598+02:00","level":"INFO","msg":"stream: created new stream","id":"gudue5kp"}
+{"time":"2025-10-27T20:46:57.060343061+02:00","level":"INFO","msg":"stream: started","id":"gudue5kp"}
+{"time":"2025-10-27T20:46:57.060384579+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gudue5kp"}
+{"time":"2025-10-27T20:46:57.06044302+02:00","level":"INFO","msg":"handler: started","stream_id":"gudue5kp"}
+{"time":"2025-10-27T20:46:57.060461625+02:00","level":"INFO","msg":"sender: started","stream_id":"gudue5kp"}
+{"time":"2025-10-27T20:53:27.933776112+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_32_scaler_standard_DA_True_pinball_True","runtime_seconds":1.176240062,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_4242_augmentation_32_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.189471246,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_65_82cd97453671338c141f.png","runtime_seconds":0.784008738,"progress":"197.5KB/197.5KB"},{"desc":"uploading history steps 62-66, summary, console lines 131-144","runtime_seconds":0.289251055}],"total_operations":3}}
+{"time":"2025-10-27T20:53:28.978577662+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-27T20:53:29.28330658+02:00","level":"INFO","msg":"stream: closing","id":"gudue5kp"}
+{"time":"2025-10-27T20:53:29.283323873+02:00","level":"INFO","msg":"handler: closed","stream_id":"gudue5kp"}
+{"time":"2025-10-27T20:53:29.28333313+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gudue5kp"}
+{"time":"2025-10-27T20:53:29.283335675+02:00","level":"INFO","msg":"sender: closed","stream_id":"gudue5kp"}
+{"time":"2025-10-27T20:53:29.283398814+02:00","level":"INFO","msg":"stream: closed","id":"gudue5kp"}

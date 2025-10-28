@@ -1,0 +1,13 @@
+{"time":"2025-10-28T03:56:26.229508348+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T03:56:26.617820301+02:00","level":"INFO","msg":"stream: created new stream","id":"fyxwvw2z"}
+{"time":"2025-10-28T03:56:26.617855287+02:00","level":"INFO","msg":"stream: started","id":"fyxwvw2z"}
+{"time":"2025-10-28T03:56:26.617864935+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"fyxwvw2z"}
+{"time":"2025-10-28T03:56:26.617873602+02:00","level":"INFO","msg":"handler: started","stream_id":"fyxwvw2z"}
+{"time":"2025-10-28T03:56:26.61790959+02:00","level":"INFO","msg":"sender: started","stream_id":"fyxwvw2z"}
+{"time":"2025-10-28T04:05:53.279649951+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.18485019},{"desc":"uploading media/images/train vs val_predictions_70_2b8efdc8e582768ad463.png","runtime_seconds":0.76677108,"progress":"206.8KB/206.8KB"},{"desc":"uploading output.log","runtime_seconds":0.766759989,"progress":"20.6KB/20.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.553875607,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T04:05:54.020761147+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T04:05:54.33444724+02:00","level":"INFO","msg":"stream: closing","id":"fyxwvw2z"}
+{"time":"2025-10-28T04:05:54.334464373+02:00","level":"INFO","msg":"handler: closed","stream_id":"fyxwvw2z"}
+{"time":"2025-10-28T04:05:54.334474221+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fyxwvw2z"}
+{"time":"2025-10-28T04:05:54.334490001+02:00","level":"INFO","msg":"sender: closed","stream_id":"fyxwvw2z"}
+{"time":"2025-10-28T04:05:54.334551437+02:00","level":"INFO","msg":"stream: closed","id":"fyxwvw2z"}

@@ -1,0 +1,13 @@
+{"time":"2025-10-28T04:24:00.126584606+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T04:24:00.553673012+02:00","level":"INFO","msg":"stream: created new stream","id":"bb5i7f9a"}
+{"time":"2025-10-28T04:24:00.553703069+02:00","level":"INFO","msg":"stream: started","id":"bb5i7f9a"}
+{"time":"2025-10-28T04:24:00.553723548+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"bb5i7f9a"}
+{"time":"2025-10-28T04:24:00.553782449+02:00","level":"INFO","msg":"sender: started","stream_id":"bb5i7f9a"}
+{"time":"2025-10-28T04:24:00.553848203+02:00","level":"INFO","msg":"handler: started","stream_id":"bb5i7f9a"}
+{"time":"2025-10-28T04:32:09.166905219+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.177045735,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.36860861,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading media/images/train vs val_predictions_61_405991cb49013a2b4ceb.png","runtime_seconds":0.751522098,"progress":"191.4KB/191.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.751505006,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.517446097,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T04:32:10.504042689+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T04:32:10.836724549+02:00","level":"INFO","msg":"stream: closing","id":"bb5i7f9a"}
+{"time":"2025-10-28T04:32:10.836744517+02:00","level":"INFO","msg":"handler: closed","stream_id":"bb5i7f9a"}
+{"time":"2025-10-28T04:32:10.836764805+02:00","level":"INFO","msg":"sender: closed","stream_id":"bb5i7f9a"}
+{"time":"2025-10-28T04:32:10.836760317+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bb5i7f9a"}
+{"time":"2025-10-28T04:32:10.836848984+02:00","level":"INFO","msg":"stream: closed","id":"bb5i7f9a"}

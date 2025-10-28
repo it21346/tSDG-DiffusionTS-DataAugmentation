@@ -1,0 +1,18 @@
+wandb_version: 1
+
+batch_size:
+  value: 32
+data_augmentation:
+  value: true
+fake_data_length:
+  value: 0.75
+model_name:
+  value: BiLSTM
+pinball_loss_usage:
+  value: true
+scaler_name:
+  value: standard
+seed:
+  value: 777
+testing_stage:
+  value: true

@@ -1,0 +1,165 @@
+Size of training data is:  (1920, 48, 18)
+Training LSTM for quantile 0.05...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1761586138.574385 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.699576 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.699816 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.701833 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.702064 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.702247 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.762661 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.762901 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1761586138.763114 1395590 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-10-27 19:28:58.764165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:2021] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3731 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.9
+/home/stelio/miniconda3/envs/tensorflow_gpu/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m5s[0m 41ms/step - loss: 0.1545 - mae: 0.8701 - mape: 131.5165 - mse: 1.0406 - val_loss: 0.0687 - val_mae: 1.2243 - val_mape: 129.3774 - val_mse: 1.8073
+Epoch 2/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0539 - mae: 0.9176 - mape: 157.0886 - mse: 1.1742 - val_loss: 0.0702 - val_mae: 1.4029 - val_mape: 154.9488 - val_mse: 2.3018
+Epoch 3/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0497 - mae: 0.8754 - mape: 161.0121 - mse: 1.1251 - val_loss: 0.0675 - val_mae: 1.2933 - val_mape: 141.5975 - val_mse: 1.9777
+Epoch 4/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0468 - mae: 0.8067 - mape: 134.1118 - mse: 0.9694 - val_loss: 0.0734 - val_mae: 1.4682 - val_mape: 166.5273 - val_mse: 2.4727
+Epoch 5/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0470 - mae: 0.8316 - mape: 142.8275 - mse: 1.0450 - val_loss: 0.0642 - val_mae: 1.1995 - val_mape: 132.2760 - val_mse: 1.6948
+Epoch 6/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 39ms/step - loss: 0.0460 - mae: 0.8172 - mape: 145.8390 - mse: 0.9915 - val_loss: 0.0616 - val_mae: 1.0791 - val_mape: 118.5504 - val_mse: 1.3764
+Epoch 7/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0444 - mae: 0.7652 - mape: 128.9104 - mse: 0.8663 - val_loss: 0.0559 - val_mae: 0.7832 - val_mape: 84.3659 - val_mse: 0.7523
+Epoch 8/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0410 - mae: 0.6812 - mape: 121.3173 - mse: 0.6892 - val_loss: 0.0457 - val_mae: 0.8171 - val_mape: 91.3541 - val_mse: 0.8069
+Epoch 9/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0357 - mae: 0.5951 - mape: 100.7169 - mse: 0.5417 - val_loss: 0.0406 - val_mae: 0.7519 - val_mape: 85.0995 - val_mse: 0.6963
+Epoch 10/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0341 - mae: 0.5735 - mape: 96.9709 - mse: 0.4908 - val_loss: 0.0452 - val_mae: 0.9049 - val_mape: 103.9978 - val_mse: 0.9609
+Epoch 11/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0345 - mae: 0.5816 - mape: 95.8786 - mse: 0.5196 - val_loss: 0.0354 - val_mae: 0.6981 - val_mape: 78.9193 - val_mse: 0.6031
+Epoch 12/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0345 - mae: 0.5255 - mape: 92.8424 - mse: 0.4248 - val_loss: 0.0356 - val_mae: 0.6975 - val_mape: 80.1256 - val_mse: 0.6007
+Epoch 13/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0321 - mae: 0.5246 - mape: 88.7877 - mse: 0.4239 - val_loss: 0.0405 - val_mae: 0.8105 - val_mape: 98.0923 - val_mse: 0.7663
+Epoch 14/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0320 - mae: 0.5417 - mape: 102.7941 - mse: 0.4402 - val_loss: 0.0387 - val_mae: 0.7740 - val_mape: 91.9449 - val_mse: 0.7161
+Epoch 15/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0315 - mae: 0.5287 - mape: 97.0171 - mse: 0.4182 - val_loss: 0.0394 - val_mae: 0.7875 - val_mape: 94.9326 - val_mse: 0.7259
+Epoch 16/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0297 - mae: 0.5301 - mape: 91.8153 - mse: 0.4221 - val_loss: 0.0358 - val_mae: 0.7168 - val_mape: 84.3926 - val_mse: 0.6189
+Epoch 17/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0302 - mae: 0.4951 - mape: 89.5005 - mse: 0.3728 - val_loss: 0.0356 - val_mae: 0.7124 - val_mape: 84.1797 - val_mse: 0.6161
+Epoch 18/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0319 - mae: 0.5425 - mape: 99.3644 - mse: 0.4213 - val_loss: 0.0347 - val_mae: 0.6932 - val_mape: 85.3989 - val_mse: 0.5824
+Epoch 19/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0305 - mae: 0.4940 - mape: 88.3578 - mse: 0.3715 - val_loss: 0.0367 - val_mae: 0.7348 - val_mape: 88.5063 - val_mse: 0.6412
+Epoch 20/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0300 - mae: 0.4804 - mape: 90.4464 - mse: 0.3607 - val_loss: 0.0323 - val_mae: 0.5658 - val_mape: 67.2151 - val_mse: 0.4133
+Epoch 21/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0296 - mae: 0.4634 - mape: 82.6346 - mse: 0.3289 - val_loss: 0.0370 - val_mae: 0.7392 - val_mape: 90.2001 - val_mse: 0.6533
+Epoch 22/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0286 - mae: 0.4913 - mape: 97.3531 - mse: 0.3626 - val_loss: 0.0378 - val_mae: 0.7566 - val_mape: 92.0321 - val_mse: 0.6765
+Epoch 23/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0281 - mae: 0.4636 - mape: 88.8989 - mse: 0.3249 - val_loss: 0.0292 - val_mae: 0.5836 - val_mape: 72.5245 - val_mse: 0.4373
+Epoch 24/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0297 - mae: 0.4942 - mape: 95.6189 - mse: 0.3752 - val_loss: 0.0333 - val_mae: 0.6287 - val_mape: 71.7706 - val_mse: 0.4963
+Epoch 25/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0268 - mae: 0.4503 - mape: 78.8128 - mse: 0.3054 - val_loss: 0.0331 - val_mae: 0.5380 - val_mape: 66.0460 - val_mse: 0.3759
+Epoch 26/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0268 - mae: 0.4485 - mape: 82.8067 - mse: 0.3094 - val_loss: 0.0309 - val_mae: 0.5617 - val_mape: 66.0841 - val_mse: 0.4084
+Epoch 27/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0278 - mae: 0.4460 - mape: 85.0725 - mse: 0.3079 - val_loss: 0.0342 - val_mae: 0.6462 - val_mape: 76.7683 - val_mse: 0.5073
+Epoch 28/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 39ms/step - loss: 0.0277 - mae: 0.4597 - mape: 85.6537 - mse: 0.3090 - val_loss: 0.0321 - val_mae: 0.6134 - val_mape: 73.9912 - val_mse: 0.4684
+Epoch 29/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0258 - mae: 0.4480 - mape: 86.4520 - mse: 0.3087 - val_loss: 0.0352 - val_mae: 0.7010 - val_mape: 82.5191 - val_mse: 0.5991
+Epoch 30/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0263 - mae: 0.4438 - mape: 83.7067 - mse: 0.3010 - val_loss: 0.0322 - val_mae: 0.5959 - val_mape: 72.6770 - val_mse: 0.4507
+Epoch 31/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0276 - mae: 0.4482 - mape: 85.7205 - mse: 0.3042 - val_loss: 0.0340 - val_mae: 0.6615 - val_mape: 80.4975 - val_mse: 0.5422
+Epoch 32/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0257 - mae: 0.4282 - mape: 79.4627 - mse: 0.2868 - val_loss: 0.0320 - val_mae: 0.5857 - val_mape: 71.6346 - val_mse: 0.4361
+Epoch 33/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0260 - mae: 0.4234 - mape: 74.7084 - mse: 0.2608 - val_loss: 0.0341 - val_mae: 0.6632 - val_mape: 81.3736 - val_mse: 0.5428
+Epoch 34/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 37ms/step - loss: 0.0269 - mae: 0.4577 - mape: 89.5841 - mse: 0.3106 - val_loss: 0.0336 - val_mae: 0.6139 - val_mape: 74.5376 - val_mse: 0.4713
+Epoch 35/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0249 - mae: 0.4131 - mape: 75.1052 - mse: 0.2570 - val_loss: 0.0329 - val_mae: 0.5826 - val_mape: 70.3032 - val_mse: 0.4270
+Epoch 36/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0251 - mae: 0.4092 - mape: 82.0927 - mse: 0.2601 - val_loss: 0.0342 - val_mae: 0.6310 - val_mape: 76.3286 - val_mse: 0.4927
+Epoch 37/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0259 - mae: 0.4276 - mape: 80.3347 - mse: 0.2758 - val_loss: 0.0332 - val_mae: 0.6349 - val_mape: 75.4394 - val_mse: 0.5057
+Epoch 38/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0255 - mae: 0.4288 - mape: 78.5391 - mse: 0.2748 - val_loss: 0.0339 - val_mae: 0.5934 - val_mape: 69.1913 - val_mse: 0.4467
+Training LSTM for quantile 0.5...
+Epoch 1/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m4s[0m 42ms/step - loss: 0.2435 - mae: 0.4869 - mape: 108.5431 - mse: 0.4102 - val_loss: 0.2471 - val_mae: 0.4942 - val_mape: 86.0554 - val_mse: 0.4234
+Epoch 2/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1724 - mae: 0.3448 - mape: 109.9057 - mse: 0.2355 - val_loss: 0.2415 - val_mae: 0.4831 - val_mape: 78.4606 - val_mse: 0.3611
+Epoch 3/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 39ms/step - loss: 0.1665 - mae: 0.3330 - mape: 109.4630 - mse: 0.2222 - val_loss: 0.2253 - val_mae: 0.4507 - val_mape: 75.1762 - val_mse: 0.3299
+Epoch 4/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1574 - mae: 0.3148 - mape: 101.1632 - mse: 0.2008 - val_loss: 0.2155 - val_mae: 0.4309 - val_mape: 68.9528 - val_mse: 0.2833
+Epoch 5/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1527 - mae: 0.3054 - mape: 101.9905 - mse: 0.1894 - val_loss: 0.1870 - val_mae: 0.3739 - val_mape: 64.4188 - val_mse: 0.2378
+Epoch 6/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1431 - mae: 0.2863 - mape: 81.3665 - mse: 0.1644 - val_loss: 0.1844 - val_mae: 0.3687 - val_mape: 56.3628 - val_mse: 0.2046
+Epoch 7/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1373 - mae: 0.2746 - mape: 80.3657 - mse: 0.1481 - val_loss: 0.1649 - val_mae: 0.3299 - val_mape: 49.8520 - val_mse: 0.1707
+Epoch 8/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1278 - mae: 0.2556 - mape: 74.2537 - mse: 0.1259 - val_loss: 0.1504 - val_mae: 0.3008 - val_mape: 44.2677 - val_mse: 0.1496
+Epoch 9/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1249 - mae: 0.2498 - mape: 72.0961 - mse: 0.1197 - val_loss: 0.1328 - val_mae: 0.2656 - val_mape: 44.9019 - val_mse: 0.1298
+Epoch 10/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1227 - mae: 0.2454 - mape: 69.4063 - mse: 0.1149 - val_loss: 0.1367 - val_mae: 0.2735 - val_mape: 40.6129 - val_mse: 0.1275
+Epoch 11/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1210 - mae: 0.2420 - mape: 69.0913 - mse: 0.1052 - val_loss: 0.1416 - val_mae: 0.2832 - val_mape: 40.4607 - val_mse: 0.1321
+Epoch 12/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1143 - mae: 0.2287 - mape: 64.2870 - mse: 0.1024 - val_loss: 0.1259 - val_mae: 0.2518 - val_mape: 40.7188 - val_mse: 0.1133
+Epoch 13/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1126 - mae: 0.2252 - mape: 56.0665 - mse: 0.0948 - val_loss: 0.1269 - val_mae: 0.2537 - val_mape: 40.3680 - val_mse: 0.1146
+Epoch 14/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1148 - mae: 0.2297 - mape: 62.6993 - mse: 0.0974 - val_loss: 0.1358 - val_mae: 0.2715 - val_mape: 39.5402 - val_mse: 0.1234
+Epoch 15/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.1091 - mae: 0.2181 - mape: 62.1926 - mse: 0.0889 - val_loss: 0.1279 - val_mae: 0.2558 - val_mape: 35.7207 - val_mse: 0.1121
+Training LSTM for quantile 0.95...
+Epoch 1/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m4s[0m 42ms/step - loss: 0.1192 - mae: 0.8519 - mape: 230.7984 - mse: 1.0765 - val_loss: 0.0475 - val_mae: 0.8772 - val_mape: 162.6828 - val_mse: 1.1486
+Epoch 2/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0452 - mae: 0.7606 - mape: 228.1570 - mse: 0.8606 - val_loss: 0.0445 - val_mae: 0.7458 - val_mape: 143.3380 - val_mse: 0.9286
+Epoch 3/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0424 - mae: 0.7052 - mape: 208.3144 - mse: 0.7650 - val_loss: 0.0434 - val_mae: 0.7138 - val_mape: 137.8921 - val_mse: 0.8649
+Epoch 4/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0425 - mae: 0.6947 - mape: 211.3627 - mse: 0.7497 - val_loss: 0.0421 - val_mae: 0.6793 - val_mape: 133.7106 - val_mse: 0.8246
+Epoch 5/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0385 - mae: 0.6436 - mape: 202.9224 - mse: 0.6746 - val_loss: 0.0414 - val_mae: 0.6801 - val_mape: 133.6895 - val_mse: 0.8126
+Epoch 6/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0373 - mae: 0.6317 - mape: 206.1134 - mse: 0.6574 - val_loss: 0.0414 - val_mae: 0.6327 - val_mape: 125.9036 - val_mse: 0.7285
+Epoch 7/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0363 - mae: 0.6060 - mape: 198.4968 - mse: 0.6226 - val_loss: 0.0429 - val_mae: 0.6223 - val_mape: 123.0503 - val_mse: 0.7043
+Epoch 8/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0368 - mae: 0.6217 - mape: 204.3026 - mse: 0.6355 - val_loss: 0.0537 - val_mae: 0.5639 - val_mape: 113.1395 - val_mse: 0.6181
+Epoch 9/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0358 - mae: 0.5912 - mape: 187.8249 - mse: 0.5779 - val_loss: 0.0398 - val_mae: 0.6921 - val_mape: 132.6269 - val_mse: 0.7951
+Epoch 10/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0342 - mae: 0.5916 - mape: 194.0842 - mse: 0.5848 - val_loss: 0.0387 - val_mae: 0.6843 - val_mape: 131.2058 - val_mse: 0.7773
+Epoch 11/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0330 - mae: 0.5804 - mape: 184.9778 - mse: 0.5613 - val_loss: 0.0397 - val_mae: 0.5572 - val_mape: 111.1023 - val_mse: 0.5852
+Epoch 12/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0345 - mae: 0.5534 - mape: 180.4944 - mse: 0.5159 - val_loss: 0.0355 - val_mae: 0.5817 - val_mape: 114.0995 - val_mse: 0.6124
+Epoch 13/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0325 - mae: 0.5464 - mape: 173.5758 - mse: 0.4996 - val_loss: 0.0361 - val_mae: 0.6346 - val_mape: 120.7483 - val_mse: 0.6618
+Epoch 14/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 38ms/step - loss: 0.0317 - mae: 0.5443 - mape: 166.6912 - mse: 0.4964 - val_loss: 0.0355 - val_mae: 0.6576 - val_mape: 122.5368 - val_mse: 0.6756
+Epoch 15/500
+[1m60/60[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 39ms/step - loss: 0.0322 - mae: 0.5376 - mape: 176.8358 - mse: 0.4854 - val_loss: 0.0340 - val_mae: 0.5831 - val_mape: 111.3261 - val_mse: 0.5710
+[1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+WARNING:tensorflow:5 out of the last 13 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x7da9601db880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+Mean Absolute Error (MAE): 23.57513312596453
+Mean squared error (MSE): 1068.703204607333
+Root Mean Squared Error (RMSE): 32.69102636209718
+R² Score: 0.6877545844899273
+SMAPE score: 30.430499537695095
+MASE score: 1.0965317845039622
+(169, 1) (169, 1)
+(169,)

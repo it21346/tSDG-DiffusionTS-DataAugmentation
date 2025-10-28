@@ -1,0 +1,13 @@
+{"time":"2025-10-28T12:39:25.759541863+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T12:39:26.14727901+02:00","level":"INFO","msg":"stream: created new stream","id":"26q4yink"}
+{"time":"2025-10-28T12:39:26.147353069+02:00","level":"INFO","msg":"stream: started","id":"26q4yink"}
+{"time":"2025-10-28T12:39:26.147422651+02:00","level":"INFO","msg":"sender: started","stream_id":"26q4yink"}
+{"time":"2025-10-28T12:39:26.147432399+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"26q4yink"}
+{"time":"2025-10-28T12:39:26.147465261+02:00","level":"INFO","msg":"handler: started","stream_id":"26q4yink"}
+{"time":"2025-10-28T12:51:29.05713744+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.175301474,"subtasks":[{"desc":"model_name_LSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.139415169,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading output.log","runtime_seconds":0.780121587,"progress":"19.6KB/19.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.780114012,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.517609478,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T12:51:30.006183605+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T12:51:30.344827174+02:00","level":"INFO","msg":"stream: closing","id":"26q4yink"}
+{"time":"2025-10-28T12:51:30.344850699+02:00","level":"INFO","msg":"handler: closed","stream_id":"26q4yink"}
+{"time":"2025-10-28T12:51:30.344870656+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"26q4yink"}
+{"time":"2025-10-28T12:51:30.344896585+02:00","level":"INFO","msg":"sender: closed","stream_id":"26q4yink"}
+{"time":"2025-10-28T12:51:30.344997345+02:00","level":"INFO","msg":"stream: closed","id":"26q4yink"}

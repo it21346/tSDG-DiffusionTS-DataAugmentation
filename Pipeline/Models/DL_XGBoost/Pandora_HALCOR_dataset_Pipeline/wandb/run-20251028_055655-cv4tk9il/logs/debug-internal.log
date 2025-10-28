@@ -1,0 +1,13 @@
+{"time":"2025-10-28T05:56:56.199789835+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-28T05:56:56.585781034+02:00","level":"INFO","msg":"stream: created new stream","id":"cv4tk9il"}
+{"time":"2025-10-28T05:56:56.585809137+02:00","level":"INFO","msg":"stream: started","id":"cv4tk9il"}
+{"time":"2025-10-28T05:56:56.585834636+02:00","level":"INFO","msg":"sender: started","stream_id":"cv4tk9il"}
+{"time":"2025-10-28T05:56:56.585846939+02:00","level":"INFO","msg":"handler: started","stream_id":"cv4tk9il"}
+{"time":"2025-10-28T05:56:56.585834796+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"cv4tk9il"}
+{"time":"2025-10-28T06:08:44.371501569+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_16_scaler_standard_DA_True_pinball_True","runtime_seconds":1.179528958,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_4242_augmentation_16_scaler_standard_DA_True_pinball_True.npz","runtime_seconds":0.303610092,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading output.log","runtime_seconds":0.781671882,"progress":"17.6KB/17.6KB"},{"desc":"uploading media/images/train vs val_predictions_59_3b898499de153057971f.png","runtime_seconds":0.781656473,"progress":"201.3KB/201.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.547962285,"progress":"2.8KB/2.8KB"}],"total_operations":4}}
+{"time":"2025-10-28T06:08:45.459513871+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T06:08:45.791259362+02:00","level":"INFO","msg":"stream: closing","id":"cv4tk9il"}
+{"time":"2025-10-28T06:08:45.791275382+02:00","level":"INFO","msg":"handler: closed","stream_id":"cv4tk9il"}
+{"time":"2025-10-28T06:08:45.791284961+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cv4tk9il"}
+{"time":"2025-10-28T06:08:45.79129528+02:00","level":"INFO","msg":"sender: closed","stream_id":"cv4tk9il"}
+{"time":"2025-10-28T06:08:45.79136329+02:00","level":"INFO","msg":"stream: closed","id":"cv4tk9il"}

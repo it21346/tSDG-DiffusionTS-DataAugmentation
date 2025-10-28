@@ -1,0 +1,13 @@
+{"time":"2025-10-27T21:25:58.788098516+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-27T21:25:59.160889008+02:00","level":"INFO","msg":"stream: created new stream","id":"khgyb6rc"}
+{"time":"2025-10-27T21:25:59.160934614+02:00","level":"INFO","msg":"stream: started","id":"khgyb6rc"}
+{"time":"2025-10-27T21:25:59.161023081+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"khgyb6rc"}
+{"time":"2025-10-27T21:25:59.16105954+02:00","level":"INFO","msg":"sender: started","stream_id":"khgyb6rc"}
+{"time":"2025-10-27T21:25:59.161052176+02:00","level":"INFO","msg":"handler: started","stream_id":"khgyb6rc"}
+{"time":"2025-10-27T21:32:33.217285627+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_LSTM_predictions_seed_4242_augmentation_32_scaler_standard_DA_True_pinball_True","runtime_seconds":1.174672399}],"total_operations":1}}
+{"time":"2025-10-27T21:32:34.261067147+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-27T21:32:34.588548512+02:00","level":"INFO","msg":"stream: closing","id":"khgyb6rc"}
+{"time":"2025-10-27T21:32:34.588574821+02:00","level":"INFO","msg":"handler: closed","stream_id":"khgyb6rc"}
+{"time":"2025-10-27T21:32:34.58858483+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"khgyb6rc"}
+{"time":"2025-10-27T21:32:34.588599488+02:00","level":"INFO","msg":"sender: closed","stream_id":"khgyb6rc"}
+{"time":"2025-10-27T21:32:34.588637759+02:00","level":"INFO","msg":"stream: closed","id":"khgyb6rc"}
