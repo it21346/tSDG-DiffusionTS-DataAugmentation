@@ -1,0 +1,17 @@
+{"time":"2025-10-28T20:22:24.092547671+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:22:24.092556087+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_202224-28z0erx7/logs/debug-core.log"}
+{"time":"2025-10-28T20:22:24.19657769+02:00","level":"INFO","msg":"created new stream","id":"28z0erx7"}
+{"time":"2025-10-28T20:22:24.196603048+02:00","level":"INFO","msg":"stream: started","id":"28z0erx7"}
+{"time":"2025-10-28T20:22:24.196626272+02:00","level":"INFO","msg":"sender: started","stream_id":"28z0erx7"}
+{"time":"2025-10-28T20:22:24.196613158+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"28z0erx7"}}
+{"time":"2025-10-28T20:22:24.19661946+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"28z0erx7"}}
+{"time":"2025-10-28T20:22:24.531340814+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-28T20:25:50.179747263+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-28T20:25:50.180083491+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-28T20:25:51.180091637+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.9","runtime_seconds":1.108073985},{"desc":"uploading config.yaml","runtime_seconds":0.31042476,"progress":"1.9KB/1.9KB"},{"desc":"uploading output.log","runtime_seconds":0.310418207,"progress":"9.0KB/9.0KB"}],"total_operations":3}}
+{"time":"2025-10-28T20:25:52.564533066+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T20:25:53.881361926+02:00","level":"INFO","msg":"stream: closing","id":"28z0erx7"}
+{"time":"2025-10-28T20:25:53.881375101+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"28z0erx7"}}
+{"time":"2025-10-28T20:25:53.881388176+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"28z0erx7"}}
+{"time":"2025-10-28T20:25:53.881393196+02:00","level":"INFO","msg":"sender: closed","stream_id":"28z0erx7"}
+{"time":"2025-10-28T20:25:53.881424625+02:00","level":"INFO","msg":"stream: closed","id":"28z0erx7"}

@@ -1,0 +1,17 @@
+{"time":"2025-10-28T20:29:08.395265538+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:29:08.395274264+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_202908-qsm8r14p/logs/debug-core.log"}
+{"time":"2025-10-28T20:29:08.499416896+02:00","level":"INFO","msg":"created new stream","id":"qsm8r14p"}
+{"time":"2025-10-28T20:29:08.499440401+02:00","level":"INFO","msg":"stream: started","id":"qsm8r14p"}
+{"time":"2025-10-28T20:29:08.499457653+02:00","level":"INFO","msg":"sender: started","stream_id":"qsm8r14p"}
+{"time":"2025-10-28T20:29:08.499462092+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"qsm8r14p"}}
+{"time":"2025-10-28T20:29:08.499453225+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"qsm8r14p"}}
+{"time":"2025-10-28T20:29:08.835435988+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-28T20:34:04.788332362+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-28T20:34:04.788649684+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-28T20:34:05.788646374+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.7","runtime_seconds":1.112129336,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.7.npz","runtime_seconds":0.211112829,"progress":"2.5KB/2.5KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.363545017,"progress":"1.9KB/1.9KB"},{"desc":"uploading output.log","runtime_seconds":0.363538203,"progress":"9.6KB/9.6KB"}],"total_operations":3}}
+{"time":"2025-10-28T20:34:07.299455161+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T20:34:08.625415986+02:00","level":"INFO","msg":"stream: closing","id":"qsm8r14p"}
+{"time":"2025-10-28T20:34:08.625429041+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"qsm8r14p"}}
+{"time":"2025-10-28T20:34:08.625443248+02:00","level":"INFO","msg":"sender: closed","stream_id":"qsm8r14p"}
+{"time":"2025-10-28T20:34:08.625442005+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"qsm8r14p"}}
+{"time":"2025-10-28T20:34:08.625491229+02:00","level":"INFO","msg":"stream: closed","id":"qsm8r14p"}

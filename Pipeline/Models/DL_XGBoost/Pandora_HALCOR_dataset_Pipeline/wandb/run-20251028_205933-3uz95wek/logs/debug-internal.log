@@ -1,0 +1,17 @@
+{"time":"2025-10-28T20:59:33.454272931+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:59:33.454281728+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_205933-3uz95wek/logs/debug-core.log"}
+{"time":"2025-10-28T20:59:33.55823036+02:00","level":"INFO","msg":"created new stream","id":"3uz95wek"}
+{"time":"2025-10-28T20:59:33.558251961+02:00","level":"INFO","msg":"stream: started","id":"3uz95wek"}
+{"time":"2025-10-28T20:59:33.558271067+02:00","level":"INFO","msg":"sender: started","stream_id":"3uz95wek"}
+{"time":"2025-10-28T20:59:33.558261459+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3uz95wek"}}
+{"time":"2025-10-28T20:59:33.558271989+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3uz95wek"}}
+{"time":"2025-10-28T20:59:33.881228118+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-28T21:04:01.777397848+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-28T21:04:01.777703517+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-28T21:04:02.777843882+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_4242_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.5","runtime_seconds":1.114749197},{"desc":"uploading media/images/train vs val_predictions_33_505bd11e8c217fb376aa.png","runtime_seconds":0.782092543,"progress":"132.6KB/132.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.55415888,"progress":"791B/791B"},{"desc":"uploading config.yaml","runtime_seconds":0.338647099,"progress":"1.9KB/1.9KB"},{"desc":"uploading output.log","runtime_seconds":0.338638713,"progress":"9.3KB/9.3KB"}],"total_operations":5}}
+{"time":"2025-10-28T21:04:04.27090767+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T21:04:05.596578792+02:00","level":"INFO","msg":"stream: closing","id":"3uz95wek"}
+{"time":"2025-10-28T21:04:05.596594913+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"3uz95wek"}}
+{"time":"2025-10-28T21:04:05.596608979+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"3uz95wek"}}
+{"time":"2025-10-28T21:04:05.59661964+02:00","level":"INFO","msg":"sender: closed","stream_id":"3uz95wek"}
+{"time":"2025-10-28T21:04:05.596660948+02:00","level":"INFO","msg":"stream: closed","id":"3uz95wek"}

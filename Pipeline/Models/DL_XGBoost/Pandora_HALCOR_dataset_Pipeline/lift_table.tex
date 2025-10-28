@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\caption{Lift ($\Delta\%$) across all model/scaler/batch configurations. Negative = improvement.}
+\label{tab:lift}
+\begin{tabular}{l l r l c c c c c c c}
+\toprule
+Model & Scaler & Batch & Metric & 0.10 & 0.25 & 0.50 & 0.75 & 1.00 & Best (\%) & Best n \\
+\midrule
+BiLSTM & standard & 16 & val\textbackslash{}_SMAPE & 12.0$\pm$26.6\% & \textbf{-3.1$\pm$6.9\%} & 1.3$\pm$17.7\% & 0.5$\pm$14.2\% & 4.4$\pm$15.6\% & -3.1\% $\downarrow$ & 0.25 \\
+BiLSTM & standard & 16 & val\textbackslash{}_RMSE & 3.6$\pm$14.8\% & 2.2$\pm$11.6\% & 0.7$\pm$30.0\% & \textbf{-0.7$\pm$19.8\%} & 2.8$\pm$18.7\% & -0.7\% $\downarrow$ & 0.75 \\
+BiLSTM & standard & 16 & val\textbackslash{}_MAE & 3.3$\pm$13.1\% & 1.1$\pm$8.5\% & 2.4$\pm$23.9\% & \textbf{-0.8$\pm$14.9\%} & 1.7$\pm$13.7\% & -0.8\% $\downarrow$ & 0.75 \\
+BiLSTM & standard & 16 & val\textbackslash{}_MSE & 6.0$\pm$32.2\% & 5.3$\pm$23.5\% & 2.0$\pm$72.1\% & \textbf{-1.7$\pm$39.3\%} & 4.6$\pm$41.1\% & -1.7\% $\downarrow$ & 0.75 \\
+BiLSTM & standard & 32 & val\textbackslash{}_SMAPE & 1.3$\pm$12.5\% & 3.8$\pm$12.4\% & 1.2$\pm$11.0\% & 1.6$\pm$8.3\% & \textbf{0.1$\pm$6.4\%} & 0.1\% $\downarrow$ & 1.00 \\
+BiLSTM & standard & 32 & val\textbackslash{}_RMSE & -6.6$\pm$15.6\% & -2.8$\pm$17.9\% & 1.7$\pm$12.8\% & -1.3$\pm$16.0\% & \textbf{-7.0$\pm$19.1\%} & -7.0\% $\downarrow$ & 1.00 \\
+BiLSTM & standard & 32 & val\textbackslash{}_MAE & -4.7$\pm$13.7\% & -1.7$\pm$12.9\% & 0.4$\pm$10.9\% & -1.3$\pm$12.0\% & \textbf{-6.4$\pm$13.7\%} & -6.4\% $\downarrow$ & 1.00 \\
+BiLSTM & standard & 32 & val\textbackslash{}_MSE & -12.7$\pm$27.9\% & -6.2$\pm$34.5\% & 3.3$\pm$26.2\% & -3.1$\pm$30.6\% & \textbf{-14.2$\pm$39.0\%} & -14.2\% $\downarrow$ & 1.00 \\
+LSTM & standard & 16 & val\textbackslash{}_SMAPE & -0.3$\pm$6.3\% & \textbf{-3.4$\pm$2.0\%} & 1.9$\pm$10.2\% & -1.3$\pm$4.3\% & -1.1$\pm$6.7\% & -3.4\% $\downarrow$ & 0.25 \\
+LSTM & standard & 16 & val\textbackslash{}_RMSE & -1.5$\pm$10.7\% & -4.0$\pm$10.1\% & -1.9$\pm$11.5\% & -0.6$\pm$14.6\% & \textbf{-5.4$\pm$6.6\%} & -5.4\% $\downarrow$ & 1.00 \\
+LSTM & standard & 16 & val\textbackslash{}_MAE & -1.9$\pm$9.4\% & -4.9$\pm$5.6\% & -1.7$\pm$11.6\% & -2.0$\pm$10.2\% & \textbf{-5.0$\pm$3.6\%} & -5.0\% $\downarrow$ & 1.00 \\
+LSTM & standard & 16 & val\textbackslash{}_MSE & -2.7$\pm$21.5\% & -7.6$\pm$19.8\% & -3.1$\pm$23.1\% & -0.5$\pm$27.6\% & \textbf{-10.7$\pm$12.5\%} & -10.7\% $\downarrow$ & 1.00 \\
+LSTM & standard & 32 & val\textbackslash{}_SMAPE & 0.3$\pm$2.8\% & -0.5$\pm$3.8\% & -1.1$\pm$5.0\% & -0.1$\pm$6.2\% & \textbf{-2.0$\pm$7.0\%} & -2.0\% $\downarrow$ & 1.00 \\
+LSTM & standard & 32 & val\textbackslash{}_RMSE & \textbf{-5.4$\pm$3.5\%} & 3.8$\pm$8.1\% & -1.5$\pm$7.5\% & 1.9$\pm$8.2\% & 1.0$\pm$14.7\% & -5.4\% $\downarrow$ & 0.10 \\
+LSTM & standard & 32 & val\textbackslash{}_MAE & \textbf{-4.1$\pm$3.3\%} & 1.2$\pm$5.0\% & -2.8$\pm$7.2\% & -0.3$\pm$7.4\% & -1.7$\pm$11.1\% & -4.1\% $\downarrow$ & 0.10 \\
+LSTM & standard & 32 & val\textbackslash{}_MSE & \textbf{-10.8$\pm$6.7\%} & 7.4$\pm$17.0\% & -3.2$\pm$14.7\% & 4.1$\pm$16.2\% & 2.2$\pm$28.9\% & -10.8\% $\downarrow$ & 0.10 \\
+\bottomrule
+\end{tabular}
+\end{table*}

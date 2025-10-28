@@ -1,0 +1,17 @@
+{"time":"2025-10-28T20:55:29.768823675+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:55:29.76883182+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_205529-8442sph4/logs/debug-core.log"}
+{"time":"2025-10-28T20:55:29.873034688+02:00","level":"INFO","msg":"created new stream","id":"8442sph4"}
+{"time":"2025-10-28T20:55:29.873059224+02:00","level":"INFO","msg":"stream: started","id":"8442sph4"}
+{"time":"2025-10-28T20:55:29.873079312+02:00","level":"INFO","msg":"sender: started","stream_id":"8442sph4"}
+{"time":"2025-10-28T20:55:29.873215721+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"8442sph4"}}
+{"time":"2025-10-28T20:55:29.873074673+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"8442sph4"}}
+{"time":"2025-10-28T20:55:30.185191221+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-28T20:59:28.191128277+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-28T20:59:28.191430328+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-28T20:59:29.191494647+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.5","runtime_seconds":1.11767751,"subtasks":[{"desc":"model_name_BiLSTM_predictions_seed_42_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.5.npz","runtime_seconds":0.214296145,"progress":"2.5KB/2.5KB"}]}],"total_operations":1}}
+{"time":"2025-10-28T20:59:30.714580807+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T20:59:32.053116366+02:00","level":"INFO","msg":"stream: closing","id":"8442sph4"}
+{"time":"2025-10-28T20:59:32.053130593+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"8442sph4"}}
+{"time":"2025-10-28T20:59:32.05314483+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"8442sph4"}}
+{"time":"2025-10-28T20:59:32.053149048+02:00","level":"INFO","msg":"sender: closed","stream_id":"8442sph4"}
+{"time":"2025-10-28T20:59:32.053185827+02:00","level":"INFO","msg":"stream: closed","id":"8442sph4"}

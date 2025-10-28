@@ -1,0 +1,17 @@
+{"time":"2025-10-28T20:45:38.648628795+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:45:38.64863683+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_204538-e2pqgrn3/logs/debug-core.log"}
+{"time":"2025-10-28T20:45:38.752632816+02:00","level":"INFO","msg":"created new stream","id":"e2pqgrn3"}
+{"time":"2025-10-28T20:45:38.752656401+02:00","level":"INFO","msg":"stream: started","id":"e2pqgrn3"}
+{"time":"2025-10-28T20:45:38.752850429+02:00","level":"INFO","msg":"sender: started","stream_id":"e2pqgrn3"}
+{"time":"2025-10-28T20:45:38.75282981+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"e2pqgrn3"}}
+{"time":"2025-10-28T20:45:38.752668284+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"e2pqgrn3"}}
+{"time":"2025-10-28T20:45:39.057599013+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-28T20:50:26.622591206+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-28T20:50:26.622880685+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-28T20:50:27.622907661+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_2021_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.7","runtime_seconds":1.119016653},{"desc":"uploading config.yaml","runtime_seconds":0.330055019,"progress":"1.9KB/1.9KB"}],"total_operations":2}}
+{"time":"2025-10-28T20:50:29.106982875+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T20:50:30.462470764+02:00","level":"INFO","msg":"stream: closing","id":"e2pqgrn3"}
+{"time":"2025-10-28T20:50:30.46248429+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"e2pqgrn3"}}
+{"time":"2025-10-28T20:50:30.462498066+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"e2pqgrn3"}}
+{"time":"2025-10-28T20:50:30.462505971+02:00","level":"INFO","msg":"sender: closed","stream_id":"e2pqgrn3"}
+{"time":"2025-10-28T20:50:30.462557609+02:00","level":"INFO","msg":"stream: closed","id":"e2pqgrn3"}

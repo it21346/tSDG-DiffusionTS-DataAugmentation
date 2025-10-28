@@ -1,0 +1,17 @@
+{"time":"2025-10-28T20:25:56.576983329+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:25:56.576991594+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_202556-q6fs15e1/logs/debug-core.log"}
+{"time":"2025-10-28T20:25:56.680950943+02:00","level":"INFO","msg":"created new stream","id":"q6fs15e1"}
+{"time":"2025-10-28T20:25:56.680974047+02:00","level":"INFO","msg":"stream: started","id":"q6fs15e1"}
+{"time":"2025-10-28T20:25:56.681198072+02:00","level":"INFO","msg":"sender: started","stream_id":"q6fs15e1"}
+{"time":"2025-10-28T20:25:56.680989205+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"q6fs15e1"}}
+{"time":"2025-10-28T20:25:56.681027979+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"q6fs15e1"}}
+{"time":"2025-10-28T20:25:57.036740576+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-28T20:29:02.723370806+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-28T20:29:02.723724306+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-28T20:29:03.723681845+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model_name_BiLSTM_predictions_seed_1234_augmentation_16_scaler_standard_DA_True_pinball_False_ori_frac_0.9","runtime_seconds":1.113232706},{"desc":"uploading config.yaml","runtime_seconds":0.326521734,"progress":"1.9KB/1.9KB"},{"desc":"uploading output.log","runtime_seconds":0.326512156,"progress":"7.5KB/7.5KB"}],"total_operations":3}}
+{"time":"2025-10-28T20:29:05.231341158+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-28T20:29:06.595539298+02:00","level":"INFO","msg":"stream: closing","id":"q6fs15e1"}
+{"time":"2025-10-28T20:29:06.595553595+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"q6fs15e1"}}
+{"time":"2025-10-28T20:29:06.595568604+02:00","level":"INFO","msg":"sender: closed","stream_id":"q6fs15e1"}
+{"time":"2025-10-28T20:29:06.59556686+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"q6fs15e1"}}
+{"time":"2025-10-28T20:29:06.595644267+02:00","level":"INFO","msg":"stream: closed","id":"q6fs15e1"}

@@ -1,0 +1,8 @@
+{"time":"2025-10-28T20:07:55.491159431+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-10-28T20:07:55.491167787+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_200755-w3afapav/logs/debug-core.log"}
+{"time":"2025-10-28T20:07:55.595169427+02:00","level":"INFO","msg":"created new stream","id":"w3afapav"}
+{"time":"2025-10-28T20:07:55.595191469+02:00","level":"INFO","msg":"stream: started","id":"w3afapav"}
+{"time":"2025-10-28T20:07:55.59538193+02:00","level":"INFO","msg":"sender: started","stream_id":"w3afapav"}
+{"time":"2025-10-28T20:07:55.595208521+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"w3afapav"}}
+{"time":"2025-10-28T20:07:55.595215865+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"w3afapav"}}
+{"time":"2025-10-28T20:07:55.994704564+02:00","level":"INFO","msg":"Starting system monitor"}
