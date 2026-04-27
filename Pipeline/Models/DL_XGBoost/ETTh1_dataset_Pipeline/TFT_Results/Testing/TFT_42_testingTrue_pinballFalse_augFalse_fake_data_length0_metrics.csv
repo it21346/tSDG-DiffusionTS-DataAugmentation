@@ -1,2 +1,0 @@
-"Name","state","Notes","User","Tags","Created","Runtime","Sweep","data_augmentation","fake_data_length","model_name","scaler_name","seed","val_MAE","val_MASE","val_MSE","val_R2","val_RMSE","val_SMAPE","Pinball_0.05","Pinball_0.50","Pinball_0.95","Coverage_0.90","Coverage_Error_0.90","Sharpness_0.90"
-"TFT-standard-bs16-augFalse--42--0","finished","-","","","","","","False","0","TFT","standard","42","3.223522901535034","","14.250456809997559","-1.4723503589630127","3.774977684020996","37.44525611400604","","","","","",""

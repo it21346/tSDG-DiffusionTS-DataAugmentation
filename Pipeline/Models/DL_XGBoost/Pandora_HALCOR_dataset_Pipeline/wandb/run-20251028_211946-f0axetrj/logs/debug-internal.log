@@ -1,8 +1,0 @@
-{"time":"2025-10-28T21:19:46.232353996+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
-{"time":"2025-10-28T21:19:46.232362261+02:00","level":"INFO","msg":"created symlink","path":"/home/stelios-pc/Desktop/PhD/Paper/tSDG-DiffusionTS-DataAugmentation/Pipeline/Models/DL_XGBoost/Pandora_HALCOR_dataset_Pipeline/wandb/run-20251028_211946-f0axetrj/logs/debug-core.log"}
-{"time":"2025-10-28T21:19:46.33623801+02:00","level":"INFO","msg":"created new stream","id":"f0axetrj"}
-{"time":"2025-10-28T21:19:46.336259841+02:00","level":"INFO","msg":"stream: started","id":"f0axetrj"}
-{"time":"2025-10-28T21:19:46.336440474+02:00","level":"INFO","msg":"sender: started","stream_id":"f0axetrj"}
-{"time":"2025-10-28T21:19:46.336278797+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"f0axetrj"}}
-{"time":"2025-10-28T21:19:46.336367004+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"f0axetrj"}}
-{"time":"2025-10-28T21:19:46.704360343+02:00","level":"INFO","msg":"Starting system monitor"}

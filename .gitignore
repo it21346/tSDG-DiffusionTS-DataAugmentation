@@ -2,12 +2,6 @@
 # *.log
 
 # Ignore specific folders
-/Pipeline/Models/TFT/lightning_logs/
-/Pipeline/Models/DL_XGBoost/wandb/
-/Pipeline/Models/TFT Predictions/
-Pipeline/Individual Household Electric Power Consumption Dataset/household_power_consumption.txt
-Diffusion-TS/Checkpoints_energy_169/
-Diffusion-TS/energy_results/ETTh1/
-Pipeline/Electricity Transformer Dataset/ETTh1_ddpm_fake_energy_raw.npy
+
 # Ignore a specific file
 # secret_config.jsonPipeline/Individual Household Electric Power Consumption Dataset/household_power_consumption.txt
