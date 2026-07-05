@@ -10,25 +10,33 @@ prediction in data-scarce scenarios"*. Synthetic multivariate time series are ge
 ```
 .
 ├── Diffusion-TS/                        # Generative model (Diffusion-TS, ICLR 2024)
-│   ├── Config/                          # YAML configs per dataset (etth.yaml, ...)
-│   ├── Data/                            # Dataloader & dataset utilities
+│   ├── Config/                          # YAML configs per dataset (energy.yaml, ...)
+│   ├── Data/
+│   │   └── datasets/
+│   │       ├── ETTh1.csv                            # Raw ETTh1 dataset
+│   │       ├── ETTh1_data_split_training.ipynb       # Feature engineering + 85% train split
+│   │       └── ETTh1_energy_data.csv                 # Engineered training data used by Diffusion-TS
 │   ├── engine/                          # Solver, logger, LR scheduler
 │   ├── Models/                          # Interpretable diffusion model
 │   ├── Utils/                           # Evaluation metrics & data utilities
 │   ├── Experiments/                     # Evaluation notebooks (discriminative, predictive, FID)
+│   ├── energy_results/ETTh1/            # Checkpoints & generated synthetic windows
+│   ├── figures/                         # PCA / t-SNE / kernel-density plots
+│   ├── Tutorial_0.ipynb                 # Main notebook: train & sample Diffusion-TS on ETTh1
 │   ├── KL_div_Wasserstein.ipynb         # Distribution comparison: real vs synthetic
-│   ├── main.py                          # Train / sample entry point
 │   └── requirements.txt
 │
 └── Pipeline/
     ├── Electricity Transformer Dataset/
     │   └── ETTh1.csv                    # Raw dataset
-    └── Models/DL_XGBoost/ETTh1_dataset_Pipeline/
-        ├── forecasting_pipeline_ETTh1_dataset.ipynb   # Main training & augmentation pipeline
-        ├── wandb_experiments.ipynb                    # Results visualisation (heatmaps, lift plots)
-        ├── Variance_Bias_Plots.ipynb                  # Bias–variance decomposition
-        ├── wandb_mse_updated.csv                      # Exported W&B runs (point forecasting)
-        └── wandb_pinball_updated.csv                  # Exported W&B runs (quantile forecasting)
+    ├── forecasting_pipeline_ETTh1_dataset.ipynb   # Main training & augmentation pipeline
+    ├── wandb_experiments.ipynb                    # Results visualisation (heatmaps, lift plots)
+    ├── Variance_Bias_Plots.ipynb                  # Bias–variance decomposition
+    ├── wandb_mse_updated.csv                      # Exported W&B runs (point forecasting)
+    ├── wandb_pinball_updated.csv                  # Exported W&B runs (quantile forecasting)
+    ├── Plots/                                     # Heatmaps (MSE / pinball / augmentation ratio)
+    ├── lift_plots_PF/                             # Lift curves (point forecasting)
+    └── lift_plots_QF/                             # Lift curves (quantile forecasting)
 ```
 
 ---
@@ -44,7 +52,7 @@ prediction in data-scarce scenarios"*. Synthetic multivariate time series are ge
 | LUFL / LULL | High/Low low useful load |
 | **OT** | Oil temperature (forecast target) |
 
-Place `ETTh1.csv` in `Pipeline/Electricity Transformer Dataset/`. For Diffusion-TS training, also place `ETTh.csv` in `Diffusion-TS/Data/datasets/` (download from the [Diffusion-TS Google Drive link](https://drive.google.com/file/d/11DI22zKWtHjXMnNGPWNUbyGz-JiEtZy6/view?usp=sharing)).
+Place `ETTh1.csv` in `Pipeline/Electricity Transformer Dataset/` and in `Diffusion-TS/Data/datasets/`. Running `Diffusion-TS/Data/datasets/ETTh1_data_split_training.ipynb` engineers the time features and writes `ETTh1_energy_data.csv` (the 85% training split used to fit Diffusion-TS, so no val/test rows leak into the generator).
 
 ---
 
@@ -59,37 +67,60 @@ cd Diffusion-TS
 pip install -r requirements.txt
 ```
 
-### Train
+### Train & sample
 
-```bash
-python main.py --name etth --config_file Config/etth.yaml --gpu 0 --train
-```
+Training and sampling are run from **`Diffusion-TS/Tutorial_0.ipynb`**, not from the command line. Open the notebook and run the cells in order:
 
-Key hyperparameters in `Config/etth.yaml`:
+1. **Build dataset and settings** — loads `Config/energy.yaml` and builds the dataloader from `Data/datasets/ETTh1_energy_data.csv`.
+2. **Training models** — calls `trainer.train()`.
+3. **Sampling** — calls `trainer.sample(...)` and unnormalizes the output back to raw scale.
+
+Key hyperparameters in `Config/energy.yaml`:
 
 | Parameter | Value |
 |-----------|-------|
-| Sequence length | 24 |
-| Features | 7 |
-| Diffusion timesteps | 500 |
-| Max epochs | 18 000 |
+| Sequence length | 169 |
+| Features | 13 |
+| Diffusion timesteps | 1000 |
+| Max epochs | 25 000 |
 | Beta schedule | cosine |
 | Loss | L1 |
 
-### Sample (unconditional)
-
-```bash
-python main.py --name etth --config_file Config/etth.yaml --gpu 0 \
-    --sample 0 --milestone <checkpoint_number>
-```
-
-The output `.npy` file (e.g. `OUTPUT/etth/ddpm_fake_etth.npy`) contains the synthetic windows. Copy this file to `Pipeline/Electricity Transformer Dataset/ETTh1_ddpm_fake_energy_raw.npy` for use in the forecasting pipeline.
+The final cell saves the synthetic windows to `Diffusion-TS/energy_results/ETTh1/ETTh1_ddpm_fake_energy_raw.npy`. Copy this file to `Pipeline/Electricity Transformer Dataset/ETTh1_ddpm_fake_energy_raw.npy` for use in the forecasting pipeline.
 
 ---
 
-## Step 2 — Forecasting Pipeline
+## Step 2 — Evaluate Synthetic Data Quality
 
-The pipeline is implemented in `Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/forecasting_pipeline_ETTh1_dataset.ipynb`.
+Before using the generated windows for augmentation, their fidelity to the real ETTh1 distribution is assessed from a few complementary angles, using `Diffusion-TS/Data/datasets/ETTh1_energy_data.csv` (real) against `Diffusion-TS/energy_results/ETTh1/ETTh1_ddpm_fake_energy_raw.npy` (synthetic).
+
+### Distributional similarity
+
+| Metric | What it measures | Where |
+|--------|-------------------|-------|
+| **PCA plot** | 2-D projection overlap between real and synthetic samples | `Diffusion-TS/figures/ETTh1_pca_plot.png` |
+| **t-SNE plot** | Non-linear manifold overlap between real and synthetic samples | `Diffusion-TS/figures/ETTh1_tsne_plot.png` |
+| **Kernel density plot** | Per-feature marginal distribution overlap | `Diffusion-TS/figures/ETTh1_kernel_density_plot.png` |
+| **KL divergence** | Histogram-based divergence per feature, averaged across features (mean ± std) | `Diffusion-TS/KL_div_Wasserstein.ipynb` |
+| **Wasserstein distance** | Earth-mover's distance per feature, averaged across features (mean ± std) | `Diffusion-TS/KL_div_Wasserstein.ipynb` |
+
+The PCA / t-SNE / kernel-density plots are produced by the `visualization()` helper in `Diffusion-TS/Utils/metric_utils.py`, called from `Diffusion-TS/Experiments/metric_tensorflow.ipynb`.
+
+### Downstream utility (`Diffusion-TS/Experiments/`)
+
+| Metric | What it measures | Notebook |
+|--------|-------------------|----------|
+| **Discriminative score** | \|classification accuracy − 0.5\| of a post-hoc RNN trained to tell real from synthetic windows apart — closer to 0 is better | `metric_tensorflow.ipynb` |
+| **Predictive score** | Train-on-synthetic, test-on-real one-step-ahead MAE using a post-hoc RNN | `metric_tensorflow.ipynb` |
+
+
+Discriminative and predictive scores are exported to `Diffusion-TS/figures/ETTh1_discr_pred_metrics.csv`.
+
+---
+
+## Step 3 — Forecasting Pipeline
+
+The pipeline is implemented in `Pipeline/forecasting_pipeline_ETTh1_dataset.ipynb`.
 
 ### Models
 
@@ -109,16 +140,13 @@ The pipeline is implemented in `Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipelin
 
 | Split | Size | Purpose |
 |-------|------|---------|
-| Train | 80 % | Model fitting |
+| Train | 85 % | Model fitting |
 | Val 1 | 5 % | Hyperparameter selection |
-| Val 2 | 5 % | Secondary validation |
 | Test | 10 % | Final evaluation |
-
-During the **testing stage**, Val 1 is merged into the training set and Val 2 is used for validation, so the test set remains held-out throughout.
 
 ### Data augmentation
 
-Set `data_augmentation=True` and `fake_data_length` to a multiplier of the training set size (e.g. `400` → 400 % extra samples). Synthetic windows are loaded from `ETTh1_ddpm_fake_energy_raw.npy`, scaled with the same scaler fitted on real data, and concatenated to the training set.
+Set `data_augmentation=True` and `fake_data_length` to the desired synthetic-to-real ratio: `0.1`, `0.25`, `0.5`, `0.75`, or `1.0` (e.g. `0.5` → 50 % extra samples relative to the training set size). Synthetic windows are loaded from `ETTh1_ddpm_fake_energy_raw.npy`, scaled with the same scaler fitted on real data, and concatenated to the training set.
 
 ### Loss modes
 
@@ -135,7 +163,7 @@ Set `data_augmentation=True` and `fake_data_length` to a multiplier of the train
 
 ---
 
-## Step 3 — Experiment Tracking & Analysis
+## Step 4 — Experiment Tracking & Analysis
 
 All runs are tracked with [Weights & Biases](https://wandb.ai) under the `synthetic-data-gan` entity.
 
@@ -150,15 +178,16 @@ Experiments use W&B Sweeps (grid search) over model type, batch size, seed, and 
 
 | Notebook | Description |
 |----------|-------------|
-| `wandb_experiments.ipynb` | Boxplots and heatmaps of MSE / pinball metrics; lift plots showing the effect of augmentation ratio |
-| `Variance_Bias_Plots.ipynb` | Bias–variance decomposition (Δ% relative to no-augmentation baseline) for both point and quantile forecasting |
-| `Diffusion-TS/KL_div_Wasserstein.ipynb` | KL divergence and Wasserstein distance between real and synthetic distributions |
+| `Pipeline/wandb_experiments.ipynb` | Boxplots and heatmaps of MSE / pinball metrics; lift plots showing the effect of augmentation ratio |
+| `Pipeline/Variance_Bias_Plots.ipynb` | Bias–variance decomposition (Δ% relative to no-augmentation baseline) for both point and quantile forecasting |
+
+> Synthetic data fidelity (KL divergence, Wasserstein distance, PCA/t-SNE/KDE, discriminative/predictive/Context-FID/correlational scores) is covered in [Step 2](#step-2--evaluate-synthetic-data-quality) above.
 
 ---
 
 ## Key Results
 
-Plots are saved under `Pipeline/Models/DL_XGBoost/ETTh1_dataset_Pipeline/Plots/`:
+Plots are saved under `Pipeline/Plots/`:
 
 - `heatmap_mse_testing.png` — forecaster comparison on point forecasting metrics
 - `heatmap_quant_pinball_testing.png` / `heatmap_stand_pinball_testing.png` — quantile metrics
