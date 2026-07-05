@@ -1,4 +1,4 @@
-# README (Work-in-progress)
+# README
 
 This repository contains the complete pipeline for the paper *"Diffusion-based data augmentation for short-term multivariate energy
 prediction in data-scarce scenarios"*. Synthetic multivariate time series are generated with **Diffusion-TS** and then used to augment training data for downstream forecasting models evaluated on the ETTh1 benchmark dataset.
